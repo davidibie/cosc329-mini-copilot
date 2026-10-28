@@ -1,8 +1,6 @@
 # COSC 329 Mini Co-pilot
 
-David and Kamso's two-person project for COSC 329.
-
-We're planning a small tool that suggests what to type next while writing Python code. We'll compare models that learn patterns from existing code with an approach that uses the structure of the code, then try two models in a basic editor.
+This a small tool that suggests what to type next while writing Python code. We'll compare models that learn patterns from existing code with an approach that uses the structure of the code, then try two models in a basic editor.
 
 ## Where we're at
 
