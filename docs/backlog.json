@@ -1,0 +1,200 @@
+[
+  {
+    "id": "T01",
+    "epic": "Setup",
+    "title": "Set up the shared repository",
+    "owner": "David",
+    "milestone": "M1",
+    "priority": "High",
+    "depends_on": "None",
+    "done_when": "Both partners can access the repo; planning files are committed; both understand the first tasks.",
+    "status": "Todo"
+  },
+  {
+    "id": "T02",
+    "epic": "Setup",
+    "title": "Agree on roles and prediction format",
+    "owner": "Both",
+    "milestone": "M1",
+    "priority": "High",
+    "depends_on": "None",
+    "done_when": "Confirm Python, ownership and full-word suggestion format; record decisions in INTERFACES.md.",
+    "status": "Todo"
+  },
+  {
+    "id": "T03",
+    "epic": "Setup",
+    "title": "Clarify evaluation split",
+    "owner": "David",
+    "milestone": "M1",
+    "priority": "High",
+    "depends_on": "None",
+    "done_when": "Ask how 70/30 and five-fold CV fit together; record instructor guidance before formal experiments.",
+    "status": "Todo"
+  },
+  {
+    "id": "T04",
+    "epic": "Data",
+    "title": "Choose and log dataset sources",
+    "owner": "David",
+    "milestone": "M2",
+    "priority": "High",
+    "depends_on": "T02",
+    "done_when": "Log at least 10 independent Python projects with URL, license, exact commit and included paths.",
+    "status": "Todo"
+  },
+  {
+    "id": "T05",
+    "epic": "Data",
+    "title": "Prepare repeatable dataset and splits",
+    "owner": "David",
+    "milestone": "M2",
+    "priority": "High",
+    "depends_on": "T03 T04",
+    "done_when": "Exclude generated/vendor code consistently; deduplicate; save project-level splits, seed and file hashes; keep raw code out of Git.",
+    "status": "Todo"
+  },
+  {
+    "id": "T06",
+    "epic": "Models",
+    "title": "Build word n-gram models",
+    "owner": "David",
+    "milestone": "M2",
+    "priority": "High",
+    "depends_on": "T02",
+    "done_when": "Support n=1..10, smoothing and unseen contexts; document tokenization; test on small known sequences.",
+    "status": "Todo"
+  },
+  {
+    "id": "T07",
+    "epic": "Models",
+    "title": "Build character n-gram models",
+    "owner": "David",
+    "milestone": "M2",
+    "priority": "High",
+    "depends_on": "T02",
+    "done_when": "Support n=1..10; generate full-word candidates with length/stop limits; expose the agreed suggestion interface.",
+    "status": "Todo"
+  },
+  {
+    "id": "T08",
+    "epic": "Models",
+    "title": "Try a parser on incomplete code",
+    "owner": "Kamso",
+    "milestone": "M2",
+    "priority": "High",
+    "depends_on": "T02",
+    "done_when": "Compare candidate parser behaviour on unfinished expressions; select an error-tolerant approach and document failure cases.",
+    "status": "Todo"
+  },
+  {
+    "id": "T09",
+    "epic": "Models",
+    "title": "Build the AST prediction baseline",
+    "owner": "Kamso",
+    "milestone": "M3",
+    "priority": "High",
+    "depends_on": "T08",
+    "done_when": "Produce ranked word candidates from prefix structure; document candidate rules, syntax checks and fallback; never use hidden future text.",
+    "status": "Todo"
+  },
+  {
+    "id": "T10",
+    "epic": "Evaluation",
+    "title": "Build shared contexts and metrics",
+    "owner": "Both",
+    "milestone": "M3",
+    "priority": "High",
+    "depends_on": "T02",
+    "done_when": "Score the same held-out word targets for every model; verify exact-match accuracy and character edit distance with hand-worked cases.",
+    "status": "Todo"
+  },
+  {
+    "id": "T11",
+    "epic": "Evaluation",
+    "title": "Run five-fold model comparisons",
+    "owner": "David",
+    "milestone": "M3",
+    "priority": "High",
+    "depends_on": "T05 T06 T07 T10",
+    "done_when": "Fit on each training fold only; save per-fold results for every n plus mean and sample SD; record runtime settings and failures.",
+    "status": "Todo"
+  },
+  {
+    "id": "T12",
+    "epic": "Evaluation",
+    "title": "Evaluate AST and hybrid models",
+    "owner": "Both",
+    "milestone": "M4",
+    "priority": "High",
+    "depends_on": "T09 T10 T11",
+    "done_when": "Kamso leads syntax integration; David leads experiment runs; compare AST and a documented hybrid with n-gram baselines using the same contexts.",
+    "status": "Todo"
+  },
+  {
+    "id": "T13",
+    "epic": "Editor",
+    "title": "Build a basic editor with fake predictions",
+    "owner": "Kamso",
+    "milestone": "M3",
+    "priority": "High",
+    "depends_on": "T02",
+    "done_when": "Typing shows up to five suggestions; selecting one replaces the partial word; use a fake model first so work can start immediately.",
+    "status": "Todo"
+  },
+  {
+    "id": "T14",
+    "epic": "Editor",
+    "title": "Connect two models and handle failures",
+    "owner": "Kamso",
+    "milestone": "M4",
+    "priority": "High",
+    "depends_on": "T09 T12 T13",
+    "done_when": "Switch between two selected models; update suggestions as code changes; handle empty output/parser errors and check typing responsiveness.",
+    "status": "Todo"
+  },
+  {
+    "id": "T15",
+    "epic": "Evaluation",
+    "title": "Choose models and compare coding experience",
+    "owner": "Both",
+    "milestone": "M4",
+    "priority": "High",
+    "depends_on": "T11 T12 T14",
+    "done_when": "Explain the choice using results; both try the same coding tasks with two models; record useful and bad suggestions and actual observations.",
+    "status": "Todo"
+  },
+  {
+    "id": "T16",
+    "epic": "Delivery",
+    "title": "Prepare presentation and demonstration",
+    "owner": "Both",
+    "milestone": "M5",
+    "priority": "High",
+    "depends_on": "T15",
+    "done_when": "Show problem, methods, results and limitations; rehearse the demo; confirm duration/format on Canvas before recording.",
+    "status": "Todo"
+  },
+  {
+    "id": "T17",
+    "epic": "Delivery",
+    "title": "Finish report and reproduce results",
+    "owner": "Both",
+    "milestone": "M6",
+    "priority": "High",
+    "depends_on": "T15",
+    "done_when": "Explain data, splits, methods, hybrid and metrics; include real tables and limitations; another partner reproduces the key run from README.",
+    "status": "Todo"
+  },
+  {
+    "id": "T18",
+    "epic": "Delivery",
+    "title": "Review final submission and contributions",
+    "owner": "Both",
+    "milestone": "M6",
+    "priority": "High",
+    "depends_on": "T16 T17",
+    "done_when": "Check current Canvas deliverables; confirm teaching-team access; record actual contributions; one submits and the other verifies.",
+    "status": "Todo"
+  }
+]
