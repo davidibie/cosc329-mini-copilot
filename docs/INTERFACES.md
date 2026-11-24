@@ -23,6 +23,6 @@ David: future dataset and character/word model files.
 
 Kamso: future parser, AST model and editor files.
 
-Shared: evaluation, hybrid, dependency changes and report. Agree on a lead for each shared task before coding.
+David owns evaluation tooling (T10), n-gram experiments (T11) and report assembly (T17). Kamso owns the prediction-interface documentation (T02), hybrid implementation and AST/hybrid experiments (T12). Coordinate dependency changes and review each other's work. See PLAN.md and the assigned GitHub issues for the five-day schedule.
 
 These files will be created when we start the matching backlog tasks. The editor can use temporary fixed suggestions while the models are being built, so neither person has to wait for the other.
