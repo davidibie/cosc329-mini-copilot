@@ -1,6 +1,6 @@
 # Project backlog
 
-This is our working task list, not a list of extra course requirements. T01 is complete. The remaining task statuses are tracked in GitHub issues.
+This is our working task list, not a list of extra course requirements. T01 and T03 are complete. The remaining task statuses are tracked in GitHub issues.
 
 Workflow: **Todo -> In progress -> Review -> Done**. Pick one task at a time, make a branch named after its ID (for example `t06-word-model`), and link the pull request to the task. Move it to Done after the other person reviews it and its completion checks pass.
 
@@ -39,7 +39,7 @@ Each task has one accountable owner. David owns data, n-grams, the evaluator, n-
 
 ### T03 Clarify evaluation split
 
-- Status: Todo
+- Status: Done
 - Epic: Setup | Owner: David | Milestone: M1 | Priority: High
 - Depends on: None
 - Done when: Ask how 70/30 and five-fold CV fit together; record instructor guidance before formal experiments.
