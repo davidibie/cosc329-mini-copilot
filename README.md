@@ -4,7 +4,11 @@ This a small tool that suggests what to type next while writing Python code. We'
 
 ## Where we're at
 
-This repo is our starting plan. There is no prediction code, dataset, editor or experiment output yet. Python is our proposed language; we'll confirm that together before collecting code.
+Python is the implementation and dataset language. The editor prototype uses a fixed demo vocabulary while the trained models are being developed.
+
+## Try the editor prototype
+
+Run `python editor.py` from the repository root with Python 3.12 or later and Tkinter available. Type `pri`, then select `print`. To test replacement in the middle of an identifier, put the cursor after `pri` in `printrange` and select `print`. The whole identifier becomes `print`.
 
 ## What's in the repo
 
@@ -43,7 +47,7 @@ Both: evaluation, hybrid model, integration, report and demo. We can adjust the 
 
 ## How we'll work
 
-Pick a task from the backlog, work on a separate branch and have the other person review the pull request. Keep the status and setup instructions current as we add code. There are no setup or run commands yet because implementation hasn't started.
+Pick a task from the backlog, work on a separate branch and have the other person review the pull request. Keep the status and setup instructions current as we add code.
 
 Keep the raw dataset out of Git and record its source URLs, exact versions and licenses in `data/sources.csv`.
 
