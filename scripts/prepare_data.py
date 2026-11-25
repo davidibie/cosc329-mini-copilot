@@ -7,6 +7,8 @@ import hashlib
 import io
 import json
 import random
+import os
+import tempfile
 import subprocess
 import tokenize
 from collections import Counter
@@ -86,6 +88,8 @@ def prepare(sources, raw, manifest_path, seed=329, max_files=12, max_bytes=49152
     for row in sorted(rows, key=lambda item: item['project_name']):
         name = row['project_name']
         directory = fetch_project(row, raw) if fetch else raw / name
+        if git(directory, 'status', '--porcelain', '--untracked-files=no'):
+            raise ValueError(f'Tracked source changes in {directory}')
         if git(directory, 'rev-parse', 'HEAD') != row['commit_sha']:
             raise ValueError(f'Incorrect source revision for {name}')
         for license_path in row['notes'].split('license_files=')[1].split('|')[0].split(';'):
@@ -139,9 +143,18 @@ def prepare(sources, raw, manifest_path, seed=329, max_files=12, max_bytes=49152
         **splits, 'licenses': licenses, 'files': sorted(files, key=lambda f: (f['project'], f['path'])),
         'excluded': sorted(rejected, key=lambda f: (f['project'], f['path']))}
     manifest_path.parent.mkdir(parents=True, exist_ok=True)
-    temporary = manifest_path.with_suffix('.tmp')
-    temporary.write_text(json.dumps(manifest, indent=2, ensure_ascii=False) + '\n')
-    temporary.replace(manifest_path)
+    with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', dir=manifest_path.parent, delete=False) as handle:
+        temporary = Path(handle.name)
+        try:
+            json.dump(manifest, handle, indent=2, ensure_ascii=False)
+            handle.write('\n')
+        except BaseException:
+            temporary.unlink(missing_ok=True)
+            raise
+    try:
+        os.replace(temporary, manifest_path)
+    finally:
+        temporary.unlink(missing_ok=True)
     counts = Counter(item['project'] for item in files)
     print(f'{len(counts)} projects; {len(files)} files; {sum(f["characters"] for f in files):,} characters')
     print(f'{len(splits["development_projects"])} development projects; {len(splits["test_projects"])} final test projects')

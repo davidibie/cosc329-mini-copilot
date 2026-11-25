@@ -29,7 +29,7 @@ Each task has one accountable owner. David owns data, n-grams, the evaluator, n-
 
 ### T02 Agree on roles and prediction format
 
-- Status: Review
+- Status: Done
 - Epic: Setup | Owner: Kamso | Milestone: M1 | Priority: High
 - Depends on: None
 - Done when: Confirm Python, ownership and full-word suggestion format; record decisions in INTERFACES.md.
@@ -89,7 +89,7 @@ Each task has one accountable owner. David owns data, n-grams, the evaluator, n-
 
 ### T08 Try a parser on incomplete code
 
-- Status: Review
+- Status: Done
 - Epic: Models | Owner: Kamso | Milestone: M2 | Priority: High
 - Depends on: T02
 - Done when: Compare candidate parser behaviour on unfinished expressions; select an error-tolerant approach and document failure cases.
@@ -139,7 +139,7 @@ Each task has one accountable owner. David owns data, n-grams, the evaluator, n-
 
 ### T13 Build a basic editor with fake predictions
 
-- Status: Review
+- Status: Done
 - Epic: Editor | Owner: Kamso | Milestone: M3 | Priority: High
 - Depends on: T02
 - Done when: Typing shows up to five suggestions; selecting one replaces the partial word; use a fake model first so work can start immediately.
