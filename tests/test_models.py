@@ -99,6 +99,21 @@ class ModelTests(unittest.TestCase):
                     with self.assertRaises(ValueError):
                         family.load(path)
 
+    def test_unicode_model_reload(self):
+        for family in FAMILIES:
+            with self.subTest(family=family.__name__), tempfile.TemporaryDirectory() as directory:
+                path = Path(directory) / 'model.json'
+                model = family(2)
+                model.fit(['élan = π\n'])
+                model.save(path)
+                self.assertEqual(family.load(path).suggest('é'), ['élan'])
+
+    def test_character_context_uses_physical_lines(self):
+        model = CharacterNGramModel(2)
+        model.fit(['first = "a\u2028b\fc"\nsecond = 1\n'])
+        self.assertEqual(model.counts[('\n',)]['s'], 1)
+        self.assertEqual(model.counts.get(('\u2028',), {}).get('s', 0), 0)
+
     def test_invalid_config_and_ties(self):
         for family in FAMILIES:
             for n in (0, 11, 1.5, True):

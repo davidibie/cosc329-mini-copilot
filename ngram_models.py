@@ -1,5 +1,6 @@
 """Word and character n-grams that rank full Python NAME completions."""
 
+import io
 import json
 import math
 import os
@@ -80,7 +81,7 @@ class NGramModel:
 
     @classmethod
     def load(cls, path):
-        payload = json.loads(Path(path).read_text())
+        payload = json.loads(Path(path).read_text(encoding='utf-8'))
         if payload.get('version') != 1 or payload.get('model_type') != cls.__name__:
             raise ValueError('Unsupported model version or model type')
         model = cls(payload['n'], payload['alpha'])
@@ -127,9 +128,8 @@ class CharacterNGramModel(NGramModel):
     def fit(self, source_strings):
         self._reset()
         for source in source_strings:
-            lines = source.splitlines(keepends=True)
             offsets = [0]
-            for line in lines:
+            for line in io.StringIO(source):
                 offsets.append(offsets[-1] + len(line))
             for item in word_tokens(source):
                 word = item.string
