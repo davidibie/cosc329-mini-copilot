@@ -12,7 +12,7 @@ import tempfile
 import subprocess
 import tokenize
 from collections import Counter
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parents[1]
 EXCLUDED_PARTS = {'tests', 'test', 'docs', 'examples', 'vendor', 'vendored', '_vendor', '__pycache__'}
@@ -44,18 +44,25 @@ def fetch_project(row, raw):
     return directory
 
 
-def inspect_file(path, directory):
+def blob(directory, revision, path):
+    return subprocess.check_output(['git', '-C', str(directory), 'cat-file', 'blob', f'{revision}:{path}'])
+
+
+def decode_source(data):
+    with io.TextIOWrapper(io.BytesIO(data), encoding=tokenize.detect_encoding(io.BytesIO(data).readline)[0]) as handle:
+        return handle.read()
+
+
+def inspect_file(path, data):
     """Verify syntax and hash tokens to catch comment/whitespace-only copies."""
-    data = path.read_bytes()
-    with tokenize.open(path) as handle:
-        source = handle.read()
+    source = decode_source(data)
     ast.parse(source, feature_version=(3, 12))
     tokens = list(tokenize.generate_tokens(io.StringIO(source).readline))
     canonical = [(item.type, item.string) for item in tokens if item.type not in IGNORED_TOKENS]
     names = sum(item.type == tokenize.NAME for item in tokens)
     if names < 10:
         raise ValueError('fewer than 10 NAME tokens')
-    return {'path': path.relative_to(directory).as_posix(),
+    return {'path': path,
             'sha256': hashlib.sha256(data).hexdigest(),
             'token_sha256': hashlib.sha256(json.dumps(canonical, ensure_ascii=False).encode()).hexdigest(),
             'bytes': len(data), 'characters': len(source), 'name_tokens': names}
@@ -92,36 +99,41 @@ def prepare(sources, raw, manifest_path, seed=329, max_files=12, max_bytes=49152
             raise ValueError(f'Tracked source changes in {directory}')
         if git(directory, 'rev-parse', 'HEAD') != row['commit_sha']:
             raise ValueError(f'Incorrect source revision for {name}')
+        revision = row['commit_sha']
         for license_path in row['notes'].split('license_files=')[1].split('|')[0].split(';'):
-            license_file = directory / license_path
             licenses.append({'project': name, 'path': license_path,
-                             'sha256': hashlib.sha256(license_file.read_bytes()).hexdigest()})
-        candidates = set()
-        for included in row['included_paths'].split(';'):
-            package = directory / included
-            if not package.is_dir():
-                raise ValueError(f'Missing source directory {package}')
-            candidates.update(package.rglob('*.py'))
-        # Stable hashed path order samples throughout a package instead of taking only __init__ files.
-        ordered = sorted(candidates, key=lambda p: hashlib.sha256(f'{seed}:{name}:{p.relative_to(directory).as_posix()}'.encode()).hexdigest())
+                             'sha256': hashlib.sha256(blob(directory, revision, license_path)).hexdigest()})
+        included = row['included_paths'].split(';')
+        entries = subprocess.check_output(
+            ['git', '-C', str(directory), 'ls-tree', '-rz', '-l', revision, '--', *included]
+        )
+        candidates = {}
+        for entry in entries.split(b'\0'):
+            if entry:
+                metadata, encoded_path = entry.split(b'\t', 1)
+                mode, kind, _, size = metadata.split()
+                path = encoded_path.decode('utf-8')
+                if kind == b'blob' and path.endswith('.py'):
+                    candidates[path] = (mode, int(size))
+        ordered = sorted(candidates, key=lambda p: hashlib.sha256(f'{seed}:{name}:{p}'.encode()).hexdigest())
         accepted = 0
-        for path in ordered:
-            relative = path.relative_to(directory).as_posix()
+        for relative in ordered:
+            mode, size = candidates[relative]
             reason = None
-            if path.is_symlink() or EXCLUDED_PARTS.intersection(path.relative_to(directory).parts):
+            if mode == b'120000' or EXCLUDED_PARTS.intersection(PurePosixPath(relative).parts):
                 reason = 'excluded directory or symlink'
-            elif path.stat().st_size > max_bytes:
+            elif size > max_bytes:
                 reason = 'file size limit'
             elif accepted >= max_files:
                 reason = 'project sample limit'
             else:
+                data = blob(directory, revision, relative)
                 try:
-                    record = inspect_file(path, directory)
+                    record = inspect_file(relative, data)
                 except (SyntaxError, UnicodeError, LookupError, ValueError, tokenize.TokenError) as error:
                     reason = f'invalid or ineligible Python 3.12 source: {type(error).__name__}'
                 else:
-                    # Reject generated files before counting them toward the sample.
-                    header = path.read_bytes()[:2048].lower()
+                    header = data[:2048].lower()
                     if b'auto-generated' in header or b'autogenerated' in header or b'do not edit' in header:
                         reason = 'generated header'
                     elif record['sha256'] in seen_bytes or record['token_sha256'] in seen_tokens:
@@ -143,7 +155,7 @@ def prepare(sources, raw, manifest_path, seed=329, max_files=12, max_bytes=49152
         **splits, 'licenses': licenses, 'files': sorted(files, key=lambda f: (f['project'], f['path'])),
         'excluded': sorted(rejected, key=lambda f: (f['project'], f['path']))}
     manifest_path.parent.mkdir(parents=True, exist_ok=True)
-    with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', dir=manifest_path.parent, delete=False) as handle:
+    with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', newline='\n', dir=manifest_path.parent, delete=False) as handle:
         temporary = Path(handle.name)
         try:
             json.dump(manifest, handle, indent=2, ensure_ascii=False)
@@ -163,17 +175,19 @@ def prepare(sources, raw, manifest_path, seed=329, max_files=12, max_bytes=49152
 
 def read_sources(manifest_path, projects, raw=ROOT / 'data/raw'):
     """Yield only requested projects, verifying bytes against the saved manifest."""
-    manifest = json.loads(Path(manifest_path).read_text())
+    manifest = json.loads(Path(manifest_path).read_text(encoding='utf-8'))
     known = set(manifest['development_projects'] + manifest['test_projects'])
-    if not set(projects) <= known:
+    projects = set(projects)
+    if not projects <= known:
         raise ValueError('Requested project is absent from the manifest')
     for item in manifest['files']:
         if item['project'] in projects:
-            path = raw / item['project'] / item['path']
-            if hashlib.sha256(path.read_bytes()).hexdigest() != item['sha256']:
-                raise ValueError(f'Corpus hash mismatch: {path}')
-            with tokenize.open(path) as handle:
-                yield handle.read()
+            directory = raw / item['project']
+            path = item['path']
+            data = blob(directory, item['commit_sha'], path)
+            if hashlib.sha256(data).hexdigest() != item['sha256']:
+                raise ValueError(f'Corpus hash mismatch: {directory / path}')
+            yield decode_source(data)
 
 
 def main():
