@@ -1,28 +1,25 @@
-# Decisions before we start coding
+# Prediction interface (T02)
 
-Nothing in this file is implemented yet. These are questions and proposed boundaries for David and Kamso to settle together.
+**Status:** Proposal for David and Kamso to review. Python is the implementation and dataset language. David owns the dataset, n-grams and shared evaluator; Kamso owns the parser, AST model, hybrid and editor. See [PLAN.md](PLAN.md) for the full work split.
 
-## Predictions
+## Model calls
 
-- What should count as a word: identifiers, keywords, numbers, punctuation or some subset?
-- How do we represent code before the cursor and a partly typed word?
-- What should every model return so the editor can show the same five-suggestion list?
-- One possible interface is `fit(source_strings)` and `suggest(prefix, limit=5)`. Decide before using it across both branches.
+- `fit(source_strings: Iterable[str]) -> None` trains a model from whole Python source files and replaces any previous fitted state. Fit only models that learn from data. Supply only files in the active training split and reset context at file boundaries.
+- `suggest(prefix: str, limit: int = 5) -> list[str]` takes all the text before the cursor, including any partial word. Pass the prefix as written, with whitespace and case preserved. Never supply the remainder of the file or a hidden target word.
+- Return up to `limit` distinct, full words, best first. For a nonempty partial, candidates must case-sensitively start with it and be longer than it. Break ties by Python's string sort order. Return `[]` for a nonpositive limit or when no candidate qualifies. The editor asks for five; the hybrid may ask for a larger pool. Ranking scores are internal to each model.
 
-## Fair comparison
+## Words and cursor behavior
 
-Use the same held-out word boundaries for every model. Predictors receive only the code before the cursor; the hidden next word and later source belong in the evaluator only. Agree on what to do when a parser fails or a model returns no suggestion.
+- Identify targets in complete Python 3.12 source with `tokenize`: use the original spelling of `NAME` tokens, which cover identifiers and keywords. Exclude comments, string literals (including f-strings and their interpolations), numbers, operators, punctuation and whitespace from the target list. Model families can still use non-target syntax as context. Word-based components and the evaluator should share this target extraction.
+- For a live prefix, find the trailing run of Python identifier characters and treat it as a partial only if the entire run is a valid identifier spelling. The input may be incomplete, so use recovery or a conservative fallback for lexical context. Suppress suggestions inside comments and strings and directly after a numeric token where a word would join that token.
+- For `pri|`, accepting `print` replaces `pri`. For `pri|nt`, replace the whole identifier, including `nt` to the right. Only the editor inspects the right side to find the replacement range. At a word boundary with no adjacent word, insert at the cursor and leave surrounding spacing unchanged.
 
-## Data and results
+## Shared evaluation
 
-Record source URLs, exact versions, licenses and exclusions in the dataset log. Agree on project-level data splits and remove duplicates across splits. Build vocabulary and fit counts on training data only. Save scores per fold before calculating averages and standard deviations.
+- Use one full-word-boundary case per eligible held-out token. Place the cursor immediately before the token and keep the expected word inside the evaluator. If evaluating partially typed words, use a separately labeled set with the cursor after the first character of targets longer than one character. Reuse the same case IDs and prefixes across models.
+- Report exact-match accuracy and character Levenshtein distance for the first suggestion. Count empty output as a miss and use the distance from `""` to the expected word. Log empty outputs and fallbacks so they can be interpreted alongside the metrics. If top-five accuracy is reported, label it separately.
+- Reuse the project-level splits and case files. Build vocabularies and model statistics from the current training files, and save each fold's metrics before summarizing them.
 
-## Suggested file ownership
+## Model loading
 
-David: future dataset and character/word model files.
-
-Kamso: future parser, AST model and editor files.
-
-David owns evaluation tooling (T10), n-gram experiments (T11) and report assembly (T17). Kamso owns the prediction-interface documentation (T02), hybrid implementation and AST/hybrid experiments (T12). Coordinate dependency changes and review each other's work. See PLAN.md and the assigned GitHub issues for the five-day schedule.
-
-These files will be created when we start the matching backlog tasks. The editor can use temporary fixed suggestions while the models are being built, so neither person has to wait for the other.
+Trainable models expose `save(path)` and a class method `load(path)` that reconstructs a predictor ready for `suggest`. Use versioned JSON containing the model type, configuration, and fitted state. Construct rules-only models directly. Load or construct the two editor predictors once at startup.
