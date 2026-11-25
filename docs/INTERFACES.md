@@ -12,7 +12,7 @@
 
 - Identify targets in complete Python 3.12 source with `tokenize`: use the original spelling of `NAME` tokens, which cover identifiers and keywords. Exclude comments, string literals (including f-strings and their interpolations), numbers, operators, punctuation and whitespace from the target list. Model families can still use non-target syntax as context. Word-based components and the evaluator should share this target extraction.
 - For a live prefix, find the trailing run of Python identifier characters and treat it as a partial only if the entire run is a valid identifier spelling. The input may be incomplete, so use recovery or a conservative fallback for lexical context. Suppress suggestions inside comments and strings and directly after a numeric token where a word would join that token.
-- For `pri|`, accepting `print` replaces `pri`. For `pri|nt`, replace the whole identifier, including `nt` to the right. Only the editor inspects the right side to find the replacement range. At a word boundary with no adjacent word, insert at the cursor and leave surrounding spacing unchanged.
+- For `pri|`, accepting `print` replaces `pri`. For `pri|nt`, replace the whole identifier, including `nt` to the right. Only the editor inspects the right side to find the replacement range. If an identifier starts immediately to the right with no partial to the left, the editor hides suggestions to avoid overwriting it. At a word boundary with no adjacent word, insert at the cursor and leave surrounding spacing unchanged.
 
 ## Shared evaluation
 
