@@ -15,9 +15,9 @@ Run `python editor.py` from the repository root with Python 3.12 or later and Tk
 - `docs/PLAN.md`: proposed roles, milestones and decisions to settle.
 - `docs/BACKLOG.md`: tasks with owners, dependencies and checks for when each is done.
 - `docs/backlog.json`: the same task list in a structured format.
-- `docs/INTERFACES.md`: questions to agree on before connecting our code.
+- `docs/INTERFACES.md`: the accepted predictor, token and metric contract.
 - `docs/Mini-Copilot-Work-Split.pdf`: shareable copy of the work split and milestones.
-- `data/sources.csv`: blank table for recording the projects we use as data.
+- `data/sources.csv`: 20 pinned source projects, licenses and selected file counts.
 
 ## What we need to build
 
@@ -28,7 +28,7 @@ Run `python editor.py` from the repository root with Python 3.12 or later and Tk
 - Compare the models using accuracy and edit distance, including five-fold results with averages and standard deviations.
 - Show five suggestions while typing in a basic editor, then compare the experience with two models.
 
-The general project description mentions a 70/30 data split, while the two-person option asks for five-fold cross-validation. We'll clarify how these should fit together before running experiments.
+We use 70% of whole projects for development, run five-fold cross-validation within that portion, and reserve 30% for final testing. See docs/PLAN.md for the instructor guidance and decision.
 
 ## Proposed work split
 
@@ -62,3 +62,14 @@ Final deliverables: December 13, 2026 at 11:59 p.m. Pacific.
 The plan includes earlier internal targets. Check Canvas for the current submission instructions.
 
 Course guidance: https://cmps-people.ok.ubc.ca/bowenhui/analytics/project.html
+
+## Prepare the dataset
+
+Use Python 3.12 and Git. The source projects are read as text, so their runtime dependencies are unnecessary.
+
+```sh
+python scripts/prepare_data.py
+python -m unittest discover -s tests -v
+```
+
+The first command downloads exact commits into ignored `data/raw/` and writes `data/manifest.json`. Use `--offline` to rebuild from existing checkouts. See [dataset decisions](docs/DATASET.md) for sampling, exclusions, deduplication and fold usage.

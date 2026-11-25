@@ -1,0 +1,5458 @@
+{
+  "version": 1,
+  "python_grammar": "3.12",
+  "sampling": {
+    "max_files_per_project": 12,
+    "max_bytes_per_file": 49152,
+    "minimum_name_tokens": 10,
+    "ordering": "SHA256(seed:project:relative_path)"
+  },
+  "seed": 329,
+  "development_projects": [
+    "arrow",
+    "attrs",
+    "boltons",
+    "click",
+    "filelock",
+    "flask",
+    "itsdangerous",
+    "more-itertools",
+    "packaging",
+    "platformdirs",
+    "pygments",
+    "rich",
+    "typer",
+    "werkzeug"
+  ],
+  "test_projects": [
+    "httpx",
+    "humanize",
+    "jinja",
+    "jmespath.py",
+    "python-dotenv",
+    "requests"
+  ],
+  "folds": [
+    {
+      "fold": 1,
+      "train_projects": [
+        "arrow",
+        "attrs",
+        "boltons",
+        "filelock",
+        "flask",
+        "more-itertools",
+        "packaging",
+        "platformdirs",
+        "rich",
+        "typer",
+        "werkzeug"
+      ],
+      "validation_projects": [
+        "click",
+        "itsdangerous",
+        "pygments"
+      ]
+    },
+    {
+      "fold": 2,
+      "train_projects": [
+        "attrs",
+        "boltons",
+        "click",
+        "flask",
+        "itsdangerous",
+        "packaging",
+        "platformdirs",
+        "pygments",
+        "rich",
+        "typer",
+        "werkzeug"
+      ],
+      "validation_projects": [
+        "arrow",
+        "filelock",
+        "more-itertools"
+      ]
+    },
+    {
+      "fold": 3,
+      "train_projects": [
+        "arrow",
+        "boltons",
+        "click",
+        "filelock",
+        "itsdangerous",
+        "more-itertools",
+        "packaging",
+        "platformdirs",
+        "pygments",
+        "rich",
+        "typer"
+      ],
+      "validation_projects": [
+        "attrs",
+        "flask",
+        "werkzeug"
+      ]
+    },
+    {
+      "fold": 4,
+      "train_projects": [
+        "arrow",
+        "attrs",
+        "boltons",
+        "click",
+        "filelock",
+        "flask",
+        "itsdangerous",
+        "more-itertools",
+        "packaging",
+        "pygments",
+        "werkzeug"
+      ],
+      "validation_projects": [
+        "platformdirs",
+        "rich",
+        "typer"
+      ]
+    },
+    {
+      "fold": 5,
+      "train_projects": [
+        "arrow",
+        "attrs",
+        "click",
+        "filelock",
+        "flask",
+        "itsdangerous",
+        "more-itertools",
+        "platformdirs",
+        "pygments",
+        "rich",
+        "typer",
+        "werkzeug"
+      ],
+      "validation_projects": [
+        "boltons",
+        "packaging"
+      ]
+    }
+  ],
+  "licenses": [
+    {
+      "project": "arrow",
+      "path": "LICENSE",
+      "sha256": "b481f87296cb0abdb13fd8cbb94b14c328be880ec9e68547a61b84dacffd067a"
+    },
+    {
+      "project": "attrs",
+      "path": "LICENSE",
+      "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f"
+    },
+    {
+      "project": "boltons",
+      "path": "LICENSE",
+      "sha256": "c301912653a8d8c99eab6212aa3aea8d164ea249d8ad53c941e0558a0a5ac1e3"
+    },
+    {
+      "project": "click",
+      "path": "LICENSE.txt",
+      "sha256": "9a8ad106a394e853bfe21f42f4e72d592819a22805d991b5f3275029292b658d"
+    },
+    {
+      "project": "filelock",
+      "path": "LICENSE",
+      "sha256": "608c89d5060ae9921adccf3236695bc654a9946e12323ef6c021dfa04e294d48"
+    },
+    {
+      "project": "flask",
+      "path": "LICENSE.txt",
+      "sha256": "489a8e1108509ed98a37bb983e11e0f7e1d31f0bd8f99a79c8448e7ff37d07ea"
+    },
+    {
+      "project": "httpx",
+      "path": "LICENSE.md",
+      "sha256": "4ec59d544f12b5f539a3a716fd321ac58ccd8030b465221f2c880200cdf28d8d"
+    },
+    {
+      "project": "humanize",
+      "path": "LICENCE",
+      "sha256": "8ba6c18112a431400ad3c743f70670079b302545d98884fc2f28a91c383a0380"
+    },
+    {
+      "project": "itsdangerous",
+      "path": "LICENSE.txt",
+      "sha256": "63af09891b6be8ad1a4252ed43af0f4efba7fc948e228367bed7f3c5ae0b09d7"
+    },
+    {
+      "project": "jinja",
+      "path": "LICENSE.txt",
+      "sha256": "3b49dcee4105eb37bac10faf1be260408fe85d252b8e9df2e0979fc1e094437b"
+    },
+    {
+      "project": "jmespath.py",
+      "path": "LICENSE",
+      "sha256": "6eefacfa4d71b82d08408c751470ac8d9854538da2142cb27be0287fb13d0ab9"
+    },
+    {
+      "project": "more-itertools",
+      "path": "LICENSE",
+      "sha256": "09f1c8c9e941af3e584d59641ea9b87d83c0cb0fd007eb5ef391a7e2643c1a46"
+    },
+    {
+      "project": "packaging",
+      "path": "LICENSE",
+      "sha256": "cad1ef5bd340d73e074ba614d26f7deaca5c7940c3d8c34852e65c4909686c48"
+    },
+    {
+      "project": "packaging",
+      "path": "LICENSE.APACHE",
+      "sha256": "0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
+    {
+      "project": "packaging",
+      "path": "LICENSE.BSD",
+      "sha256": "b70e7e9b742f1cc6f948b34c16aa39ffece94196364bc88ff0d2180f0028fac5"
+    },
+    {
+      "project": "platformdirs",
+      "path": "LICENSE",
+      "sha256": "29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6"
+    },
+    {
+      "project": "pygments",
+      "path": "LICENSE",
+      "sha256": "a9d66f1d526df02e29dce73436d34e56e8632f46c275bbdffc70569e882f9f17"
+    },
+    {
+      "project": "python-dotenv",
+      "path": "LICENSE",
+      "sha256": "80619b7049f08c81683ad0e01f08f257a840652dd71ee83146d36658c7d2c2b9"
+    },
+    {
+      "project": "requests",
+      "path": "LICENSE",
+      "sha256": "09e8a9bcec8067104652c168685ab0931e7868f9c8284b66f5ae6edae5f1130b"
+    },
+    {
+      "project": "rich",
+      "path": "LICENSE",
+      "sha256": "deed7c17a4318158190a3ea239cc879a5a50271cebb98ae7025f48fbe58dca15"
+    },
+    {
+      "project": "typer",
+      "path": "LICENSE",
+      "sha256": "58992cebcf8dfb6e40c4e2112ed12126c243666dca3912a3d78b7ecac4859d49"
+    },
+    {
+      "project": "werkzeug",
+      "path": "LICENSE.txt",
+      "sha256": "3b49dcee4105eb37bac10faf1be260408fe85d252b8e9df2e0979fc1e094437b"
+    }
+  ],
+  "files": [
+    {
+      "path": "arrow/__init__.py",
+      "sha256": "820d3004bbceb2d8427c62ebe1e7e7e5a6f5222033205e222bff5c1b33372033",
+      "token_sha256": "9c1060c8e61e091b3e4880d94d56aa3b49c77280178c35a169737c4c574db44e",
+      "bytes": 928,
+      "characters": 928,
+      "name_tokens": 37,
+      "project": "arrow",
+      "commit_sha": "2224255c4acc594d734cef0bbc83360452a67983"
+    },
+    {
+      "path": "arrow/api.py",
+      "sha256": "89b607f6cbc6b6fa19d82169f5219dbd3a4badfff7a634da4b43fc5c2fb03a1d",
+      "token_sha256": "c3fbc4aeb9b93b83045c1eb1160cd08e87bf1bd9cd68e67ee9b21cc7f1dee96e",
+      "bytes": 2735,
+      "characters": 2735,
+      "name_tokens": 196,
+      "project": "arrow",
+      "commit_sha": "2224255c4acc594d734cef0bbc83360452a67983"
+    },
+    {
+      "path": "arrow/constants.py",
+      "sha256": "cff3cc420315708b9979833270efbeb74b00c2e1030a5e73874d74c81c439916",
+      "token_sha256": "c7d15e905f1e8ac63cf2f6aaeaeb3748f1cf5c060135e7d626be36a3d9f210f4",
+      "bytes": 3117,
+      "characters": 3117,
+      "name_tokens": 55,
+      "project": "arrow",
+      "commit_sha": "2224255c4acc594d734cef0bbc83360452a67983"
+    },
+    {
+      "path": "arrow/factory.py",
+      "sha256": "9d4119efab4da3a7cd5b556969b673ff833623b5cb6a6aab55fa9bfa619a643b",
+      "token_sha256": "e9951b9d24edc863d4b6706b4e0e377780c8fef3b0d93434913eee938b5a85c5",
+      "bytes": 11375,
+      "characters": 11375,
+      "name_tokens": 486,
+      "project": "arrow",
+      "commit_sha": "2224255c4acc594d734cef0bbc83360452a67983"
+    },
+    {
+      "path": "arrow/formatter.py",
+      "sha256": "6a6da8d7331ae308f2f71f1c4071d8f93430c882bd84a049a9ee27b60893091e",
+      "token_sha256": "24274de577aa3a89794b647c65d3a61b56f3e7bb78a0515350b987e67b69175a",
+      "bytes": 5139,
+      "characters": 5139,
+      "name_tokens": 377,
+      "project": "arrow",
+      "commit_sha": "2224255c4acc594d734cef0bbc83360452a67983"
+    },
+    {
+      "path": "arrow/parser.py",
+      "sha256": "9dc7e6083d87f6d6a5fcd78bd8ee9d1463640f817fa50f492aafdcba7bda859e",
+      "token_sha256": "278bbe4d895e7eb602d9012842d2ae4268b5a5a8bafbfa3a09a72a831fb38fec",
+      "bytes": 33363,
+      "characters": 33363,
+      "name_tokens": 1387,
+      "project": "arrow",
+      "commit_sha": "2224255c4acc594d734cef0bbc83360452a67983"
+    },
+    {
+      "path": "arrow/util.py",
+      "sha256": "c6d71f313c62469c87227333d9fe7a6bfd62be6353c699c816810e28551ddb0b",
+      "token_sha256": "b801115e427141e1898af91c945fb76cbc28df8c8faf27688578fce12d4c1c5c",
+      "bytes": 3625,
+      "characters": 3625,
+      "name_tokens": 183,
+      "project": "arrow",
+      "commit_sha": "2224255c4acc594d734cef0bbc83360452a67983"
+    },
+    {
+      "path": "src/attr/__init__.py",
+      "sha256": "4fdf747231ee1acc387a5912d163595305e7cf73536a0954a23e12be98e323f8",
+      "token_sha256": "ab73670d00e0ae8333b17e2918864b530a2c9cd6d751c4944cf721693a4c7b88",
+      "bytes": 2386,
+      "characters": 2386,
+      "name_tokens": 149,
+      "project": "attrs",
+      "commit_sha": "36484c6fb5cf4d6f3436a17f0d81c67776f811c8"
+    },
+    {
+      "path": "src/attr/_cmp.py",
+      "sha256": "dcd9f54e3c659546225ff9c9a159c4917a0393484cd4360a8f90c4ec665ee22d",
+      "token_sha256": "7429f0b2f6f2438635e8e60edadd38eb5e92436e97291bebf03a52d29df4276b",
+      "bytes": 4117,
+      "characters": 4117,
+      "name_tokens": 184,
+      "project": "attrs",
+      "commit_sha": "36484c6fb5cf4d6f3436a17f0d81c67776f811c8"
+    },
+    {
+      "path": "src/attr/_compat.py",
+      "sha256": "aa4df995064dde6f1177f98dd08ba0cc59b41b8ed197c51106a9e8b484b1ace8",
+      "token_sha256": "64a95c5c171262fef466e658348a6d51bf8e1b677b5b49c524bdc331f0dce23c",
+      "bytes": 3430,
+      "characters": 3430,
+      "name_tokens": 180,
+      "project": "attrs",
+      "commit_sha": "36484c6fb5cf4d6f3436a17f0d81c67776f811c8"
+    },
+    {
+      "path": "src/attr/_config.py",
+      "sha256": "0499fe7dced578eaca08d0eb0a58c2b4293e8d63e39939496d8e5ec52ceafae6",
+      "token_sha256": "3809d63944b7f9926e6606ea10194bc7ca0078f21f273b400ba2739a7be40eed",
+      "bytes": 841,
+      "characters": 841,
+      "name_tokens": 23,
+      "project": "attrs",
+      "commit_sha": "36484c6fb5cf4d6f3436a17f0d81c67776f811c8"
+    },
+    {
+      "path": "src/attr/_funcs.py",
+      "sha256": "ebe7ec2965d53ad6d49ba8bfe8bf6972d8be12f69d22fedbf84fffc17aadb144",
+      "token_sha256": "23d82b2c81531c60c724b5b5a5c8605f3da967709e13bacd0a3b84d203178937",
+      "bytes": 16511,
+      "characters": 16511,
+      "name_tokens": 689,
+      "project": "attrs",
+      "commit_sha": "36484c6fb5cf4d6f3436a17f0d81c67776f811c8"
+    },
+    {
+      "path": "src/attr/_next_gen.py",
+      "sha256": "2b205638ab541785abe9c7b833c9a98d46cb0e4186b2ef103b8a099a90dd1d00",
+      "token_sha256": "dd1618975a023826596e49de8251c122ebc5450801adb895a9b813333f6e01bc",
+      "bytes": 26392,
+      "characters": 26392,
+      "name_tokens": 326,
+      "project": "attrs",
+      "commit_sha": "36484c6fb5cf4d6f3436a17f0d81c67776f811c8"
+    },
+    {
+      "path": "src/attr/_version_info.py",
+      "sha256": "c3847e1580b734afe43241945899583f87150251fd1d1682fae9b77dc8d89073",
+      "token_sha256": "88c17f1ebc0892b7739b78c9d33f01024080e0740b02102b30b7f69ddc5c542a",
+      "bytes": 2222,
+      "characters": 2222,
+      "name_tokens": 146,
+      "project": "attrs",
+      "commit_sha": "36484c6fb5cf4d6f3436a17f0d81c67776f811c8"
+    },
+    {
+      "path": "src/attr/converters.py",
+      "sha256": "be3ce4f8ee6feb27a881b13a734665690fe4c81cfe030089c648f428229a8ed7",
+      "token_sha256": "42eef49348c202021344408c85c571a46a0b2dea189f60e936e2049c1162417d",
+      "bytes": 3826,
+      "characters": 3826,
+      "name_tokens": 189,
+      "project": "attrs",
+      "commit_sha": "36484c6fb5cf4d6f3436a17f0d81c67776f811c8"
+    },
+    {
+      "path": "src/attr/exceptions.py",
+      "sha256": "6f8bcc6e7a10dd5a7059986aad88bfb2c5d508af28d9ce074124b4f5c49433da",
+      "token_sha256": "13d5034832c9f3e5e7836271f50a4cf9cb282cf83e455a1596fa20ae6336bd6b",
+      "bytes": 1990,
+      "characters": 1990,
+      "name_tokens": 65,
+      "project": "attrs",
+      "commit_sha": "36484c6fb5cf4d6f3436a17f0d81c67776f811c8"
+    },
+    {
+      "path": "src/attr/filters.py",
+      "sha256": "64188a58ba774742df099b2aed7d75a67f565fc36c952db05cce23b272ce19cf",
+      "token_sha256": "180e26af4770841fcdaa995fba47d4ffb24d1408202932ca32ab634f3ae8b788",
+      "bytes": 1795,
+      "characters": 1795,
+      "name_tokens": 95,
+      "project": "attrs",
+      "commit_sha": "36484c6fb5cf4d6f3436a17f0d81c67776f811c8"
+    },
+    {
+      "path": "src/attr/setters.py",
+      "sha256": "b743c8e408df22520d21c2b3992ff7027896f8251e3fb9eabc17ba8aac38d1cf",
+      "token_sha256": "e71e8bdb925441bec0816989ad44a5e16856c30d24d1d198fbd2474c0e61ee85",
+      "bytes": 1684,
+      "characters": 1684,
+      "name_tokens": 94,
+      "project": "attrs",
+      "commit_sha": "36484c6fb5cf4d6f3436a17f0d81c67776f811c8"
+    },
+    {
+      "path": "src/attrs/__init__.py",
+      "sha256": "3ea59419611e6cfc16be5521f2a3a69e030ec97e737fac48b7f38b88a06a2006",
+      "token_sha256": "2900e5ba27982fc3b5d39304cc66875fe19bea24b9e08495adb850f1bfb89e17",
+      "bytes": 1238,
+      "characters": 1238,
+      "name_tokens": 54,
+      "project": "attrs",
+      "commit_sha": "36484c6fb5cf4d6f3436a17f0d81c67776f811c8"
+    },
+    {
+      "path": "boltons/cacheutils.py",
+      "sha256": "21724c8e4536f90831d0e6fb876319d72ffdc5a3f54f94709d45c94b24c37e80",
+      "token_sha256": "c6538eef98ccc7d273a91cd622972aff95d1322d1d38cb7ddd2764e56d0d36e6",
+      "bytes": 30419,
+      "characters": 30419,
+      "name_tokens": 1534,
+      "project": "boltons",
+      "commit_sha": "d31d821d56c8f7756af9c30a864077f2e5855321"
+    },
+    {
+      "path": "boltons/debugutils.py",
+      "sha256": "06ea49b3d15c88c29565d7f695a750ac49306ca5eb5a920fda8edbc62d943ead",
+      "token_sha256": "44393ad6182bec69b986119351cb6d05eede738a3dee8cf2862283281daf9e53",
+      "bytes": 10486,
+      "characters": 10486,
+      "name_tokens": 529,
+      "project": "boltons",
+      "commit_sha": "d31d821d56c8f7756af9c30a864077f2e5855321"
+    },
+    {
+      "path": "boltons/formatutils.py",
+      "sha256": "15c7963d5c97b11ec7a419e9e4aec7c20ca765bcf701306510c9c57c7eaeb1a4",
+      "token_sha256": "f2531a89974ed0fb75b930dd6a92a2b41f294a1331759db23551e2acef4b5d79",
+      "bytes": 12728,
+      "characters": 12728,
+      "name_tokens": 529,
+      "project": "boltons",
+      "commit_sha": "d31d821d56c8f7756af9c30a864077f2e5855321"
+    },
+    {
+      "path": "boltons/funcutils.py",
+      "sha256": "c950203489b989be96dbe762aedea579f9269d8525521a93052dafdb3637b572",
+      "token_sha256": "7801698aad627fc4379657190d477c739c0d7a508cf36166c79de533406ed318",
+      "bytes": 40457,
+      "characters": 40457,
+      "name_tokens": 1696,
+      "project": "boltons",
+      "commit_sha": "d31d821d56c8f7756af9c30a864077f2e5855321"
+    },
+    {
+      "path": "boltons/gcutils.py",
+      "sha256": "54676a5eb6d5b685bfda870d0e82c619c531428005361a713d3129d3f7f72935",
+      "token_sha256": "cb00983e601341909a604312cb128f871ca5f957e5a84f475a3f6020229c38b8",
+      "bytes": 7108,
+      "characters": 7108,
+      "name_tokens": 155,
+      "project": "boltons",
+      "commit_sha": "d31d821d56c8f7756af9c30a864077f2e5855321"
+    },
+    {
+      "path": "boltons/mboxutils.py",
+      "sha256": "426b5211f7b3ce6ee9d1c80d794b56d9544435865b48a016d1955cd0a1e0320d",
+      "token_sha256": "e101a19cbd421644dbe3dc1031c2fec42db164e0b5cac6f16877ea2fd8068b7b",
+      "bytes": 5938,
+      "characters": 5938,
+      "name_tokens": 182,
+      "project": "boltons",
+      "commit_sha": "d31d821d56c8f7756af9c30a864077f2e5855321"
+    },
+    {
+      "path": "boltons/pathutils.py",
+      "sha256": "3d1ae1d04766115ead50597bb32503e3930d969fd2872be88466c7a9627d4af0",
+      "token_sha256": "68e44a1b4e19e512a7f9ab3b4a8d9a3d9ef2111c199267a2967013704c059212",
+      "bytes": 6481,
+      "characters": 6481,
+      "name_tokens": 125,
+      "project": "boltons",
+      "commit_sha": "d31d821d56c8f7756af9c30a864077f2e5855321"
+    },
+    {
+      "path": "boltons/queueutils.py",
+      "sha256": "ce2c3741d8034dd80253ecb13805ad93b74a548d5d006876f7d730facdbad09f",
+      "token_sha256": "34b24b96f095be1f3d86fce876a523bd215916bd883a307f8185ec64a0718c89",
+      "bytes": 7654,
+      "characters": 7654,
+      "name_tokens": 259,
+      "project": "boltons",
+      "commit_sha": "d31d821d56c8f7756af9c30a864077f2e5855321"
+    },
+    {
+      "path": "boltons/setutils.py",
+      "sha256": "4ef544f50e9e64858a9b4bf24fc72a8824f502f973eb1cea8467b3610b3eb4f4",
+      "token_sha256": "af3f129f379be34c965a0ccb5042b0d8c5d2688cd3b9470b5b474fb30fae7872",
+      "bytes": 35482,
+      "characters": 35482,
+      "name_tokens": 2468,
+      "project": "boltons",
+      "commit_sha": "d31d821d56c8f7756af9c30a864077f2e5855321"
+    },
+    {
+      "path": "boltons/tbutils.py",
+      "sha256": "68bc5bdfb0a1fd85aac58c36a73ac59e8e33953edd41a56deaddb50d0193c4f5",
+      "token_sha256": "4cc69dbb5bf26721d439e2b8fcb4971f54a39b8fa4f59182a092a7395d61d598",
+      "bytes": 33001,
+      "characters": 33001,
+      "name_tokens": 1371,
+      "project": "boltons",
+      "commit_sha": "d31d821d56c8f7756af9c30a864077f2e5855321"
+    },
+    {
+      "path": "boltons/timeutils.py",
+      "sha256": "316c05c7061bfc8da0184523a6d3e87600112c4c4be9c4d6619d3f9605b7f321",
+      "token_sha256": "0f7c8bcabe63f30ae3b583d7a9cb7dd8ef5d112067156da1c052b360951a8654",
+      "bytes": 24515,
+      "characters": 24512,
+      "name_tokens": 954,
+      "project": "boltons",
+      "commit_sha": "d31d821d56c8f7756af9c30a864077f2e5855321"
+    },
+    {
+      "path": "boltons/typeutils.py",
+      "sha256": "622ff62ccb8228f81dbb4139d0248accf233f3f65fd820868fedcbd66d3e0c51",
+      "token_sha256": "a39a146a972f43831a82eacac759608c5ef057bb700a7f33a1d684cddfebc1d8",
+      "bytes": 5822,
+      "characters": 5822,
+      "name_tokens": 161,
+      "project": "boltons",
+      "commit_sha": "d31d821d56c8f7756af9c30a864077f2e5855321"
+    },
+    {
+      "path": "src/click/_compat.py",
+      "sha256": "43e898c7291c1c37f91484f838d8d474081754d83726d0444d06ae7ca68a6a69",
+      "token_sha256": "3dac0b39209379ede06ac837018ad26ea4dacb20cf1cc17fa0fa9de3dabb9c8c",
+      "bytes": 17934,
+      "characters": 17934,
+      "name_tokens": 1444,
+      "project": "click",
+      "commit_sha": "08b803cf32ceb2ae6a772c62d5da42757a897d44"
+    },
+    {
+      "path": "src/click/_termui_impl.py",
+      "sha256": "90145b0d068e9a0f595e2c212aa162a185c7de24738bca854cf523f54c1a1687",
+      "token_sha256": "e12ac97d74a4ec9a364adfae7ba35a160ca685cb94184300074cd94b96121a5c",
+      "bytes": 32689,
+      "characters": 32689,
+      "name_tokens": 2040,
+      "project": "click",
+      "commit_sha": "08b803cf32ceb2ae6a772c62d5da42757a897d44"
+    },
+    {
+      "path": "src/click/_textwrap.py",
+      "sha256": "c526ca64bbe24d08f054b164fb2b37f6f65c62ca4e05848d51bc68d8e00e86d9",
+      "token_sha256": "cc42c453db20392a744ded2803645c32b11cd735adcd418ddd8203fa241036b1",
+      "bytes": 3234,
+      "characters": 3234,
+      "name_tokens": 181,
+      "project": "click",
+      "commit_sha": "08b803cf32ceb2ae6a772c62d5da42757a897d44"
+    },
+    {
+      "path": "src/click/_utils.py",
+      "sha256": "949dcaa99b4242a55df29613a36adc1c30092f55b14f63fe09cf35bc9ba585f5",
+      "token_sha256": "ab00138a44ee9e9ff4bc2bdc3e1792d5f302b98fa397e858e2604afba0d30fb2",
+      "bytes": 1117,
+      "characters": 1117,
+      "name_tokens": 70,
+      "project": "click",
+      "commit_sha": "08b803cf32ceb2ae6a772c62d5da42757a897d44"
+    },
+    {
+      "path": "src/click/_winconsole.py",
+      "sha256": "a6f0d49ef0be806a9730bd64a2e5b373a95d49de91fd7728595ff31d773f2db7",
+      "token_sha256": "542a90cdd99086ac7d0e3b26f5b96075dbbb9de21c82ce9f29d3abed84facf4d",
+      "bytes": 8413,
+      "characters": 8412,
+      "name_tokens": 679,
+      "project": "click",
+      "commit_sha": "08b803cf32ceb2ae6a772c62d5da42757a897d44"
+    },
+    {
+      "path": "src/click/decorators.py",
+      "sha256": "f4d01d31413df715c3573d4879ab82fd280ef048fc4ffdacf093c6c506ee6965",
+      "token_sha256": "4326cefec69cb0b3d5e4cc12f5bd337915b542d828656d7a7c29feb7d534dd84",
+      "bytes": 21676,
+      "characters": 21676,
+      "name_tokens": 1124,
+      "project": "click",
+      "commit_sha": "08b803cf32ceb2ae6a772c62d5da42757a897d44"
+    },
+    {
+      "path": "src/click/exceptions.py",
+      "sha256": "1ef498df81b86ae8ff6d8451f3e4fc094f09c2aff5f8e72c454e1ecdfa337849",
+      "token_sha256": "94d15939f3290c4b4fcff9aa69f5d521e56c1be398bb652969267c483d893532",
+      "bytes": 11862,
+      "characters": 11862,
+      "name_tokens": 879,
+      "project": "click",
+      "commit_sha": "08b803cf32ceb2ae6a772c62d5da42757a897d44"
+    },
+    {
+      "path": "src/click/formatting.py",
+      "sha256": "421994c476e0108d521f7c20da7a407a28425dd81afbfe8298bf59d3faf6580f",
+      "token_sha256": "0f85063b16b38fa63617bc223b1d703cd5f2939e84dccd4310c6276e49a77413",
+      "bytes": 10896,
+      "characters": 10896,
+      "name_tokens": 623,
+      "project": "click",
+      "commit_sha": "08b803cf32ceb2ae6a772c62d5da42757a897d44"
+    },
+    {
+      "path": "src/click/globals.py",
+      "sha256": "80cf8d87a0383341c1fd2824685e4ce2770618c0c773f7e51d7bbdfe88781845",
+      "token_sha256": "210a6a62b234a374ff6a0ba90f3d25d6767b0ec1c3d0838749023b421bbda644",
+      "bytes": 1923,
+      "characters": 1923,
+      "name_tokens": 111,
+      "project": "click",
+      "commit_sha": "08b803cf32ceb2ae6a772c62d5da42757a897d44"
+    },
+    {
+      "path": "src/click/parser.py",
+      "sha256": "a09f9f53fde6bf1ba022e36d1da0804d9e7a9601261d18208c9892a84818ae30",
+      "token_sha256": "f6d4210858d48f1e7195dc6de9af438fdf0f43ccb656f529c924113c6e1997b0",
+      "bytes": 19052,
+      "characters": 19052,
+      "name_tokens": 1147,
+      "project": "click",
+      "commit_sha": "08b803cf32ceb2ae6a772c62d5da42757a897d44"
+    },
+    {
+      "path": "src/click/shell_completion.py",
+      "sha256": "c5fcba42d9c50bf90367b21a7a80c32fb43f6dda55d0847c7e357b4c95f4e71a",
+      "token_sha256": "1cde2d4df1a307429944c18c6e5b3586edceb803c1510ae0b516d346251ec1b5",
+      "bytes": 26058,
+      "characters": 26058,
+      "name_tokens": 1106,
+      "project": "click",
+      "commit_sha": "08b803cf32ceb2ae6a772c62d5da42757a897d44"
+    },
+    {
+      "path": "src/click/types.py",
+      "sha256": "896fe567765a5e978ee0930513049c8b6d008b67a87ac0e53f656f8b560ed434",
+      "token_sha256": "8d878b318e86cbd021e928326037b0cc7065858e777ce6341c115257700b57d9",
+      "bytes": 46667,
+      "characters": 46667,
+      "name_tokens": 2714,
+      "project": "click",
+      "commit_sha": "08b803cf32ceb2ae6a772c62d5da42757a897d44"
+    },
+    {
+      "path": "src/filelock/_async_lock/_acquire.py",
+      "sha256": "507af69b7e73869b42f2ef15c59413826765ab0ef4dca998d8ab1cb6acb823be",
+      "token_sha256": "e7b155cac556f28f2864109f6a7d30c943f6801f10a99168b2740e834ee5b19f",
+      "bytes": 10482,
+      "characters": 10482,
+      "name_tokens": 593,
+      "project": "filelock",
+      "commit_sha": "be45d684b9ea64b23c950ede74519ccd35243e50"
+    },
+    {
+      "path": "src/filelock/_async_lock/_lock.py",
+      "sha256": "b112bde621eb59c35e2b9751acc4d376991ac49a96fd83c2bd3c897172adc465",
+      "token_sha256": "6c82b0ddb44cb3495a43d39de6ecf41ad3ee6425b247b725bbb315592bf2d42a",
+      "bytes": 17388,
+      "characters": 17388,
+      "name_tokens": 768,
+      "project": "filelock",
+      "commit_sha": "be45d684b9ea64b23c950ede74519ccd35243e50"
+    },
+    {
+      "path": "src/filelock/_core/_lock.py",
+      "sha256": "3dbcd0570e9a963b2c07d635fd9565b5024721252c41b76b6fb3b0edddf3001e",
+      "token_sha256": "b461da00f27ccb2f66806da7bc9dbf3da2b4f93f8cafe3f2064d89ff2aaaecde",
+      "bytes": 15640,
+      "characters": 15640,
+      "name_tokens": 697,
+      "project": "filelock",
+      "commit_sha": "be45d684b9ea64b23c950ede74519ccd35243e50"
+    },
+    {
+      "path": "src/filelock/_core/_release.py",
+      "sha256": "d6ff2918c4bbde57b108ea7edc911240b88c15890780c3f4bb00f9649c7a7840",
+      "token_sha256": "ae481f6446ea95dfce4babec41d00e3746225d53497198ccd0d00042c826e4d4",
+      "bytes": 10320,
+      "characters": 10320,
+      "name_tokens": 677,
+      "project": "filelock",
+      "commit_sha": "be45d684b9ea64b23c950ede74519ccd35243e50"
+    },
+    {
+      "path": "src/filelock/_filesystem/_windows/_directories.py",
+      "sha256": "6f1dd0fcca5f3ef68fb79f2cd38ceac9da49d2473f214a5928a317921e1a98bc",
+      "token_sha256": "e843773e9d560febee25eb0dfd198fcd79905c0eb62d974f465c8bb052a77615",
+      "bytes": 10259,
+      "characters": 10259,
+      "name_tokens": 584,
+      "project": "filelock",
+      "commit_sha": "be45d684b9ea64b23c950ede74519ccd35243e50"
+    },
+    {
+      "path": "src/filelock/_native/_unix.py",
+      "sha256": "9e0baba94dbe0032cc3f0ae1c15b9cb1c332294b9efdc284874854ced8f21107",
+      "token_sha256": "1cb4a2e99d04ab7a0d4d2413cc77aa2ca2c579217288a39d25d39d6c5fcea8ce",
+      "bytes": 19070,
+      "characters": 19070,
+      "name_tokens": 1342,
+      "project": "filelock",
+      "commit_sha": "be45d684b9ea64b23c950ede74519ccd35243e50"
+    },
+    {
+      "path": "src/filelock/_native/_windows.py",
+      "sha256": "9f58f886003305f7bb5eb17beef8f960b8bf99e638791b1ca3d50ac9b00758e4",
+      "token_sha256": "20da2d77a64a29a8583ec04a67fa44e3063154160da7d14b2849937a84462df0",
+      "bytes": 4507,
+      "characters": 4507,
+      "name_tokens": 273,
+      "project": "filelock",
+      "commit_sha": "be45d684b9ea64b23c950ede74519ccd35243e50"
+    },
+    {
+      "path": "src/filelock/_soft/_read_write/_heartbeat.py",
+      "sha256": "6447c74eb1d29f7e4c1cdb0a4523dd480b56529c0ee22d3899f238a5ada91387",
+      "token_sha256": "dbdad3716a868d55ffe40efa3640b37fd2d8145314da7cf0bc326520c1778e4a",
+      "bytes": 3319,
+      "characters": 3319,
+      "name_tokens": 211,
+      "project": "filelock",
+      "commit_sha": "be45d684b9ea64b23c950ede74519ccd35243e50"
+    },
+    {
+      "path": "src/filelock/_soft/_strict/__init__.py",
+      "sha256": "4c4197b57ed8dbdf7555b69f0ee094c7d03e6a8f1b43dc2b44cee10509519da4",
+      "token_sha256": "4b133b01bf7d3698b4cfad016bda71a6ed6b2493f99e3de5a2afc5ce769a438a",
+      "bytes": 907,
+      "characters": 907,
+      "name_tokens": 53,
+      "project": "filelock",
+      "commit_sha": "be45d684b9ea64b23c950ede74519ccd35243e50"
+    },
+    {
+      "path": "src/filelock/_soft/_strict/_directories.py",
+      "sha256": "144067d0d2e86aa96aa7dec39cd6a414eaf048c84905817687a39f86e5d95a72",
+      "token_sha256": "eae9a8f58d245ea1d9a55b3e39f798deb6857eb6f3ca293262adea7583260aa3",
+      "bytes": 16301,
+      "characters": 16301,
+      "name_tokens": 1296,
+      "project": "filelock",
+      "commit_sha": "be45d684b9ea64b23c950ede74519ccd35243e50"
+    },
+    {
+      "path": "src/filelock/_sqlite/_async.py",
+      "sha256": "8abb8d166ac312816d477f5016321465f4ee8108017ba4fd3fb77b194f673fcb",
+      "token_sha256": "06fbf3be3882084ba5f02ca184f30db445bba52c58db1966296fdf9a2952f994",
+      "bytes": 7947,
+      "characters": 7947,
+      "name_tokens": 381,
+      "project": "filelock",
+      "commit_sha": "be45d684b9ea64b23c950ede74519ccd35243e50"
+    },
+    {
+      "path": "src/filelock/asyncio.py",
+      "sha256": "e1b1b66f9772e8b33af74922b68efbe402110619a4cb710006aa6afff6c62947",
+      "token_sha256": "b699ce02ab4591d4215212549aa50d3a41d8dc998b09111a8b41fab7351fc214",
+      "bytes": 1056,
+      "characters": 1056,
+      "name_tokens": 41,
+      "project": "filelock",
+      "commit_sha": "be45d684b9ea64b23c950ede74519ccd35243e50"
+    },
+    {
+      "path": "src/flask/blueprints.py",
+      "sha256": "a79404da5635f0622d6ddaff44a46967c0e8d7b8343ef4062206644940e15f69",
+      "token_sha256": "0b3795920fc63bfcef10ee4f7b9e5547f0b74b5d41aca29e36036f1b178613e0",
+      "bytes": 4541,
+      "characters": 4541,
+      "name_tokens": 216,
+      "project": "flask",
+      "commit_sha": "49943b5a94413a530761350f04e896f76e8d620e"
+    },
+    {
+      "path": "src/flask/config.py",
+      "sha256": "3e2a85d033da9ba1d6d051f8087d61a574c17b7d0d4b38cf10ec2bcf56fa92dd",
+      "token_sha256": "54bc1e7c5ba6fab4b401bb44bec0246fa22e0a90461699420efc55e1a378cc1b",
+      "bytes": 13219,
+      "characters": 13219,
+      "name_tokens": 535,
+      "project": "flask",
+      "commit_sha": "49943b5a94413a530761350f04e896f76e8d620e"
+    },
+    {
+      "path": "src/flask/globals.py",
+      "sha256": "1abe9a4e0a96c8bb28c232e2b08993fffdfb9bb694be2230755e54a46a40ca4d",
+      "token_sha256": "f1410b10480dd2f86c2249877e9c05285cb751308d0d4856da4982051758315f",
+      "bytes": 2414,
+      "characters": 2414,
+      "name_tokens": 134,
+      "project": "flask",
+      "commit_sha": "49943b5a94413a530761350f04e896f76e8d620e"
+    },
+    {
+      "path": "src/flask/json/__init__.py",
+      "sha256": "b402bd0b89b87250f932bf4b8e2bec7af7130a8ebdc3ff5a0bba3865e9984173",
+      "token_sha256": "b1aca22cb27dc30a72ace51c6b3c829afd10307dbc9555951e03d5203b439f6f",
+      "bytes": 5583,
+      "characters": 5583,
+      "name_tokens": 145,
+      "project": "flask",
+      "commit_sha": "49943b5a94413a530761350f04e896f76e8d620e"
+    },
+    {
+      "path": "src/flask/json/tag.py",
+      "sha256": "0e168dc2e20e85db7647be28382f58e19f19a6bc4562245be5d50fe5bcb220dc",
+      "token_sha256": "6e3d2fa1e98cc130ae22959144f75553c805e567c105da9fa5053be96251e30b",
+      "bytes": 9281,
+      "characters": 9281,
+      "name_tokens": 644,
+      "project": "flask",
+      "commit_sha": "49943b5a94413a530761350f04e896f76e8d620e"
+    },
+    {
+      "path": "src/flask/logging.py",
+      "sha256": "f2c33758c4ee6e2d5c05bd9cfe53e45a937427c74c02aae029160b2e2d5d0952",
+      "token_sha256": "c285a1812699ab0025d010dab2021ce7ea83216b33955793333e61337020c9c9",
+      "bytes": 2377,
+      "characters": 2377,
+      "name_tokens": 116,
+      "project": "flask",
+      "commit_sha": "49943b5a94413a530761350f04e896f76e8d620e"
+    },
+    {
+      "path": "src/flask/sansio/app.py",
+      "sha256": "cf5df9f2972be7cad9878df7ea321804617d769f47823984abbe0a9b1cbc460b",
+      "token_sha256": "c71b04ae728a520c7a2aaa373415d22a0cadd795e284f67aca60221a4ce531d5",
+      "bytes": 39534,
+      "characters": 39534,
+      "name_tokens": 1194,
+      "project": "flask",
+      "commit_sha": "49943b5a94413a530761350f04e896f76e8d620e"
+    },
+    {
+      "path": "src/flask/sansio/blueprints.py",
+      "sha256": "da960c5792daf2f1cef8c14113d9c95c8ce389a9689abb395fe867f4054d0ba1",
+      "token_sha256": "dca3a000897a9d68da6a6ac3281758833035271d66b4cd5ac3586eaf47b17f2c",
+      "bytes": 27017,
+      "characters": 27017,
+      "name_tokens": 1287,
+      "project": "flask",
+      "commit_sha": "49943b5a94413a530761350f04e896f76e8d620e"
+    },
+    {
+      "path": "src/flask/sansio/scaffold.py",
+      "sha256": "d6578d2b5f06d227482e4110f8b750d04c8d94c9525c8857f9183f727ee2858b",
+      "token_sha256": "abea39cd084e620bffe770d905edfacc38aff8880382ec43b7a0018dc7ea6f69",
+      "bytes": 30633,
+      "characters": 30633,
+      "name_tokens": 1058,
+      "project": "flask",
+      "commit_sha": "49943b5a94413a530761350f04e896f76e8d620e"
+    },
+    {
+      "path": "src/flask/templating.py",
+      "sha256": "3ed7a044a96c911267e855b7359d9f159f06321f75fbe678a6656923d5e0989e",
+      "token_sha256": "bedba5471154909769de1a8adae65808de191a12c803ba0bb1cf761779523beb",
+      "bytes": 7336,
+      "characters": 7336,
+      "name_tokens": 552,
+      "project": "flask",
+      "commit_sha": "49943b5a94413a530761350f04e896f76e8d620e"
+    },
+    {
+      "path": "src/flask/typing.py",
+      "sha256": "ac3b0f12bf2a89e10c6b8f04d142b6103f9f1495030b8ff2c559d9952e060a00",
+      "token_sha256": "524233aaca64ec51d85f81ebca78c59bc07fc091a4900378ed765d3d5219d815",
+      "bytes": 3114,
+      "characters": 3114,
+      "name_tokens": 218,
+      "project": "flask",
+      "commit_sha": "49943b5a94413a530761350f04e896f76e8d620e"
+    },
+    {
+      "path": "src/flask/views.py",
+      "sha256": "d0d5ceecd117533169c924cdbb01ea5bb0ee74b7b1c4b22855f73f0e4dea0ee7",
+      "token_sha256": "055c53bed00c79130083564b9913261851c0257ddc5f69c4cc8a7d8492fbe539",
+      "bytes": 6971,
+      "characters": 6971,
+      "name_tokens": 251,
+      "project": "flask",
+      "commit_sha": "49943b5a94413a530761350f04e896f76e8d620e"
+    },
+    {
+      "path": "httpx/__init__.py",
+      "sha256": "ee97edea66c8b6e7fa76ac30847e4189dfe114069e86827719e23a7c2e110f40",
+      "token_sha256": "6af488229939f6dab87b2345a68e28a19fa8de320697aa63100f62e338525c2e",
+      "bytes": 2191,
+      "characters": 2191,
+      "name_tokens": 68,
+      "project": "httpx",
+      "commit_sha": "7cff5f79bc78649bbcd3fd9aa7a74c86e0f63016"
+    },
+    {
+      "path": "httpx/_api.py",
+      "sha256": "aff660b388c8a5c3c92ea2b975b6d26b2aa8fe254c2856b164277ea0e1f12c4b",
+      "token_sha256": "39d5f6a2809d5c75e5f67c1e9ae164c2f31bc84044e2ed937b1334a674f5dfc4",
+      "bytes": 11743,
+      "characters": 11743,
+      "name_tokens": 754,
+      "project": "httpx",
+      "commit_sha": "7cff5f79bc78649bbcd3fd9aa7a74c86e0f63016"
+    },
+    {
+      "path": "httpx/_content.py",
+      "sha256": "2c61b3ac94d1dcebcde0c6f519554d2d7917247fbaa0a97002db4ef69e70ff28",
+      "token_sha256": "055f37aca32c24021b59ed218138323af943d6062976a63856f358c7912db169",
+      "bytes": 8161,
+      "characters": 8161,
+      "name_tokens": 615,
+      "project": "httpx",
+      "commit_sha": "7cff5f79bc78649bbcd3fd9aa7a74c86e0f63016"
+    },
+    {
+      "path": "httpx/_decoders.py",
+      "sha256": "a74757f08d0d1077b1b37506a784ac66eb62321b17aeb5a5ebe1a7a956f488a3",
+      "token_sha256": "25bf3386602a7cba3fb45546f8673ff70d8ce2716b0f544186ec50ff60fd004a",
+      "bytes": 12041,
+      "characters": 12041,
+      "name_tokens": 836,
+      "project": "httpx",
+      "commit_sha": "7cff5f79bc78649bbcd3fd9aa7a74c86e0f63016"
+    },
+    {
+      "path": "httpx/_exceptions.py",
+      "sha256": "494a7dec969198444f988c6ab8dc480273a6f2aa11ae523a094e0cbc90f1b7d7",
+      "token_sha256": "828325c72a78cd51a20445e456ba8184ca0580df87445bc083ccff13b8a58c7c",
+      "bytes": 8500,
+      "characters": 8490,
+      "name_tokens": 262,
+      "project": "httpx",
+      "commit_sha": "7cff5f79bc78649bbcd3fd9aa7a74c86e0f63016"
+    },
+    {
+      "path": "httpx/_main.py",
+      "sha256": "0a0f4631a6e24d3fecc1a0df5202118ad4b0c4b44c4b05033a6ecb7521aa940e",
+      "token_sha256": "a22bf79259a6074086d544dd8bc24e98204afb04871b290b6dd6a2e7b76edc0c",
+      "bytes": 15626,
+      "characters": 15626,
+      "name_tokens": 1064,
+      "project": "httpx",
+      "commit_sha": "7cff5f79bc78649bbcd3fd9aa7a74c86e0f63016"
+    },
+    {
+      "path": "httpx/_multipart.py",
+      "sha256": "28e1c465997aa28860f663da2b2caedf8e6aab5ac92e0df94d41b7600cd70776",
+      "token_sha256": "351b127f9ce17e1aa89e7867a311afef505c0dc3d2c9ef0402db7a79ec9b0bf7",
+      "bytes": 9843,
+      "characters": 9843,
+      "name_tokens": 708,
+      "project": "httpx",
+      "commit_sha": "7cff5f79bc78649bbcd3fd9aa7a74c86e0f63016"
+    },
+    {
+      "path": "httpx/_status_codes.py",
+      "sha256": "0d89fedae7c180c797cb9b3cc77fd307bc2302e00031ec136a43eb9b9ad712c7",
+      "token_sha256": "5ac33536813bf8d6c0b20a5455b86c13998ac2e1772e50758b3b1d71a1ae8c34",
+      "bytes": 5639,
+      "characters": 5639,
+      "name_tokens": 183,
+      "project": "httpx",
+      "commit_sha": "7cff5f79bc78649bbcd3fd9aa7a74c86e0f63016"
+    },
+    {
+      "path": "httpx/_transports/__init__.py",
+      "sha256": "19b52805200ea7bcfe97ef63e5884c851dc3308727e8554b863d3bd8edcd9e7a",
+      "token_sha256": "6a222297d2b1d6734e9831a7ec4dec2b5f08a6d7f8c0b4bca88bcc830a4c228c",
+      "bytes": 275,
+      "characters": 275,
+      "name_tokens": 16,
+      "project": "httpx",
+      "commit_sha": "7cff5f79bc78649bbcd3fd9aa7a74c86e0f63016"
+    },
+    {
+      "path": "httpx/_transports/asgi.py",
+      "sha256": "1d17e20d830fb78c101f6805807660e1cfa2dec6e5a3a6cbe464ea7044fec73f",
+      "token_sha256": "5dac8737de3b10d045e5ec22f7afdc2980ea0837f6292a5092d0b81407943d02",
+      "bytes": 5501,
+      "characters": 5501,
+      "name_tokens": 347,
+      "project": "httpx",
+      "commit_sha": "7cff5f79bc78649bbcd3fd9aa7a74c86e0f63016"
+    },
+    {
+      "path": "httpx/_types.py",
+      "sha256": "272878d4642aec039ebfc20e58a0c083bcc26ef1c07ee7e65b983f3e24ed12b6",
+      "token_sha256": "cffdbcaf7798fcf020cc07160b386e86beee093ef0f39ff974e63c980f95b3ea",
+      "bytes": 2965,
+      "characters": 2965,
+      "name_tokens": 232,
+      "project": "httpx",
+      "commit_sha": "7cff5f79bc78649bbcd3fd9aa7a74c86e0f63016"
+    },
+    {
+      "path": "httpx/_urlparse.py",
+      "sha256": "640987e3b38d7e4c6bae3f8f3d88467a21e36fa0232824be00d58837838bfca6",
+      "token_sha256": "ed72d9cb1236fb903aba43a4ed66f3d4ebd34002577c6815997609b763b375c0",
+      "bytes": 18546,
+      "characters": 18546,
+      "name_tokens": 922,
+      "project": "httpx",
+      "commit_sha": "7cff5f79bc78649bbcd3fd9aa7a74c86e0f63016"
+    },
+    {
+      "path": "src/humanize/__init__.py",
+      "sha256": "69586bc9cba2dbe0daa63d9f82eed16f8511a9da1ccf2e1045cd5175a9028e40",
+      "token_sha256": "5217f5fdbc532fa58972f3239ffeec4aaa5715bd7fd17b08df2a395bed07b307",
+      "bytes": 1072,
+      "characters": 1072,
+      "name_tokens": 49,
+      "project": "humanize",
+      "commit_sha": "a95004512dde4e8f0269946bb4af754382347441"
+    },
+    {
+      "path": "src/humanize/filesize.py",
+      "sha256": "f402b006fa15c56679b076e2e48010c512c937c6ecd8923ae511198ce5ab92f1",
+      "token_sha256": "3b9fdfc473e07ea5cc05ab016fe82815fcb9d95227f93d02e6ac7a74441eb9a9",
+      "bytes": 3000,
+      "characters": 3000,
+      "name_tokens": 139,
+      "project": "humanize",
+      "commit_sha": "a95004512dde4e8f0269946bb4af754382347441"
+    },
+    {
+      "path": "src/humanize/i18n.py",
+      "sha256": "d25d0989ea16974e1505fdc2d4ab5294941640cf4ae85102edfc6dfd34488be6",
+      "token_sha256": "3e6b84fe38cc34375304a12d4aa86d91563ec01c9c23885fae9ef9a89c1d13fe",
+      "bytes": 5583,
+      "characters": 5583,
+      "name_tokens": 235,
+      "project": "humanize",
+      "commit_sha": "a95004512dde4e8f0269946bb4af754382347441"
+    },
+    {
+      "path": "src/humanize/lists.py",
+      "sha256": "622534ad0d9e026280ec627f363ebe8c4be0dbe6345561b570187f5c3be726a1",
+      "token_sha256": "76192ec079d04c8e6d19d58b8e7b1db0db1949511d42b2f0da3e051cc43fd95c",
+      "bytes": 1015,
+      "characters": 1015,
+      "name_tokens": 51,
+      "project": "humanize",
+      "commit_sha": "a95004512dde4e8f0269946bb4af754382347441"
+    },
+    {
+      "path": "src/humanize/number.py",
+      "sha256": "2ab61afb03ab23f183a94dc1693edec660652211bdafcf2efb4bf8752122e6fb",
+      "token_sha256": "c620ac0d79ef4d57af609f64de4906d0c5d4162a45f5d3953589105232359992",
+      "bytes": 17540,
+      "characters": 17496,
+      "name_tokens": 696,
+      "project": "humanize",
+      "commit_sha": "a95004512dde4e8f0269946bb4af754382347441"
+    },
+    {
+      "path": "src/humanize/time.py",
+      "sha256": "4a325404ef4b8e27677d2e854d490eed4210998b39e448e823b0c6a2fea69620",
+      "token_sha256": "b1b15782d20c40c2b854ba6620db26a8ae1023d62da40723ab69c7048a7a5e41",
+      "bytes": 21620,
+      "characters": 21620,
+      "name_tokens": 1109,
+      "project": "humanize",
+      "commit_sha": "a95004512dde4e8f0269946bb4af754382347441"
+    },
+    {
+      "path": "src/itsdangerous/__init__.py",
+      "sha256": "cd4e17bf6c055e1d4e6fb30c5d51406365ccb0d5e2bb0f65b446a9208996a9a0",
+      "token_sha256": "5bc4d5bffe06ab37af32e40a84ac2ff8703e3c8edb105f4997da5665d8445463",
+      "bytes": 853,
+      "characters": 853,
+      "name_tokens": 102,
+      "project": "itsdangerous",
+      "commit_sha": "672971d66a2ef9f85151e53283113f33d642dabd"
+    },
+    {
+      "path": "src/itsdangerous/_json.py",
+      "sha256": "c0f4069a07b6c99f77dbc107285ea069d19ec866022502b1b54fa22ca13a5270",
+      "token_sha256": "680be0925c1456dcd182a2180e55a8c0d755504b239b3ba66b8653315f3dbe19",
+      "bytes": 473,
+      "characters": 473,
+      "name_tokens": 46,
+      "project": "itsdangerous",
+      "commit_sha": "672971d66a2ef9f85151e53283113f33d642dabd"
+    },
+    {
+      "path": "src/itsdangerous/encoding.py",
+      "sha256": "c304f3e6aff7ccb71a01dba793afef4a84adc06a9859edf4ed997f53ceda4453",
+      "token_sha256": "b1bf043c360161952c0ed469706729bb3d3ab81ff3f13d822b69ba3f1bc08b5a",
+      "bytes": 1409,
+      "characters": 1409,
+      "name_tokens": 116,
+      "project": "itsdangerous",
+      "commit_sha": "672971d66a2ef9f85151e53283113f33d642dabd"
+    },
+    {
+      "path": "src/itsdangerous/exc.py",
+      "sha256": "46bddec68d0c44511c3d996dc1e7322b5e955756c4d8af7f175f9dfa58dc527e",
+      "token_sha256": "c1994a2c34caef81198ce4a75bf8c354dbcdfdc320579e9c889c87349280cb36",
+      "bytes": 3201,
+      "characters": 3201,
+      "name_tokens": 139,
+      "project": "itsdangerous",
+      "commit_sha": "672971d66a2ef9f85151e53283113f33d642dabd"
+    },
+    {
+      "path": "src/itsdangerous/serializer.py",
+      "sha256": "6d6f1687897c7e3ac6eeff5bfd6794df90e299feedcc6aae3faa0e53ffe925e8",
+      "token_sha256": "c0e9f7e8c23e38bd0b99d044847935fd21f8d62eddb8aab2ee7ab33ca606f445",
+      "bytes": 15563,
+      "characters": 15563,
+      "name_tokens": 951,
+      "project": "itsdangerous",
+      "commit_sha": "672971d66a2ef9f85151e53283113f33d642dabd"
+    },
+    {
+      "path": "src/itsdangerous/signer.py",
+      "sha256": "60ed0257b341bc703a8f9e3d4441c91548d4a23c36a47ab0714a509d4ef23584",
+      "token_sha256": "f8645119901bddcb4737e1ff6257b45a758b0a5e50bdd612efeff954c97e7eb9",
+      "bytes": 9647,
+      "characters": 9647,
+      "name_tokens": 488,
+      "project": "itsdangerous",
+      "commit_sha": "672971d66a2ef9f85151e53283113f33d642dabd"
+    },
+    {
+      "path": "src/itsdangerous/timed.py",
+      "sha256": "3afbf6050e8b73605931d1e516f374835456979e4319c098bfe5f284f120c6c5",
+      "token_sha256": "b1b9d18b4517e2c41f946f46dec4e2696b453032a859a90baa2918fc6c5a03a2",
+      "bytes": 8087,
+      "characters": 8087,
+      "name_tokens": 455,
+      "project": "itsdangerous",
+      "commit_sha": "672971d66a2ef9f85151e53283113f33d642dabd"
+    },
+    {
+      "path": "src/itsdangerous/url_safe.py",
+      "sha256": "6b3e1ee5f5e2fefb3e61b5a3f186709f8c2254a7de0fef8610a453e547aee0fe",
+      "token_sha256": "5a1a0b0609727042e74e620c75125e2879fb29aa0f93459de2f51bd1b7d6be95",
+      "bytes": 2505,
+      "characters": 2505,
+      "name_tokens": 155,
+      "project": "itsdangerous",
+      "commit_sha": "672971d66a2ef9f85151e53283113f33d642dabd"
+    },
+    {
+      "path": "src/jinja2/__init__.py",
+      "sha256": "447fd98f9910c42ccd8d058b80c74ac852e1476d6f61ab8fd9d697aa69acf98b",
+      "token_sha256": "6cec57916d2a2bc57ef1b5cd5f1c2d20004f06a0629e64f362b7b36661e0d37c",
+      "bytes": 2458,
+      "characters": 2458,
+      "name_tokens": 218,
+      "project": "jinja",
+      "commit_sha": "5ef70112a1ff19c05324ff889dd30405b1002044"
+    },
+    {
+      "path": "src/jinja2/bccache.py",
+      "sha256": "d72be2f2e31a734ca2f099e08e6e4f1152939d97ccde72e418f5fbfba1d41ee7",
+      "token_sha256": "2f3943fe8fad8300b333e731ad284192efcf38005b330fe1f5ea8262e9dec7ae",
+      "bytes": 13986,
+      "characters": 13986,
+      "name_tokens": 662,
+      "project": "jinja",
+      "commit_sha": "5ef70112a1ff19c05324ff889dd30405b1002044"
+    },
+    {
+      "path": "src/jinja2/debug.py",
+      "sha256": "7de6a5653e450fcb474dd37b8a20f0cf7ef057139e5656418f0c478b1a2639d5",
+      "token_sha256": "34d64ddc82b4a02434eeacfc35a7d6f2df465d44b0f2129260db350ff537300e",
+      "bytes": 5753,
+      "characters": 5753,
+      "name_tokens": 319,
+      "project": "jinja",
+      "commit_sha": "5ef70112a1ff19c05324ff889dd30405b1002044"
+    },
+    {
+      "path": "src/jinja2/ext.py",
+      "sha256": "623aff178464ee9cfba4db495224f9948e1ec85996908abffa32352382a4b859",
+      "token_sha256": "7ceb9fa1941b6b79fc332df3532918a1c66aa8adc9edc89f1d859c40f65de68f",
+      "bytes": 31109,
+      "characters": 31109,
+      "name_tokens": 1869,
+      "project": "jinja",
+      "commit_sha": "5ef70112a1ff19c05324ff889dd30405b1002044"
+    },
+    {
+      "path": "src/jinja2/idtracking.py",
+      "sha256": "67cf1d827792f489021b4f8aa8d46d5f57a4f385bc5165fc0d4dec299b65bcef",
+      "token_sha256": "432d31ed52c5cec580403d375930247791c78cce64a7f60d67df26cab7cfdc6a",
+      "bytes": 10490,
+      "characters": 10490,
+      "name_tokens": 1046,
+      "project": "jinja",
+      "commit_sha": "5ef70112a1ff19c05324ff889dd30405b1002044"
+    },
+    {
+      "path": "src/jinja2/lexer.py",
+      "sha256": "36cedcead16de1c53cd16c1b65aba2861599318fb36d9b99df791c98bb186017",
+      "token_sha256": "7344a15f5f645dba8d935651ef9d06ef0ec6dd11c5590d043e6f3c43964a39c9",
+      "bytes": 29687,
+      "characters": 29687,
+      "name_tokens": 1529,
+      "project": "jinja",
+      "commit_sha": "5ef70112a1ff19c05324ff889dd30405b1002044"
+    },
+    {
+      "path": "src/jinja2/nodes.py",
+      "sha256": "8decfec152c75d6a90b052edfe434c0049256efaf79ba1d0d786adc3dc74bf0e",
+      "token_sha256": "12cbdb221b591efae8c5851442b4e3417df811224560f86ba3bc1e4282064a6a",
+      "bytes": 34189,
+      "characters": 34189,
+      "name_tokens": 2121,
+      "project": "jinja",
+      "commit_sha": "5ef70112a1ff19c05324ff889dd30405b1002044"
+    },
+    {
+      "path": "src/jinja2/optimizer.py",
+      "sha256": "fb18c24656c9f3230248ba7132d6f017b407c01557aed562c2b831fe8737aef8",
+      "token_sha256": "5c5bbf2dfee0995462927ce597a2df1c56349326e0a87535722027f3bc1b93f8",
+      "bytes": 1646,
+      "characters": 1646,
+      "name_tokens": 97,
+      "project": "jinja",
+      "commit_sha": "5ef70112a1ff19c05324ff889dd30405b1002044"
+    },
+    {
+      "path": "src/jinja2/runtime.py",
+      "sha256": "e245ee3a0248a9ce883e89e04d079a7de232918bf8bfd50965212a4002301341",
+      "token_sha256": "c1f67734c9b78a779264e7bff62f51e26f91a04219df89eb4b73e0ad0d3dd673",
+      "bytes": 34148,
+      "characters": 34148,
+      "name_tokens": 2118,
+      "project": "jinja",
+      "commit_sha": "5ef70112a1ff19c05324ff889dd30405b1002044"
+    },
+    {
+      "path": "src/jinja2/sandbox.py",
+      "sha256": "d62b0cf53172ba01780d839a9e186c227e42d1928c230564fcfa44a48066c03c",
+      "token_sha256": "65d3da9182c9d64870ae345b639b5582e5b391277cf77a213ed342f52cf21f83",
+      "bytes": 14942,
+      "characters": 14942,
+      "name_tokens": 777,
+      "project": "jinja",
+      "commit_sha": "5ef70112a1ff19c05324ff889dd30405b1002044"
+    },
+    {
+      "path": "src/jinja2/tests.py",
+      "sha256": "54bb018551675a0f8fc52073d4c8519cd5a03f5a2f5e4de778ed452d031e0bd4",
+      "token_sha256": "8dcd57f56898c3cc14a13de632442377708e2133dd2c9e47ddd36edf158d0c3c",
+      "bytes": 5926,
+      "characters": 5926,
+      "name_tokens": 345,
+      "project": "jinja",
+      "commit_sha": "5ef70112a1ff19c05324ff889dd30405b1002044"
+    },
+    {
+      "path": "src/jinja2/utils.py",
+      "sha256": "a87ae5bb3365aa9009cf3f55252a7721e7ed90c350d8ad58ebd9ee03340bbd3e",
+      "token_sha256": "4a790dc382e6c01725c7c9084c84889bffb09f2f9814e17368b88cfa00a9d881",
+      "bytes": 24080,
+      "characters": 24080,
+      "name_tokens": 1327,
+      "project": "jinja",
+      "commit_sha": "5ef70112a1ff19c05324ff889dd30405b1002044"
+    },
+    {
+      "path": "jmespath/__init__.py",
+      "sha256": "1bdefe3427441afe5dd173812b95de18db16731294a4c114e392e1ef949cd8a3",
+      "token_sha256": "86a3fa39bc632d3d23077f185b3c1e09277c55930c2c6910ebd0e27db49a965c",
+      "bytes": 281,
+      "characters": 281,
+      "name_tokens": 33,
+      "project": "jmespath.py",
+      "commit_sha": "2812594e69d43098ef60f81f4efc404c071b0418"
+    },
+    {
+      "path": "jmespath/ast.py",
+      "sha256": "4a21d133599d40f46dd76476aa442efc4cdb77e8219391cbcb51e5d631c0caff",
+      "token_sha256": "41f539dec80fc9efd75a9970c5bb218d53cc7007fc446f70e050e6c790611a64",
+      "bytes": 2130,
+      "characters": 2130,
+      "name_tokens": 132,
+      "project": "jmespath.py",
+      "commit_sha": "2812594e69d43098ef60f81f4efc404c071b0418"
+    },
+    {
+      "path": "jmespath/compat.py",
+      "sha256": "acc1e9be61b7240c57fe5434c8f2b57612f3fb23ae1326cca9dac4aba45102be",
+      "token_sha256": "ae06943ff004f4ffbc6689a26bf788c3efcd2ae35a2072fd1f737e26a32333be",
+      "bytes": 381,
+      "characters": 381,
+      "name_tokens": 38,
+      "project": "jmespath.py",
+      "commit_sha": "2812594e69d43098ef60f81f4efc404c071b0418"
+    },
+    {
+      "path": "jmespath/exceptions.py",
+      "sha256": "e47468b7806fdd209376f87994041d401b2a49d68a8ee4cf4b21a6934f334af0",
+      "token_sha256": "610917a07f02946c3d35d94c3a73768bd55292a7f5bcf1fe4a4add5476700f8f",
+      "bytes": 4128,
+      "characters": 4128,
+      "name_tokens": 252,
+      "project": "jmespath.py",
+      "commit_sha": "2812594e69d43098ef60f81f4efc404c071b0418"
+    },
+    {
+      "path": "jmespath/functions.py",
+      "sha256": "73d29131314d9ba2a457a23d42f82386264673bb3120bb3e2f79afc47055fe4c",
+      "token_sha256": "6ae892bc7850b6d0cc2d44d3c9f55c5f9449933533cb2045bf0f4e6f0ad558ad",
+      "bytes": 12729,
+      "characters": 12729,
+      "name_tokens": 791,
+      "project": "jmespath.py",
+      "commit_sha": "2812594e69d43098ef60f81f4efc404c071b0418"
+    },
+    {
+      "path": "jmespath/lexer.py",
+      "sha256": "2c4dfe74cef99f2f51311f265e65a528a453225cfc9e3bd6cfe33edb2e2de560",
+      "token_sha256": "10400865a04e50371aec8a4cb533fe2b66ac4bab90a8db5d88478f81b450f5e9",
+      "bytes": 8574,
+      "characters": 8574,
+      "name_tokens": 517,
+      "project": "jmespath.py",
+      "commit_sha": "2812594e69d43098ef60f81f4efc404c071b0418"
+    },
+    {
+      "path": "jmespath/parser.py",
+      "sha256": "5630d0379ca349ee467f973d227700e84e18c55473621254697059ada0ec5137",
+      "token_sha256": "23b614470e99f3085cb00114086f479911c6f158bece591bed35930b5fa6ddbd",
+      "bytes": 19571,
+      "characters": 19571,
+      "name_tokens": 1116,
+      "project": "jmespath.py",
+      "commit_sha": "2812594e69d43098ef60f81f4efc404c071b0418"
+    },
+    {
+      "path": "jmespath/visitor.py",
+      "sha256": "c38a44cfad82ee5f50b37d003f736638c12be799ee256555fa46fe4211182912",
+      "token_sha256": "61d1de5a04b31c624a74a98b41604af973e316a203612b3c9fb5b18ae3462cb4",
+      "bytes": 10834,
+      "characters": 10834,
+      "name_tokens": 836,
+      "project": "jmespath.py",
+      "commit_sha": "2812594e69d43098ef60f81f4efc404c071b0418"
+    },
+    {
+      "path": "more_itertools/recipes.py",
+      "sha256": "227cd3fdd5ea569e92f3db25e427d11d5597713daa1ea8f778f60555ea421f0e",
+      "token_sha256": "cc5b534a25fd96bc8d292093d7fa1c348a5d51b2bd59a1faa99492d2a8e92080",
+      "bytes": 46417,
+      "characters": 46397,
+      "name_tokens": 1816,
+      "project": "more-itertools",
+      "commit_sha": "aa9977698a5e6ae15d3fdfac08a5fc5621c4e179"
+    },
+    {
+      "path": "src/packaging/_elffile.py",
+      "sha256": "01fad840bc2d83297b1f2cb3be54c1314aa76b13c3b3a60b4b738e8a7de5d0e7",
+      "token_sha256": "46b25baf576704b785e5360076792278aedc6062ba95fc058b760aaa1909aaa0",
+      "bytes": 3277,
+      "characters": 3277,
+      "name_tokens": 200,
+      "project": "packaging",
+      "commit_sha": "38b09627c236ace5fa663d59254d67374900e562"
+    },
+    {
+      "path": "src/packaging/_manylinux.py",
+      "sha256": "f82a68151c0f950ef235e04045f4a476a0909fb32385fb75f570930f69110486",
+      "token_sha256": "b3196755fd81d858ba8c2d0ab30246f7d777306a81c8484c0efc5ccad76b709a",
+      "bytes": 10058,
+      "characters": 10058,
+      "name_tokens": 490,
+      "project": "packaging",
+      "commit_sha": "38b09627c236ace5fa663d59254d67374900e562"
+    },
+    {
+      "path": "src/packaging/_musllinux.py",
+      "sha256": "e4bf2603703b17e280f7fae10a5017586d362d015cef2d632b99d64b8337b3f3",
+      "token_sha256": "74888bb269f48ba70c8bb30a79b6f23236457264ec7a8c71047ba31acf276b41",
+      "bytes": 2840,
+      "characters": 2840,
+      "name_tokens": 194,
+      "project": "packaging",
+      "commit_sha": "38b09627c236ace5fa663d59254d67374900e562"
+    },
+    {
+      "path": "src/packaging/_ranges.py",
+      "sha256": "a59fd878d3513944b60b666f51104dfd9876a07efbc0b7f8005de487561d7f6c",
+      "token_sha256": "5400c851b7b01da9917e6bd16c2240c1b40abfdfa639ff881444c1932c3b0ea7",
+      "bytes": 27449,
+      "characters": 27449,
+      "name_tokens": 1904,
+      "project": "packaging",
+      "commit_sha": "38b09627c236ace5fa663d59254d67374900e562"
+    },
+    {
+      "path": "src/packaging/_structures.py",
+      "sha256": "d667e8762ff00f28fe14e54690532041bdd98bd35fb12489adcd5b17957e3d4f",
+      "token_sha256": "2cd32439c56309ed85e2607b3c536f3620bec4f7c971d9d49ce8140d18efb643",
+      "bytes": 2204,
+      "characters": 2202,
+      "name_tokens": 102,
+      "project": "packaging",
+      "commit_sha": "38b09627c236ace5fa663d59254d67374900e562"
+    },
+    {
+      "path": "src/packaging/_tokenizer.py",
+      "sha256": "e5a9d4b3cada2e8ac4a7eebe35315cca6ae5d6e51775fde47ae104e1c198a0c0",
+      "token_sha256": "c10cf9265c623b1108c3227f0f216b403fef31fe54301a20c278dec0868a9f03",
+      "bytes": 7329,
+      "characters": 7329,
+      "name_tokens": 472,
+      "project": "packaging",
+      "commit_sha": "38b09627c236ace5fa663d59254d67374900e562"
+    },
+    {
+      "path": "src/packaging/dependency_groups.py",
+      "sha256": "2e93125f81e523ed510ce054d64cfa2c41f676d82b5e3f57d259cd26bf97ca9b",
+      "token_sha256": "38c26994ba7f1e44885536b078c7f1d523dfa4a98682b2a88c69ea74bdf2be27",
+      "bytes": 11302,
+      "characters": 11302,
+      "name_tokens": 560,
+      "project": "packaging",
+      "commit_sha": "38b09627c236ace5fa663d59254d67374900e562"
+    },
+    {
+      "path": "src/packaging/direct_url.py",
+      "sha256": "b1b0ad1a257afda1fad1fc6e7d965cd43ac1b5e4aded46134ba0f294e01b38ac",
+      "token_sha256": "41c45efa93a5dbdefee5f73eb75d06b466a1e99aa011fb47f827cee7db22d7a1",
+      "bytes": 10741,
+      "characters": 10741,
+      "name_tokens": 703,
+      "project": "packaging",
+      "commit_sha": "38b09627c236ace5fa663d59254d67374900e562"
+    },
+    {
+      "path": "src/packaging/markers.py",
+      "sha256": "920c8f5e43283d12b43541e1dd70b4ddc4f5a1b3931b1709bac4857fc2bfb001",
+      "token_sha256": "20f0e45c75aa57aa3ad148851e40a6f9a29238c1e81ad51ce4ee0e0ef983c9f7",
+      "bytes": 28646,
+      "characters": 28646,
+      "name_tokens": 1220,
+      "project": "packaging",
+      "commit_sha": "38b09627c236ace5fa663d59254d67374900e562"
+    },
+    {
+      "path": "src/packaging/pylock.py",
+      "sha256": "5973120664ee86063b0f6108f0388c701097e10e3a8f4d4e9511fb60b0905e9b",
+      "token_sha256": "df68ec4e1469ad563803aa5fa3a00a1db473d8374646189d8c97c6751c6c5757",
+      "bytes": 32344,
+      "characters": 32344,
+      "name_tokens": 2007,
+      "project": "packaging",
+      "commit_sha": "38b09627c236ace5fa663d59254d67374900e562"
+    },
+    {
+      "path": "src/packaging/requirements.py",
+      "sha256": "b1e2bf677652017106042dab243ce3ce4d88dbad3e9ceebb9abb20245ed49c01",
+      "token_sha256": "a6de80ec595d7bfeebd0a5f69a27744767bc12bdc1cffc45b2db0a0a1fcf74fc",
+      "bytes": 11951,
+      "characters": 11951,
+      "name_tokens": 678,
+      "project": "packaging",
+      "commit_sha": "38b09627c236ace5fa663d59254d67374900e562"
+    },
+    {
+      "path": "src/packaging/utils.py",
+      "sha256": "8773e7b9e7a9edb162dfc197336f7eb5ccd683acf985e6cab8025c01c4adce9c",
+      "token_sha256": "40a3b055005fca6b49fe03c2dd4b21669e5443cf460724298a7361ae11478994",
+      "bytes": 12264,
+      "characters": 12264,
+      "name_tokens": 337,
+      "project": "packaging",
+      "commit_sha": "38b09627c236ace5fa663d59254d67374900e562"
+    },
+    {
+      "path": "src/platformdirs/__main__.py",
+      "sha256": "62c1a65cb46c88e445cf5f7dc5e55ac794ef904dcd5ade774a235fa0e79b5655",
+      "token_sha256": "7274b6e0d299e9f88f7175c2a75ca5a7590fda748f017d1e39a5d05c65766378",
+      "bytes": 2165,
+      "characters": 2165,
+      "name_tokens": 92,
+      "project": "platformdirs",
+      "commit_sha": "131607b6871c19a3228c9d553c73f6bd56fb8d19"
+    },
+    {
+      "path": "src/platformdirs/_android.py",
+      "sha256": "9909c1ad89a9d801aef2f03538f87dc2c0607c9ab0c0ff50272ed5edc792e399",
+      "token_sha256": "4df6ca7cd11fd2e84faf485a2d9376a55693d78914a88157f0b3c1901dd6e03a",
+      "bytes": 2323,
+      "characters": 2323,
+      "name_tokens": 118,
+      "project": "platformdirs",
+      "commit_sha": "131607b6871c19a3228c9d553c73f6bd56fb8d19"
+    },
+    {
+      "path": "src/platformdirs/_paths.py",
+      "sha256": "00b661a14a153a7dd472b1379fd994b35f6f1cddc69e27623314d16d382cf0dc",
+      "token_sha256": "4c22bd8ee848fa5ac0283c366c5788ad9a4deaf78419974e97f9f547cda0a72a",
+      "bytes": 4860,
+      "characters": 4860,
+      "name_tokens": 423,
+      "project": "platformdirs",
+      "commit_sha": "131607b6871c19a3228c9d553c73f6bd56fb8d19"
+    },
+    {
+      "path": "src/platformdirs/_runtime.py",
+      "sha256": "332c96da9747b3de8c69b09b3ea017fee326b8b5baed14f7d3a370d2e60b3432",
+      "token_sha256": "3b0d0acce4cf53c0aa9a693527b3a4d19c104c4e1762c30afbd70246e2437654",
+      "bytes": 3031,
+      "characters": 3031,
+      "name_tokens": 216,
+      "project": "platformdirs",
+      "commit_sha": "131607b6871c19a3228c9d553c73f6bd56fb8d19"
+    },
+    {
+      "path": "src/platformdirs/_xdg.py",
+      "sha256": "7572e3374d2dd01338ec8139f931f9578d3759885afa903fc02e973878a0d08d",
+      "token_sha256": "5e610f643553b8781a11dc136aa4c3f609d9d3ad66f28339fc1faf65d98aeab5",
+      "bytes": 10473,
+      "characters": 10473,
+      "name_tokens": 626,
+      "project": "platformdirs",
+      "commit_sha": "131607b6871c19a3228c9d553c73f6bd56fb8d19"
+    },
+    {
+      "path": "src/platformdirs/android.py",
+      "sha256": "475b4dfebdcdbbc9b3ef6d45814938eb67ab01267837581f6b5fd65d053298bb",
+      "token_sha256": "84493b981ba5db5d0488da66ac869cf249279ae55fe39c685a058952bb718b9c",
+      "bytes": 8233,
+      "characters": 8233,
+      "name_tokens": 344,
+      "project": "platformdirs",
+      "commit_sha": "131607b6871c19a3228c9d553c73f6bd56fb8d19"
+    },
+    {
+      "path": "src/platformdirs/api.py",
+      "sha256": "392dc32959dcc8013759735e25a98a259dd3b63b85fd0142155febe9392bcabd",
+      "token_sha256": "bbe460ba3471b1bb8ee12415a3cb7748f7459e70383f5512299e31eca65da28f",
+      "bytes": 31439,
+      "characters": 31439,
+      "name_tokens": 1628,
+      "project": "platformdirs",
+      "commit_sha": "131607b6871c19a3228c9d553c73f6bd56fb8d19"
+    },
+    {
+      "path": "src/platformdirs/ios.py",
+      "sha256": "1a3b517a1b123f2e8f27ef42e5927790fdb42caf04c4801c24beb8d9f86e0031",
+      "token_sha256": "5f1aac4d249f3084180a3440ccd4586672c7e96b1e78573b865fd93f272a84af",
+      "bytes": 6195,
+      "characters": 6195,
+      "name_tokens": 235,
+      "project": "platformdirs",
+      "commit_sha": "131607b6871c19a3228c9d553c73f6bd56fb8d19"
+    },
+    {
+      "path": "src/platformdirs/macos.py",
+      "sha256": "121a1b2b1898620854b6ae72736e29f3f2a764ac3ea9ffe950486484303344c9",
+      "token_sha256": "fb9d3f542e7d878efd170a24bd72b447685d56c37d1ad16674fdccf630a270ae",
+      "bytes": 12948,
+      "characters": 12948,
+      "name_tokens": 589,
+      "project": "platformdirs",
+      "commit_sha": "131607b6871c19a3228c9d553c73f6bd56fb8d19"
+    },
+    {
+      "path": "src/platformdirs/testing.py",
+      "sha256": "4fa0d7fa2458a2f62b9450086c12a184ce728e0d58eec43825bf43b416800a53",
+      "token_sha256": "94e982d662977a3533ee07cd8621a3bfac64389d66b45daa846158ee22944caf",
+      "bytes": 4747,
+      "characters": 4747,
+      "name_tokens": 305,
+      "project": "platformdirs",
+      "commit_sha": "131607b6871c19a3228c9d553c73f6bd56fb8d19"
+    },
+    {
+      "path": "src/platformdirs/unix.py",
+      "sha256": "69c1c901f8c1b4a2733e8a04b963f3b55254114478eb3576c04c28857549424c",
+      "token_sha256": "96d42f09f861e24cfd259944d8a727a421e5a411b8afc9b2c00f02165db403f5",
+      "bytes": 22571,
+      "characters": 22571,
+      "name_tokens": 1158,
+      "project": "platformdirs",
+      "commit_sha": "131607b6871c19a3228c9d553c73f6bd56fb8d19"
+    },
+    {
+      "path": "src/platformdirs/windows.py",
+      "sha256": "9fac74e01b4944f912ff46bb2acb96199ed221a5c5dca11b5e8f7c633ced997a",
+      "token_sha256": "0c5861eb08018b72e4f0ec1494d454ed01884bef41e87c27b4da72f48d6f5712",
+      "bytes": 18782,
+      "characters": 18782,
+      "name_tokens": 842,
+      "project": "platformdirs",
+      "commit_sha": "131607b6871c19a3228c9d553c73f6bd56fb8d19"
+    },
+    {
+      "path": "pygments/filter.py",
+      "sha256": "d5d9db92ad80742dc0907b770da5f09ce91304b0a1975911ea76922f09ebfed7",
+      "token_sha256": "af7ab5eaa46bb1344c0e1e62d54aa5e01a742f12b08b2a35e62fa6b86e678d59",
+      "bytes": 1913,
+      "characters": 1913,
+      "name_tokens": 91,
+      "project": "pygments",
+      "commit_sha": "156d85fdd18d34427fe893527e71da91dcfb0eb5"
+    },
+    {
+      "path": "pygments/lexers/bitbake.py",
+      "sha256": "cf0a8af5cb612678a8f23c6a9542543ede4ee5dfc8e01c9df5dc24f79d257dd7",
+      "token_sha256": "eb4931802a9ed93eccc8d5238d12b3fee1171e77439d0cd752648b8c2ebec4cc",
+      "bytes": 6132,
+      "characters": 6132,
+      "name_tokens": 168,
+      "project": "pygments",
+      "commit_sha": "156d85fdd18d34427fe893527e71da91dcfb0eb5"
+    },
+    {
+      "path": "pygments/lexers/compiled.py",
+      "sha256": "3d18a6cbb79bdb078fed7e9b12e933d496922ee4001133b7e0aee66872c66f10",
+      "token_sha256": "155bc71272312241878c5dc1a54b7c3cbc55eb0103d5eeb3c1cc062e6f0e7800",
+      "bytes": 1429,
+      "characters": 1429,
+      "name_tokens": 140,
+      "project": "pygments",
+      "commit_sha": "156d85fdd18d34427fe893527e71da91dcfb0eb5"
+    },
+    {
+      "path": "pygments/lexers/dsls.py",
+      "sha256": "b88d5525a61ff79535b309a9c7ab1e1576ee9431ad21a6a7b49e7223cf378888",
+      "token_sha256": "0e7a0586076b891e6cbb844f177c7841fabd7f69892288ac6a1ab0e2ee16c38f",
+      "bytes": 36750,
+      "characters": 36750,
+      "name_tokens": 998,
+      "project": "pygments",
+      "commit_sha": "156d85fdd18d34427fe893527e71da91dcfb0eb5"
+    },
+    {
+      "path": "pygments/lexers/iolang.py",
+      "sha256": "d18ca304058fe31977cddf0f72c3ad64c21b4a1d742979c908b73ac6a725919a",
+      "token_sha256": "db07e98aa6ee734ee73aeeb83479a0e894fe1801b9d21aa60c0b642bc1c95f3c",
+      "bytes": 1908,
+      "characters": 1908,
+      "name_tokens": 57,
+      "project": "pygments",
+      "commit_sha": "156d85fdd18d34427fe893527e71da91dcfb0eb5"
+    },
+    {
+      "path": "pygments/lexers/j.py",
+      "sha256": "e7aa946ecd42ef029d67af96a4d9f11e7b4daacc56ae8aa23bb91e236ca8475a",
+      "token_sha256": "6d97f39a3fb8b7fd1c9d73f1731022cb4845e142941a777cf7e10781c444a73a",
+      "bytes": 4856,
+      "characters": 4856,
+      "name_tokens": 120,
+      "project": "pygments",
+      "commit_sha": "156d85fdd18d34427fe893527e71da91dcfb0eb5"
+    },
+    {
+      "path": "pygments/lexers/json5.py",
+      "sha256": "1b2799e7c0312a42498a21fb26e3e66a40d95eba296ba6c3905460b891e27ea5",
+      "token_sha256": "0b35b38aabd93c028b87a2517fbdb126f63ffd67db19ef54f1a259818e9c37f0",
+      "bytes": 2505,
+      "characters": 2505,
+      "name_tokens": 85,
+      "project": "pygments",
+      "commit_sha": "156d85fdd18d34427fe893527e71da91dcfb0eb5"
+    },
+    {
+      "path": "pygments/lexers/objective.py",
+      "sha256": "443e67856d79a60dc552ecb521f1af6ff8786deff7879f879055a92d5448f1e5",
+      "token_sha256": "6555b77fa9a44d5e9c3bfdb2fea665154fa05d963378af4018d8c0b45f72e984",
+      "bytes": 23663,
+      "characters": 23663,
+      "name_tokens": 556,
+      "project": "pygments",
+      "commit_sha": "156d85fdd18d34427fe893527e71da91dcfb0eb5"
+    },
+    {
+      "path": "pygments/lexers/pddl.py",
+      "sha256": "6bc03691e085f6a350bd56508ab8015797c7e2eddc8ebb5af3e79927cb6cc666",
+      "token_sha256": "bc3781e4d9b6338a08678eae0752d54c24e92ff8a66327872f0bed136374ea58",
+      "bytes": 2992,
+      "characters": 2992,
+      "name_tokens": 49,
+      "project": "pygments",
+      "commit_sha": "156d85fdd18d34427fe893527e71da91dcfb0eb5"
+    },
+    {
+      "path": "pygments/lexers/prql.py",
+      "sha256": "5c985df1da4458f0482a6417c7fd3dfb3d4dca8b4b5c8b24a6ecd7dfa1f2907a",
+      "token_sha256": "b8944593726f05bcdcdf78f6987edb9dba25d2a5b68617694fd4597e1c7b2b5e",
+      "bytes": 8750,
+      "characters": 8750,
+      "name_tokens": 272,
+      "project": "pygments",
+      "commit_sha": "156d85fdd18d34427fe893527e71da91dcfb0eb5"
+    },
+    {
+      "path": "pygments/lexers/tnt.py",
+      "sha256": "30d6137e48b1d31e4bd690d5f15f3318b4bb194f33edbb7ec298816a9d96d3d5",
+      "token_sha256": "234bfb0fb276b6bb2ef2ff00ce1a5775d8f05d0154d4d1d81358e92a634251b2",
+      "bytes": 10459,
+      "characters": 10442,
+      "name_tokens": 815,
+      "project": "pygments",
+      "commit_sha": "156d85fdd18d34427fe893527e71da91dcfb0eb5"
+    },
+    {
+      "path": "pygments/styles/rrt.py",
+      "sha256": "bece299d6c26308411d1e19cce9d3a0186b3b18891d0a15c462454cd27f7ad77",
+      "token_sha256": "a92d0eb8641d14c873b032a3d4b17ea9e0faa872daa26ebb9ef1ee13960220c1",
+      "bytes": 1295,
+      "characters": 1295,
+      "name_tokens": 54,
+      "project": "pygments",
+      "commit_sha": "156d85fdd18d34427fe893527e71da91dcfb0eb5"
+    },
+    {
+      "path": "src/dotenv/__init__.py",
+      "sha256": "6e163e88aeb0c0765a996208e9e482b820165d435d9f64d016610eb97494ed23",
+      "token_sha256": "3bf22ec01f316cd7bd8cd97318dd5baafa43439bed2d45e74c78c4f7216df20b",
+      "bytes": 1230,
+      "characters": 1230,
+      "name_tokens": 85,
+      "project": "python-dotenv",
+      "commit_sha": "4fbc6ff07215367ece731006855e732d1405992c"
+    },
+    {
+      "path": "src/dotenv/cli.py",
+      "sha256": "cba5e82445206ce3a4d70f819e9093112ff80a5346cef3ec68a5da43fc3d5349",
+      "token_sha256": "62b69b29cfb124d62971ffe517821925b243a0598a97ef67639f00b134741323",
+      "bytes": 7569,
+      "characters": 7569,
+      "name_tokens": 543,
+      "project": "python-dotenv",
+      "commit_sha": "4fbc6ff07215367ece731006855e732d1405992c"
+    },
+    {
+      "path": "src/dotenv/ipython.py",
+      "sha256": "74740177d3dc7425298466faed7c32dc6914a8c49d7fd5d4522358c53677b585",
+      "token_sha256": "f142b2fdd1b1f01784d7858ce0214767d7b015d9337a2a05c2a89833688fa398",
+      "bytes": 1326,
+      "characters": 1326,
+      "name_tokens": 75,
+      "project": "python-dotenv",
+      "commit_sha": "4fbc6ff07215367ece731006855e732d1405992c"
+    },
+    {
+      "path": "src/dotenv/main.py",
+      "sha256": "fcb89122cd8756c43209f9052bb3c552dbe440d45493c762295c771f0d1ceaa8",
+      "token_sha256": "77d7da23235094595dc2a20003d93f5514beb1358e32f8beac15b4e327d43421",
+      "bytes": 16970,
+      "characters": 16970,
+      "name_tokens": 1138,
+      "project": "python-dotenv",
+      "commit_sha": "4fbc6ff07215367ece731006855e732d1405992c"
+    },
+    {
+      "path": "src/dotenv/parser.py",
+      "sha256": "75f68bfa9e63b6f504b7d23a605b66edbb578d5e3e7ba797ab78ffcbc0eb44ae",
+      "token_sha256": "ac15d6cb126d98b91cdcbb714737a8cff65ec9a0d31bd5dd535b65bff168888d",
+      "bytes": 5806,
+      "characters": 5806,
+      "name_tokens": 492,
+      "project": "python-dotenv",
+      "commit_sha": "4fbc6ff07215367ece731006855e732d1405992c"
+    },
+    {
+      "path": "src/dotenv/variables.py",
+      "sha256": "083d2a5cebefa41deae51a4140c0fda97eaf1d7ed2c96f92ba2c063054a5b74f",
+      "token_sha256": "fad36eccc70035111a272c365ab2872b1e0a2ddfec3e1a04e35ecd1f837301ce",
+      "bytes": 2348,
+      "characters": 2348,
+      "name_tokens": 259,
+      "project": "python-dotenv",
+      "commit_sha": "4fbc6ff07215367ece731006855e732d1405992c"
+    },
+    {
+      "path": "src/requests/__init__.py",
+      "sha256": "80534322a1a3167d8775829ee220a6acf4fe455f3f778c4b8e94bcf7fadfa0b5",
+      "token_sha256": "a8cd0db47174792efa90cf589690080a366be8da1ed3a85a84970a335f56378f",
+      "bytes": 5637,
+      "characters": 5637,
+      "name_tokens": 269,
+      "project": "requests",
+      "commit_sha": "3c7baaa05ab4aa49cc819ce3a819d260de19c157"
+    },
+    {
+      "path": "src/requests/__version__.py",
+      "sha256": "abba90670b0370a3dc40d97c2dea46a35d4bec941ff10d7c3cf3098ef04a17f9",
+      "token_sha256": "5bd16950fde427a0496e0853b0f4e0fd60b20f973b5f3890e9b1123bafca369c",
+      "bytes": 435,
+      "characters": 435,
+      "name_tokens": 10,
+      "project": "requests",
+      "commit_sha": "3c7baaa05ab4aa49cc819ce3a819d260de19c157"
+    },
+    {
+      "path": "src/requests/_internal_utils.py",
+      "sha256": "4c7d8d132c9898fc7d715e473f3ac74785ddc4ab96d2c9240f87835dc6d981ff",
+      "token_sha256": "6e9cad25dac87aef1cd80aa9109af54288908b0892ef25db3656fb329e23cd9b",
+      "bytes": 1542,
+      "characters": 1542,
+      "name_tokens": 68,
+      "project": "requests",
+      "commit_sha": "3c7baaa05ab4aa49cc819ce3a819d260de19c157"
+    },
+    {
+      "path": "src/requests/adapters.py",
+      "sha256": "cc9b1b02694fee0353481fbad84fe3ddbedec4441dba54df7914c63f2aa85937",
+      "token_sha256": "2aa87e75ad3c4aa485238dcda760b32a27a6887a623fe87afca3c19dd193e7e4",
+      "bytes": 27992,
+      "characters": 27992,
+      "name_tokens": 1248,
+      "project": "requests",
+      "commit_sha": "3c7baaa05ab4aa49cc819ce3a819d260de19c157"
+    },
+    {
+      "path": "src/requests/exceptions.py",
+      "sha256": "c5e18f3352454968e337bb3056f0867df2f37c0a0d2c1a77dc05e7e0b3c0411b",
+      "token_sha256": "1c40dbcb091e4dc60350712b79ca95cb31563edf3dc0ead8a42baa0151d7e0e6",
+      "bytes": 4564,
+      "characters": 4564,
+      "name_tokens": 191,
+      "project": "requests",
+      "commit_sha": "3c7baaa05ab4aa49cc819ce3a819d260de19c157"
+    },
+    {
+      "path": "src/requests/help.py",
+      "sha256": "e5845e93980b2e25be418fb7fe0b8e6e999fef8f84afc5a43f4546efdc24691f",
+      "token_sha256": "af0cbc4d8a75bcd54fb01bf038ba5db35a5be283192bd809283d43bf6ac533ec",
+      "bytes": 4068,
+      "characters": 4068,
+      "name_tokens": 199,
+      "project": "requests",
+      "commit_sha": "3c7baaa05ab4aa49cc819ce3a819d260de19c157"
+    },
+    {
+      "path": "src/requests/hooks.py",
+      "sha256": "ebd8a02475d31a0e473a8f553e9501ff43645b9563885ad52844e7a63f0d76ab",
+      "token_sha256": "b5ad8f48fbd644a52d295ab40b674a622528e3b8a5d9aa4d5d3647fbedde9bd7",
+      "bytes": 1138,
+      "characters": 1138,
+      "name_tokens": 93,
+      "project": "requests",
+      "commit_sha": "3c7baaa05ab4aa49cc819ce3a819d260de19c157"
+    },
+    {
+      "path": "src/requests/models.py",
+      "sha256": "a3351c3c12a86bf5ed211533875350bc4791e9327a685f8c19ba54343e471e26",
+      "token_sha256": "3ca2c327c93b64cfc240c9bc5680ee16108705220a2efa8978418ce7cf8d2ce3",
+      "bytes": 41462,
+      "characters": 41462,
+      "name_tokens": 2295,
+      "project": "requests",
+      "commit_sha": "3c7baaa05ab4aa49cc819ce3a819d260de19c157"
+    },
+    {
+      "path": "src/requests/packages.py",
+      "sha256": "fe0d2067af355320252874631fa91a9db6a8c71d9e01beaacdc5e2383c932287",
+      "token_sha256": "ee52ffe43ebb167eae2f1f6982d154baf72c0c6dfa35f3f1d1ac24abf495e6db",
+      "bytes": 904,
+      "characters": 904,
+      "name_tokens": 69,
+      "project": "requests",
+      "commit_sha": "3c7baaa05ab4aa49cc819ce3a819d260de19c157"
+    },
+    {
+      "path": "src/requests/sessions.py",
+      "sha256": "3d2089736ced93b2b405624a943f866d22652b17df06a85eb010f86272fc3e7d",
+      "token_sha256": "325f882effa278118abc578c0ec3468bc520612181ec6d81577f02ec0d2c7458",
+      "bytes": 34072,
+      "characters": 34072,
+      "name_tokens": 1591,
+      "project": "requests",
+      "commit_sha": "3c7baaa05ab4aa49cc819ce3a819d260de19c157"
+    },
+    {
+      "path": "src/requests/status_codes.py",
+      "sha256": "1950f47c89cf18019787e07d8ce48f66d6b38e622f7d94d70a90247fee6c040e",
+      "token_sha256": "0eef4d1298dc7c1bd944c352c8e4918af637eb18daacc86feb29bf65d37b89ad",
+      "bytes": 4351,
+      "characters": 4347,
+      "name_tokens": 71,
+      "project": "requests",
+      "commit_sha": "3c7baaa05ab4aa49cc819ce3a819d260de19c157"
+    },
+    {
+      "path": "src/requests/structures.py",
+      "sha256": "ba9460c39078f25e6f1d2a24ac941ac6f8d2ee97197fa8c8d0c262d8a1e67a02",
+      "token_sha256": "1d3cdbc40993f259328fde23dd201676211c837f2ca9d7cd99cf14a07acd361a",
+      "bytes": 4134,
+      "characters": 4134,
+      "name_tokens": 292,
+      "project": "requests",
+      "commit_sha": "3c7baaa05ab4aa49cc819ce3a819d260de19c157"
+    },
+    {
+      "path": "rich/__main__.py",
+      "sha256": "91ccbc06d04452460b0a8811930842749b3454dc7a285d67f24154da0fbba658",
+      "token_sha256": "6c59575c6c3ebda4a0b8fb7d2d604ced84c8d17b4cab4299e25bde7a4bd9f0e3",
+      "bytes": 7725,
+      "characters": 7567,
+      "name_tokens": 380,
+      "project": "rich",
+      "commit_sha": "3a109ccdffe5b2d0e30684a304fbd388e99ce57b"
+    },
+    {
+      "path": "rich/_ratio.py",
+      "sha256": "d6b83241c8b7e962a3da0d4521e14f67e59b73f87a04000080fea5652861a59b",
+      "token_sha256": "1ed2cd735e8dd8a9c4dc2fbff4442e19a8f0b60ad8141d4cc43f8ae5f4d7a395",
+      "bytes": 5300,
+      "characters": 5300,
+      "name_tokens": 326,
+      "project": "rich",
+      "commit_sha": "3a109ccdffe5b2d0e30684a304fbd388e99ce57b"
+    },
+    {
+      "path": "rich/_timer.py",
+      "sha256": "cde9716d3ea83c566736bc163e973592d51e013f957387ee15c4592d018bb4c2",
+      "token_sha256": "388bde73d37ee357c7810e5b806fee450cc2bed3d89335ca587f4e0bacb1212c",
+      "bytes": 417,
+      "characters": 417,
+      "name_tokens": 31,
+      "project": "rich",
+      "commit_sha": "3a109ccdffe5b2d0e30684a304fbd388e99ce57b"
+    },
+    {
+      "path": "rich/columns.py",
+      "sha256": "8d3414b2b9d1a64ec02cb4dfd013a9890cdefa2d2c50ecb81470e5a454946cf1",
+      "token_sha256": "3bdb092ef5f055daca0656831a9f3af7f134cf2afdfc73696f001bda50dba79f",
+      "bytes": 7132,
+      "characters": 7132,
+      "name_tokens": 497,
+      "project": "rich",
+      "commit_sha": "3a109ccdffe5b2d0e30684a304fbd388e99ce57b"
+    },
+    {
+      "path": "rich/emoji.py",
+      "sha256": "8a62044be9a016f58136dd6c5a382ee98a8dc4f55786d0504f4b8647f6699a10",
+      "token_sha256": "644d715bc7b89c6e4f6d106023e7cd3620f64cf099395042235811faeb428bab",
+      "bytes": 2356,
+      "characters": 2356,
+      "name_tokens": 176,
+      "project": "rich",
+      "commit_sha": "3a109ccdffe5b2d0e30684a304fbd388e99ce57b"
+    },
+    {
+      "path": "rich/filesize.py",
+      "sha256": "9124e92f68e289d266d9a2fd641adb5d7e6a0159adda756354071f1c53b9837c",
+      "token_sha256": "8da0fa8ee0d5a148b1254ce2e2bb2a603c2c19eb234b6a2dd034247e441f6711",
+      "bytes": 2449,
+      "characters": 2449,
+      "name_tokens": 99,
+      "project": "rich",
+      "commit_sha": "3a109ccdffe5b2d0e30684a304fbd388e99ce57b"
+    },
+    {
+      "path": "rich/progress_bar.py",
+      "sha256": "443df4c1c572b6331ec7126d31f7942dd29a3e9586b447d7b5b10dcf5c99ad5e",
+      "token_sha256": "117582633c32e803d99d20bbfaeb65ae5b7cb2445d6b7ffa1dfebd9a94db478a",
+      "bytes": 8122,
+      "characters": 8114,
+      "name_tokens": 564,
+      "project": "rich",
+      "commit_sha": "3a109ccdffe5b2d0e30684a304fbd388e99ce57b"
+    },
+    {
+      "path": "rich/protocol.py",
+      "sha256": "e21d3f18f668ec430bfe1beb8b8be55d73939563b74a126fbdf0f09893f0d049",
+      "token_sha256": "145296c5459fa3ee506f865694e3c2d472216750f010439446071019aaa87012",
+      "bytes": 1343,
+      "characters": 1343,
+      "name_tokens": 77,
+      "project": "rich",
+      "commit_sha": "3a109ccdffe5b2d0e30684a304fbd388e99ce57b"
+    },
+    {
+      "path": "rich/spinner.py",
+      "sha256": "621720b59f69878db4a745e13c3319bab6e7ab6e9bffaad190dfab0cf2d8d14b",
+      "token_sha256": "ae5a75ed0cf503de320d16ad02f344b31233d307b3738fd7a1a0ad58c48c99bc",
+      "bytes": 4173,
+      "characters": 4173,
+      "name_tokens": 276,
+      "project": "rich",
+      "commit_sha": "3a109ccdffe5b2d0e30684a304fbd388e99ce57b"
+    },
+    {
+      "path": "rich/syntax.py",
+      "sha256": "e30d5f9f98f6565a1fc30e1115e49b8c8abd2a07f91dd633f4101570fa1d3632",
+      "token_sha256": "bf16ec6f2d7a40ff6132e9408e129c176e722079a39688ad1a6f6726001cc40c",
+      "bytes": 36097,
+      "characters": 36095,
+      "name_tokens": 2082,
+      "project": "rich",
+      "commit_sha": "3a109ccdffe5b2d0e30684a304fbd388e99ce57b"
+    },
+    {
+      "path": "rich/themes.py",
+      "sha256": "d17bbadeff81df763f2629bf7cf8f565b6d776565a67687574dbe183f10e9143",
+      "token_sha256": "0cc353ff7c13220eafb036c4c07ebf6c372d1408997484ce14925f7cbd9395da",
+      "bytes": 101,
+      "characters": 101,
+      "name_tokens": 11,
+      "project": "rich",
+      "commit_sha": "3a109ccdffe5b2d0e30684a304fbd388e99ce57b"
+    },
+    {
+      "path": "rich/tree.py",
+      "sha256": "118eb1290fb8785d3879bdc82a0f55823f1a6566bc801e811211fdc6fa645e63",
+      "token_sha256": "8792e1ffa3da08dafae49dcf8838190837db64fa5bd819ea248a020e78827452",
+      "bytes": 9342,
+      "characters": 9285,
+      "name_tokens": 605,
+      "project": "rich",
+      "commit_sha": "3a109ccdffe5b2d0e30684a304fbd388e99ce57b"
+    },
+    {
+      "path": "typer/__init__.py",
+      "sha256": "43a8ed4a33658b47effd2646e5fa6e3fa5cf5fcd5ccff6ddfa4373cfdec10c61",
+      "token_sha256": "2f1541531f85ac1f40acfff2d663f505d18c7f1a493e168a75665e632415e2bd",
+      "bytes": 1399,
+      "characters": 1399,
+      "name_tokens": 180,
+      "project": "typer",
+      "commit_sha": "2517edde5a1292a712e2f16e600754c52c6f00d9"
+    },
+    {
+      "path": "typer/_adapters.py",
+      "sha256": "2a7cc7900438404295d3df9e671c5830687dfc66a9965e15c72a6faa19d5de58",
+      "token_sha256": "a41b71b81e11f121b613a18094826d05e89ac4696fbb80b141bbd6e10c29e73b",
+      "bytes": 9018,
+      "characters": 9018,
+      "name_tokens": 699,
+      "project": "typer",
+      "commit_sha": "2517edde5a1292a712e2f16e600754c52c6f00d9"
+    },
+    {
+      "path": "typer/_click/exceptions.py",
+      "sha256": "cac64a7acbddfbb2a8a027f54144757f1060633d0858d68ff78513496bdffb21",
+      "token_sha256": "a331870f802f8017514213d2fbf7ac7af17a04e46e792c65b87650bf6426eaa7",
+      "bytes": 7376,
+      "characters": 7376,
+      "name_tokens": 602,
+      "project": "typer",
+      "commit_sha": "2517edde5a1292a712e2f16e600754c52c6f00d9"
+    },
+    {
+      "path": "typer/_click/formatting.py",
+      "sha256": "a26c88a5ab444b5491af2bf0c6fc717883dfcc636eefeeec1474903acb868666",
+      "token_sha256": "78d14074992dc7a2443cbe890998747868e77ab97a30fc0bcd4029e000c0663e",
+      "bytes": 8485,
+      "characters": 8485,
+      "name_tokens": 586,
+      "project": "typer",
+      "commit_sha": "2517edde5a1292a712e2f16e600754c52c6f00d9"
+    },
+    {
+      "path": "typer/_click/parser.py",
+      "sha256": "56b0a674ea4a36fd2013a0b61e73e3fda5a18c9d5183d502cb2e7cd98ce1f89e",
+      "token_sha256": "33d8d986f455d05780b35b0eb2d3e52ab4bbf95f620b08bb9d32454f3d4b83be",
+      "bytes": 16645,
+      "characters": 16645,
+      "name_tokens": 1014,
+      "project": "typer",
+      "commit_sha": "2517edde5a1292a712e2f16e600754c52c6f00d9"
+    },
+    {
+      "path": "typer/_completion_shared.py",
+      "sha256": "33bde5c44390ba72e40b850f9d2347e0721110b55fca83465e35d44d9b5bde4c",
+      "token_sha256": "518357c695e46798db637a3d91a1539d28ee094d3ab155aebb432fc784c17a49",
+      "bytes": 9146,
+      "characters": 9146,
+      "name_tokens": 483,
+      "project": "typer",
+      "commit_sha": "2517edde5a1292a712e2f16e600754c52c6f00d9"
+    },
+    {
+      "path": "typer/_display.py",
+      "sha256": "e65313bd559b0c7b6bbb5be13640bb6a3d01c0ca81a6a30bf6689f9f886b87e7",
+      "token_sha256": "ad5788b860805b06dd76195b5d0f0359c3dc9639c69cd314e25fb5a426f2974d",
+      "bytes": 654,
+      "characters": 654,
+      "name_tokens": 64,
+      "project": "typer",
+      "commit_sha": "2517edde5a1292a712e2f16e600754c52c6f00d9"
+    },
+    {
+      "path": "typer/_param_types.py",
+      "sha256": "a2333bd7bf0952426adf8bba3c0c79d333b3ea62950bc80c715193416bb1f9d1",
+      "token_sha256": "6167c129b02078ce49d90fdf98b8d636ee27fa35583d112a14f5e8235d544e14",
+      "bytes": 11682,
+      "characters": 11682,
+      "name_tokens": 1031,
+      "project": "typer",
+      "commit_sha": "2517edde5a1292a712e2f16e600754c52c6f00d9"
+    },
+    {
+      "path": "typer/cli.py",
+      "sha256": "669d616bb3854f200d83691517f0b4ac2631838414a8b698d101703d591fb448",
+      "token_sha256": "9c8c0de11752ca8fa96e351977cc66ba2ea9009b0b33e87b9349a7b0d7231cfa",
+      "bytes": 10259,
+      "characters": 10259,
+      "name_tokens": 865,
+      "project": "typer",
+      "commit_sha": "2517edde5a1292a712e2f16e600754c52c6f00d9"
+    },
+    {
+      "path": "typer/exceptions.py",
+      "sha256": "5cf0fbc56c141c24e1c33f9dae2d9579f858d6134fac704a1ed70063cb66c923",
+      "token_sha256": "761da99b997733feed0a8a7ab736bfe4bbf5f4bb561652f93d1c8184fa8ee02f",
+      "bytes": 693,
+      "characters": 693,
+      "name_tokens": 47,
+      "project": "typer",
+      "commit_sha": "2517edde5a1292a712e2f16e600754c52c6f00d9"
+    },
+    {
+      "path": "typer/models.py",
+      "sha256": "99b88c61b65bdf32bc778575f5b4277020385cb6bde82303d09f3ffee2697ed7",
+      "token_sha256": "45f1a127ffa2b94fef41070692be6bb7e1017b49be71caf849db5a36e80bb8aa",
+      "bytes": 18842,
+      "characters": 18842,
+      "name_tokens": 1162,
+      "project": "typer",
+      "commit_sha": "2517edde5a1292a712e2f16e600754c52c6f00d9"
+    },
+    {
+      "path": "typer/testing.py",
+      "sha256": "5aac6eb971182c3a641697785bde2e6e08d1e3f5199ff9f6b66242d13982251f",
+      "token_sha256": "feff087e20d7e61a0e430cd91745e89ce170bffb6d5b82dc9cf4134ec5394e4e",
+      "bytes": 11086,
+      "characters": 11086,
+      "name_tokens": 849,
+      "project": "typer",
+      "commit_sha": "2517edde5a1292a712e2f16e600754c52c6f00d9"
+    },
+    {
+      "path": "src/werkzeug/datastructures/__init__.py",
+      "sha256": "1966ad980db53a06b92ea7b7a5c351fd82ace96df2750d7a5eda22a1be65ca51",
+      "token_sha256": "3f7f1d7f6d56aec471207f1a94cbcb892db0b6260d5dc2c0956b9a4b35d31df2",
+      "bytes": 3167,
+      "characters": 3167,
+      "name_tokens": 227,
+      "project": "werkzeug",
+      "commit_sha": "0f43c6ebd426039e4b99ec22535c2c8a2ec2f69f"
+    },
+    {
+      "path": "src/werkzeug/datastructures/accept.py",
+      "sha256": "4e06dc1a8e7c8357d8f44844c492d666c6670121e32f5a8c410650656a1e812f",
+      "token_sha256": "739075de24e54fa014510d256800ea7277f34f41b302ccf9ff62b53f491399ce",
+      "bytes": 13675,
+      "characters": 13675,
+      "name_tokens": 861,
+      "project": "werkzeug",
+      "commit_sha": "0f43c6ebd426039e4b99ec22535c2c8a2ec2f69f"
+    },
+    {
+      "path": "src/werkzeug/datastructures/file_storage.py",
+      "sha256": "bafc8f98e17e33d0b7b824d2951f0a450df03b4b5a7916390484c3c68229905f",
+      "token_sha256": "f51c4b8778413d6779dcc4eb0703e5eec9b1fe3138176986cd3d9132411dba47",
+      "bytes": 7337,
+      "characters": 7337,
+      "name_tokens": 430,
+      "project": "werkzeug",
+      "commit_sha": "0f43c6ebd426039e4b99ec22535c2c8a2ec2f69f"
+    },
+    {
+      "path": "src/werkzeug/datastructures/headers.py",
+      "sha256": "739784f21bccf5d9df13bf154ddd4337b4bb97ebadf8cdb0661dcc96e208a132",
+      "token_sha256": "fbb252dca67f1f971d96c239322f659e64d97e4fb75263f4107852cc98ed96a1",
+      "bytes": 22806,
+      "characters": 22806,
+      "name_tokens": 1488,
+      "project": "werkzeug",
+      "commit_sha": "0f43c6ebd426039e4b99ec22535c2c8a2ec2f69f"
+    },
+    {
+      "path": "src/werkzeug/datastructures/mixins.py",
+      "sha256": "147bcd9ddd05a89960604ceb527336cbad163c2e2d05523ea6cc35fb099f9cfe",
+      "token_sha256": "ba6498f3a66bf4c5fa3e78a625da70e41c06c67acc51e4f0520a8995c863868b",
+      "bytes": 9968,
+      "characters": 9968,
+      "name_tokens": 998,
+      "project": "werkzeug",
+      "commit_sha": "0f43c6ebd426039e4b99ec22535c2c8a2ec2f69f"
+    },
+    {
+      "path": "src/werkzeug/middleware/dispatcher.py",
+      "sha256": "7be288335cdd24d5e25b36f657fa5cab22c278e0c41130ec4e1e81cce419b431",
+      "token_sha256": "2245d32beb7a86119dd1bcfa4319a3f7dbc1b8533d947a27b0ff7389a7cbaccd",
+      "bytes": 2481,
+      "characters": 2481,
+      "name_tokens": 92,
+      "project": "werkzeug",
+      "commit_sha": "0f43c6ebd426039e4b99ec22535c2c8a2ec2f69f"
+    },
+    {
+      "path": "src/werkzeug/routing/__init__.py",
+      "sha256": "77c4d1c6c936e085aed8176839851f2fef9d7a8947c2219508126a2e811edd83",
+      "token_sha256": "172d22eb55261f12792995c9350cdaf29bbdde26763da27ab85fda11443846ce",
+      "bytes": 4820,
+      "characters": 4820,
+      "name_tokens": 156,
+      "project": "werkzeug",
+      "commit_sha": "0f43c6ebd426039e4b99ec22535c2c8a2ec2f69f"
+    },
+    {
+      "path": "src/werkzeug/routing/exceptions.py",
+      "sha256": "ea41b1595383d0caf32decfd1e5594565d66974123ab01530e00a4e0d35bd136",
+      "token_sha256": "40999da713a7b95bfb5e39f82125a6e7a22a7c1bd6fa235b2002a663e141d1e7",
+      "bytes": 5338,
+      "characters": 5338,
+      "name_tokens": 367,
+      "project": "werkzeug",
+      "commit_sha": "0f43c6ebd426039e4b99ec22535c2c8a2ec2f69f"
+    },
+    {
+      "path": "src/werkzeug/routing/map.py",
+      "sha256": "cebaacc191dcc4cf1b785690e7068bdace7b8717240df7b256b9d89d01caf0ed",
+      "token_sha256": "8ce7e9316e0ad04f1ea461926041803a60760c6609a1e013d65852c15e5d550a",
+      "bytes": 40044,
+      "characters": 40044,
+      "name_tokens": 1699,
+      "project": "werkzeug",
+      "commit_sha": "0f43c6ebd426039e4b99ec22535c2c8a2ec2f69f"
+    },
+    {
+      "path": "src/werkzeug/security.py",
+      "sha256": "a076684537b8d43a2a9647879062643c96f1d46d04fd959aba820957cfbac820",
+      "token_sha256": "e4224863ffd9c2f7c39a3c4db02cc6c1d7833e3d7fab1953bb7b12b21cc02e97",
+      "bytes": 7380,
+      "characters": 7374,
+      "name_tokens": 274,
+      "project": "werkzeug",
+      "commit_sha": "0f43c6ebd426039e4b99ec22535c2c8a2ec2f69f"
+    },
+    {
+      "path": "src/werkzeug/serving.py",
+      "sha256": "8331ce51604d1a99e9e7967da654c32a7a3ecaef5e371f97200b8f9fc06dbe12",
+      "token_sha256": "43762a4f67338ef2c2d1a1292ef869b487349af47d462e456b9a8b4105991beb",
+      "bytes": 40443,
+      "characters": 40443,
+      "name_tokens": 2131,
+      "project": "werkzeug",
+      "commit_sha": "0f43c6ebd426039e4b99ec22535c2c8a2ec2f69f"
+    },
+    {
+      "path": "src/werkzeug/wsgi.py",
+      "sha256": "25fe0af1245e925ade694d8380aeea1df72e44b8553fc3a7f84c389feada6235",
+      "token_sha256": "877cbeafa5fcddb5b5413c76cb183d18c08b1d7b427d0ffbce0ec5115aa485d7",
+      "bytes": 24822,
+      "characters": 24822,
+      "name_tokens": 926,
+      "project": "werkzeug",
+      "commit_sha": "0f43c6ebd426039e4b99ec22535c2c8a2ec2f69f"
+    }
+  ],
+  "excluded": [
+    {
+      "project": "arrow",
+      "path": "arrow/_version.py",
+      "reason": "invalid or ineligible Python 3.12 source: ValueError"
+    },
+    {
+      "project": "arrow",
+      "path": "arrow/arrow.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "arrow",
+      "path": "arrow/locales.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "attrs",
+      "path": "src/attr/_make.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "attrs",
+      "path": "src/attr/validators.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "attrs",
+      "path": "src/attrs/converters.py",
+      "reason": "invalid or ineligible Python 3.12 source: ValueError"
+    },
+    {
+      "project": "attrs",
+      "path": "src/attrs/exceptions.py",
+      "reason": "invalid or ineligible Python 3.12 source: ValueError"
+    },
+    {
+      "project": "attrs",
+      "path": "src/attrs/filters.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "attrs",
+      "path": "src/attrs/setters.py",
+      "reason": "invalid or ineligible Python 3.12 source: ValueError"
+    },
+    {
+      "project": "attrs",
+      "path": "src/attrs/validators.py",
+      "reason": "invalid or ineligible Python 3.12 source: ValueError"
+    },
+    {
+      "project": "boltons",
+      "path": "boltons/__init__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "boltons",
+      "path": "boltons/deprutils.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "boltons",
+      "path": "boltons/dictutils.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "boltons",
+      "path": "boltons/easterutils.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "boltons",
+      "path": "boltons/ecoutils.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "boltons",
+      "path": "boltons/excutils.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "boltons",
+      "path": "boltons/fileutils.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "boltons",
+      "path": "boltons/ioutils.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "boltons",
+      "path": "boltons/iterutils.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "boltons",
+      "path": "boltons/jsonutils.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "boltons",
+      "path": "boltons/listutils.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "boltons",
+      "path": "boltons/mathutils.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "boltons",
+      "path": "boltons/namedutils.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "boltons",
+      "path": "boltons/socketutils.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "boltons",
+      "path": "boltons/statsutils.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "boltons",
+      "path": "boltons/strutils.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "boltons",
+      "path": "boltons/tableutils.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "boltons",
+      "path": "boltons/urlutils.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "click",
+      "path": "src/click/__init__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "click",
+      "path": "src/click/core.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "click",
+      "path": "src/click/termui.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "click",
+      "path": "src/click/testing.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "click",
+      "path": "src/click/utils.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/__init__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_async_lock/__init__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_async_lock/_backends.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_async_lock/_executor.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_async_lock/_owners.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_async_lock/_release.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_async_lock/_transitions.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_core/__init__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_core/_acquire.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_core/_errors.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_core/_fork.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_core/_registry.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_core/_settings.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_core/_shutdown.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_core/_singleton.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_core/_state.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_filesystem/__init__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_filesystem/_exchange.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_filesystem/_files.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_filesystem/_ownership.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_filesystem/_windows/__init__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_filesystem/_windows/_handles.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_filesystem/_windows/_oplocks.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_identity/__init__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_identity/_host.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_identity/_process.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_native/__init__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_native/_descriptor.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_soft/__init__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_soft/_exclusive/__init__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_soft/_exclusive/_lock.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_soft/_exclusive/_marker.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_soft/_exclusive/_publication.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_soft/_exclusive/_recovery.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_soft/_lease.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_soft/_read_write/__init__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_soft/_read_write/_async.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_soft/_read_write/_generations.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_soft/_read_write/_hold.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_soft/_read_write/_lock.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_soft/_read_write/_participant.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_soft/_read_write/_storage.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_soft/_read_write/_sweep.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_soft/_records.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_soft/_strict/_claims.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_soft/_strict/_lock.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_soft/_strict/_publication.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_soft/_strict/_release.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_soft/_strict/_scan.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_soft/_strict/_sentinel.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_soft/_strict/_windows.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_sqlite/__init__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_sqlite/_connection.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_sqlite/_fork.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_sqlite/_links.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_sqlite/_lock.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "filelock",
+      "path": "src/filelock/_sqlite/_transactions.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "flask",
+      "path": "src/flask/__init__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "flask",
+      "path": "src/flask/__main__.py",
+      "reason": "invalid or ineligible Python 3.12 source: ValueError"
+    },
+    {
+      "project": "flask",
+      "path": "src/flask/app.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "flask",
+      "path": "src/flask/cli.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "flask",
+      "path": "src/flask/ctx.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "flask",
+      "path": "src/flask/debughelpers.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "flask",
+      "path": "src/flask/helpers.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "flask",
+      "path": "src/flask/json/provider.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "flask",
+      "path": "src/flask/sessions.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "flask",
+      "path": "src/flask/signals.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "flask",
+      "path": "src/flask/testing.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "flask",
+      "path": "src/flask/wrappers.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "httpx",
+      "path": "httpx/__version__.py",
+      "reason": "invalid or ineligible Python 3.12 source: ValueError"
+    },
+    {
+      "project": "httpx",
+      "path": "httpx/_auth.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "httpx",
+      "path": "httpx/_client.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "httpx",
+      "path": "httpx/_config.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "httpx",
+      "path": "httpx/_models.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "httpx",
+      "path": "httpx/_transports/base.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "httpx",
+      "path": "httpx/_transports/default.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "httpx",
+      "path": "httpx/_transports/mock.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "httpx",
+      "path": "httpx/_transports/wsgi.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "httpx",
+      "path": "httpx/_urls.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "httpx",
+      "path": "httpx/_utils.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "jinja",
+      "path": "src/jinja2/_identifier.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "jinja",
+      "path": "src/jinja2/async_utils.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "jinja",
+      "path": "src/jinja2/compiler.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "jinja",
+      "path": "src/jinja2/constants.py",
+      "reason": "invalid or ineligible Python 3.12 source: ValueError"
+    },
+    {
+      "project": "jinja",
+      "path": "src/jinja2/defaults.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "jinja",
+      "path": "src/jinja2/environment.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "jinja",
+      "path": "src/jinja2/exceptions.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "jinja",
+      "path": "src/jinja2/filters.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "jinja",
+      "path": "src/jinja2/loaders.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "jinja",
+      "path": "src/jinja2/meta.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "jinja",
+      "path": "src/jinja2/nativetypes.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "jinja",
+      "path": "src/jinja2/parser.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "jinja",
+      "path": "src/jinja2/visitor.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "more-itertools",
+      "path": "more_itertools/__init__.py",
+      "reason": "invalid or ineligible Python 3.12 source: ValueError"
+    },
+    {
+      "project": "more-itertools",
+      "path": "more_itertools/more.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "packaging",
+      "path": "src/packaging/__init__.py",
+      "reason": "invalid or ineligible Python 3.12 source: ValueError"
+    },
+    {
+      "project": "packaging",
+      "path": "src/packaging/_parser.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "packaging",
+      "path": "src/packaging/errors.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "packaging",
+      "path": "src/packaging/licenses/__init__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "packaging",
+      "path": "src/packaging/licenses/_spdx.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "packaging",
+      "path": "src/packaging/metadata.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "packaging",
+      "path": "src/packaging/ranges.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "packaging",
+      "path": "src/packaging/specifiers.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "packaging",
+      "path": "src/packaging/tags.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "packaging",
+      "path": "src/packaging/version.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "platformdirs",
+      "path": "src/platformdirs/__init__.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "platformdirs",
+      "path": "src/platformdirs/pytest_plugin.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/__init__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/__main__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/cmdline.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/console.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/filters/__init__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/formatter.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/formatters/__init__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/formatters/_mapping.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/formatters/bbcode.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/formatters/groff.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/formatters/html.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/formatters/img.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/formatters/irc.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/formatters/latex.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/formatters/other.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/formatters/pangomarkup.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/formatters/rtf.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/formatters/svg.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/formatters/terminal.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/formatters/terminal256.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexer.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/__init__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_ada_builtins.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_asy_builtins.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_cl_builtins.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_cocoa_builtins.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_csound_builtins.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_css_builtins.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_googlesql_builtins.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_julia_builtins.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_lasso_builtins.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_lilypond_builtins.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_lua_builtins.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_luau_builtins.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_mapping.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_mql_builtins.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_mysql_builtins.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_openedge_builtins.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_php_builtins.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_postgres_builtins.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_qlik_builtins.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_scheme_builtins.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_scilab_builtins.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_sourcemod_builtins.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_sql_builtins.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_stan_builtins.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_stata_builtins.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_tsql_builtins.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_usd_builtins.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_vbscript_builtins.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/_vim_builtins.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/actionscript.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/ada.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/agile.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/algebra.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/ambient.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/amdgpu.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/ampl.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/apdlexer.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/apl.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/archetype.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/arrow.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/arturo.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/asc.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/asm.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/asn1.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/automation.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/bare.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/basic.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/bdd.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/berry.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/bibtex.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/blueprint.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/boa.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/bqn.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/business.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/c_cpp.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/c_like.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/capnproto.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/carbon.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/cddl.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/cel.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/chapel.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/clean.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/codeql.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/comal.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/configs.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/console.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/cplint.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/crystal.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/csound.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/css.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/d.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/dalvik.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/data.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/dax.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/devicetree.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/diff.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/dns.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/dotnet.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/dylan.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/ecl.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/eiffel.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/elm.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/elpi.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/email.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/erlang.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/esoteric.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/ezhil.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/factor.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/fantom.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/felix.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/fift.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/floscript.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/forth.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/fortran.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/foxpro.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/freefem.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/func.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/functional.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/futhark.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/gcodelexer.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/gdscript.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/gleam.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/go.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/grammar_notation.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/graph.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/graphics.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/graphql.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/graphviz.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/gsql.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/hare.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/haskell.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/haxe.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/hdl.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/hexdump.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/html.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/idl.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/igor.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/inferno.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/installers.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/int_fiction.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/javascript.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/jmespath.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/jslt.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/jsonnet.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/jsx.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/julia.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/jvm.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/kuin.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/kusto.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/ldap.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/lean.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/lilypond.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/lisp.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/macaulay2.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/make.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/maple.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/markup.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/math.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/matlab.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/maxima.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/meson.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/mime.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/minecraft.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/mips.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/ml.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/modeling.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/modula2.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/mojo.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/monte.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/mosel.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/ncl.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/nimrod.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/nit.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/nix.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/numbair.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/oberon.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/ooc.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/openscad.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/other.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/parasail.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/parsers.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/pascal.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/pawn.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/perl.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/phix.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/php.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/pointless.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/pony.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/praat.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/procfile.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/prolog.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/promql.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/ptx.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/purescript.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/python.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/q.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/qlik.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/qvt.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/r.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/rdf.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/rebol.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/rego.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/rell.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/resource.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/ride.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/rita.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/rnc.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/roboconf.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/robotframework.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/ruby.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/rust.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/sas.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/savi.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/scdoc.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/scripting.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/sgf.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/shell.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/sieve.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/slash.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/smalltalk.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/smithy.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/smv.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/snobol.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/solidity.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/soong.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/sophia.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/special.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/spice.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/sql.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/srcinfo.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/stata.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/supercollider.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/tablegen.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/tact.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/tal.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/tcl.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/teal.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/templates.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/teraterm.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/testing.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/text.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/textedit.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/textfmts.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/theorem.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/thingsdb.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/tlb.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/tls.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/trafficscript.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/typoscript.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/typst.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/ul4.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/unicon.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/urbi.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/usd.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/varnish.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/verification.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/verifpal.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/vip.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/vyper.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/web.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/webassembly.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/webidl.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/webmisc.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/wgsl.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/whiley.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/wowtoc.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/wren.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/x10.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/xorg.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/yang.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/yara.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/lexers/zig.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/modeline.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/plugin.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/regexopt.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/scanner.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/sphinxext.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/style.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/__init__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/_mapping.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/abap.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/algol.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/algol_nu.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/arduino.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/autumn.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/borland.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/bw.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/coffee.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/colorful.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/default.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/dracula.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/emacs.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/friendly.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/friendly_grayscale.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/fruity.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/gh_dark.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/gruvbox.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/igor.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/inkpot.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/lightbulb.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/lilypond.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/lovelace.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/manni.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/material.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/monokai.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/murphy.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/native.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/night_owl.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/nord.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/onedark.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/paraiso_dark.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/paraiso_light.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/pastie.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/perldoc.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/rainbow_dash.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/sas.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/solarized.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/staroffice.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/stata_dark.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/stata_light.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/tango.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/trac.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/vim.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/vs.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/xcode.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/styles/zenburn.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/token.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/unistring.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "pygments",
+      "path": "pygments/util.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "python-dotenv",
+      "path": "src/dotenv/__main__.py",
+      "reason": "invalid or ineligible Python 3.12 source: ValueError"
+    },
+    {
+      "project": "python-dotenv",
+      "path": "src/dotenv/version.py",
+      "reason": "invalid or ineligible Python 3.12 source: ValueError"
+    },
+    {
+      "project": "requests",
+      "path": "src/requests/_types.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "requests",
+      "path": "src/requests/api.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "requests",
+      "path": "src/requests/auth.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "requests",
+      "path": "src/requests/certs.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "requests",
+      "path": "src/requests/compat.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "requests",
+      "path": "src/requests/cookies.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "requests",
+      "path": "src/requests/utils.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/__init__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_emoji_codes.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_emoji_replace.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_export_format.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_extension.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_fileno.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_inspect.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_log_render.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_loop.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_null_file.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_palettes.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_pick.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_spinners.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_stack.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_unicode_data/__init__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_unicode_data/_versions.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_unicode_data/unicode10-0-0.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_unicode_data/unicode11-0-0.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_unicode_data/unicode12-0-0.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_unicode_data/unicode12-1-0.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_unicode_data/unicode13-0-0.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_unicode_data/unicode14-0-0.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_unicode_data/unicode15-0-0.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_unicode_data/unicode15-1-0.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_unicode_data/unicode16-0-0.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_unicode_data/unicode17-0-0.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_unicode_data/unicode4-1-0.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_unicode_data/unicode5-0-0.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_unicode_data/unicode5-1-0.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_unicode_data/unicode5-2-0.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_unicode_data/unicode6-0-0.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_unicode_data/unicode6-1-0.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_unicode_data/unicode6-2-0.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_unicode_data/unicode6-3-0.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_unicode_data/unicode7-0-0.py",
+      "reason": "invalid or ineligible Python 3.12 source: ValueError"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_unicode_data/unicode8-0-0.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_unicode_data/unicode9-0-0.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_win32_console.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_windows.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_windows_renderer.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/_wrap.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/abc.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/align.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/ansi.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/bar.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/box.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/cells.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/color.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/color_triplet.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/console.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/constrain.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/containers.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/control.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/default_styles.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/diagnose.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/errors.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/file_proxy.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/highlighter.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/json.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/jupyter.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/layout.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/live.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/live_render.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/logging.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/markdown.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/markup.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/measure.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/padding.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/pager.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/palette.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/panel.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/pretty.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/progress.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/prompt.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/region.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/repr.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/rule.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/scope.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/screen.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/segment.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/status.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/style.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/styled.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/table.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/terminal_theme.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/text.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/theme.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "rich",
+      "path": "rich/traceback.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "typer",
+      "path": "typer/__main__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "typer",
+      "path": "typer/_click/__init__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "typer",
+      "path": "typer/_click/_compat.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "typer",
+      "path": "typer/_click/_termui_impl.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "typer",
+      "path": "typer/_click/_textwrap.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "typer",
+      "path": "typer/_click/_winconsole.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "typer",
+      "path": "typer/_click/core.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "typer",
+      "path": "typer/_click/decorators.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "typer",
+      "path": "typer/_click/globals.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "typer",
+      "path": "typer/_click/shell_completion.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "typer",
+      "path": "typer/_click/termui.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "typer",
+      "path": "typer/_click/utils.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "typer",
+      "path": "typer/_coercion.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "typer",
+      "path": "typer/_completion_classes.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "typer",
+      "path": "typer/_typing.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "typer",
+      "path": "typer/colors.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "typer",
+      "path": "typer/completion.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "typer",
+      "path": "typer/core.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "typer",
+      "path": "typer/main.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "typer",
+      "path": "typer/params.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "typer",
+      "path": "typer/rich_utils.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "typer",
+      "path": "typer/utils.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/__init__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/_header_property.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/_internal.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/_reloader.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/datastructures/auth.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/datastructures/cache_control.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/datastructures/csp.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/datastructures/etag.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/datastructures/range.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/datastructures/set.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/datastructures/structures.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/debug/__init__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/debug/console.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/debug/repr.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/debug/tbtools.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/exceptions.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/formparser.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/http.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/local.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/middleware/__init__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/middleware/http_proxy.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/middleware/lint.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/middleware/profiler.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/middleware/proxy_fix.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/middleware/shared_data.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/routing/converters.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/routing/matcher.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/routing/rules.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/sansio/__init__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/sansio/http.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/sansio/multipart.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/sansio/request.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/sansio/response.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/sansio/utils.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/test.py",
+      "reason": "file size limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/testapp.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/urls.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/user_agent.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/utils.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/wrappers/__init__.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/wrappers/request.py",
+      "reason": "project sample limit"
+    },
+    {
+      "project": "werkzeug",
+      "path": "src/werkzeug/wrappers/response.py",
+      "reason": "project sample limit"
+    }
+  ]
+}
