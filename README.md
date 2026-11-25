@@ -73,3 +73,14 @@ python -m unittest discover -s tests -v
 ```
 
 The first command downloads exact commits into ignored `data/raw/` and writes `data/manifest.json`. Use `--offline` to rebuild from existing checkouts. See [dataset decisions](docs/DATASET.md) for sampling, exclusions, deduplication and fold usage.
+
+## N-gram models
+
+`ngram_models.py` implements word and character models for n=1 through 10. The editor still uses its labelled fake predictor until T14. See [model methods and commands](docs/NGRAMS.md).
+
+```sh
+python scripts/train_model.py --family word --n 3 --fold 1 --output models/word-3-fold1.json
+python scripts/train_model.py --family character --n 3 --fold 1 --output models/character-3-fold1.json
+```
+
+T11 will compare every n on the saved five folds and select a best model. No formal model accuracy or edit-distance results have been claimed yet.

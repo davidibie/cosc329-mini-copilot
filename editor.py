@@ -1,56 +1,9 @@
 """A small Python editor for trying the Mini-Copilot prediction interface."""
 
-from io import StringIO
 import tkinter as tk
 from tkinter import ttk
-import token
-import tokenize
 
-
-def is_identifier_character(character: str) -> bool:
-    return bool(character) and ("a" + character).isidentifier()
-
-
-def identifier_suffix(prefix: str) -> str:
-    start = len(prefix)
-    while start > 0 and is_identifier_character(prefix[start - 1]):
-        start -= 1
-    return prefix[start:]
-
-
-def partial_word(prefix: str) -> str | None:
-    """Return the partial word, or None when completions should be hidden."""
-    partial = identifier_suffix(prefix)
-    if partial and not partial.isidentifier():
-        return None
-
-    line = prefix.count("\n") + 1
-    column = len(prefix.rpartition("\n")[2])
-    word_start = (line, column - len(partial))
-    literal_depth = 0
-    try:
-        for item in tokenize.generate_tokens(StringIO(prefix).readline):
-            kind = token.tok_name[item.type]
-            if kind in {"FSTRING_START", "TSTRING_START"}:
-                literal_depth += 1
-            elif kind in {"FSTRING_END", "TSTRING_END"}:
-                literal_depth -= 1
-            elif item.type == tokenize.COMMENT and item.end == (line, column):
-                return None
-            elif item.type == tokenize.NUMBER and item.end == word_start:
-                return None
-            elif item.type == tokenize.ERRORTOKEN:
-                return None
-    except IndentationError:
-        return None
-    except tokenize.TokenError as error:
-        if error.args[0] not in {
-            "unexpected EOF in multi-line statement",
-            "EOF in multi-line statement",
-        }:
-            return None
-
-    return None if literal_depth else partial
+from text_processing import identifier_suffix, is_identifier_character, partial_word
 
 
 class FakePredictor:

@@ -20,7 +20,7 @@
     "priority": "High",
     "depends_on": "None",
     "done_when": "Confirm Python, ownership and full-word suggestion format; record decisions in INTERFACES.md.",
-    "status": "Review",
+    "status": "Done",
     "day": 1
   },
   {
@@ -68,7 +68,7 @@
     "priority": "High",
     "depends_on": "T02",
     "done_when": "Support n=1..10, smoothing and unseen contexts; document tokenization; test on small known sequences.",
-    "status": "Todo",
+    "status": "Review",
     "day": 2
   },
   {
@@ -80,7 +80,7 @@
     "priority": "High",
     "depends_on": "T02",
     "done_when": "Support n=1..10; generate full-word candidates with length/stop limits; expose the agreed suggestion interface.",
-    "status": "Todo",
+    "status": "Review",
     "day": 2
   },
   {
@@ -92,7 +92,7 @@
     "priority": "High",
     "depends_on": "T02",
     "done_when": "Compare candidate parser behaviour on unfinished expressions; select an error-tolerant approach and document failure cases.",
-    "status": "Review",
+    "status": "Done",
     "day": 1
   },
   {
@@ -152,7 +152,7 @@
     "priority": "High",
     "depends_on": "T02",
     "done_when": "Typing shows up to five suggestions; selecting one replaces the partial word; use a fake model first so work can start immediately.",
-    "status": "Review",
+    "status": "Done",
     "day": 2
   },
   {
