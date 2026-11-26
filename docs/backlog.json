@@ -104,7 +104,7 @@
     "priority": "High",
     "depends_on": "T08",
     "done_when": "Produce ranked word candidates from prefix structure; document candidate rules, syntax checks and fallback; never use hidden future text.",
-    "status": "Todo",
+    "status": "Review",
     "day": 2
   },
   {

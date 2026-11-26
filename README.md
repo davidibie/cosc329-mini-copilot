@@ -84,3 +84,12 @@ python scripts/train_model.py --family character --n 3 --fold 1 --output models/
 ```
 
 T11 will compare every n on the saved five folds and select a best model. No formal model accuracy or edit-distance results have been claimed yet.
+
+## Try the AST predictor
+
+Install `requirements.txt` with Python 3.12, then run a prefix through the standalone predictor. See [the AST predictor notes](docs/AST_PREDICTOR.md) for its ranking rules and fallback diagnostics.
+
+```sh
+python -m pip install -r requirements.txt
+python -c "from ast_predictor import ASTPredictor; print(ASTPredictor().suggest('from math import sq'))"
+```

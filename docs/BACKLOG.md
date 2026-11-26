@@ -99,7 +99,7 @@ Each task has one accountable owner. David owns data, n-grams, the evaluator, n-
 
 ### T09 Build the AST prediction baseline
 
-- Status: Todo
+- Status: Review
 - Epic: Models | Owner: Kamso | Milestone: M3 | Priority: High
 - Depends on: T08
 - Done when: Produce ranked word candidates from prefix structure; document candidate rules, syntax checks and fallback; never use hidden future text.

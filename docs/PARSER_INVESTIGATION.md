@@ -1,6 +1,6 @@
 # Parsing incomplete Python (T08)
 
-Use Python's `ast` for prefixes that already parse and Parso 0.8.6 with the Python 3.12 grammar for recovery. Parso preserved the order and spelling of tokens in the unfinished cases and recovered a complete call after a malformed line. The AST predictor (T09) will use these trees to derive the context before the cursor.
+Use Python's `ast` when the prefix with a cursor placeholder parses and Parso 0.8.6 with the Python 3.12 grammar for recovery. Parso preserved the order and spelling of tokens in the unfinished cases and recovered a complete call after a malformed line. See the [AST predictor](AST_PREDICTOR.md) for the implemented classification and fallback rules.
 
 ## Reproduce the comparison
 
@@ -29,8 +29,8 @@ These results were observed on Python 3.12.14 with the versions above. A trailin
 
 ## Use in the predictor
 
-- Parse the visible prefix with `ast.parse`. Read abstract nodes such as `FunctionDef`, `Assign`, `Import`, `Call`, and `Attribute` when available.
-- On `SyntaxError`, parse the same prefix with Parso in recovery mode. Parso returns a concrete syntax tree with typed nodes, token leaves, and source positions. It can group unfinished syntax in `error_node` and represent unexpected tokens with `error_leaf`. Check both when inferring context. A partial identifier can be valid Python, so derive its spelling from the cursor position independently of parse errors.
+- In a temporary copy of the visible prefix, put a placeholder at the cursor and run `ast.parse`. Read abstract nodes such as `FunctionDef`, `Assign`, `Import`, and `Attribute` when available.
+- On `SyntaxError`, parse the same probe with Parso in recovery mode. Parso returns a concrete syntax tree with typed nodes, token leaves, and source positions. It can group unfinished syntax in `error_node` and represent unexpected tokens with `error_leaf`. Use the closest relevant node and its recovered tokens to infer the cursor context. A partial identifier can be valid Python, so derive its spelling from the cursor position independently of parse errors.
 - Map recognized Parso nodes and recovered token patterns to the same abstract contexts used for the Python AST. For example, a name followed by a call trailer or a recovered opening parenthesis can indicate a call. An incomplete `def` header provides function context. Keep the nearest relevant node and avoid inferring a specific context from an unrelated earlier statement.
 - When the parser cannot recover enough structure near the cursor, record a fallback and use context-neutral candidates subject to the partial-word filter. Return fewer than five, including zero, when too few candidates qualify. The full-prefix parse provides structural context and classification. A syntax error elsewhere in the prefix should not automatically disqualify a completion.
 
