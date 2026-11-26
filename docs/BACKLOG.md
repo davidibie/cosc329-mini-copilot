@@ -69,7 +69,7 @@ Each task has one accountable owner. David owns data, n-grams, the evaluator, n-
 
 ### T06 Build word n-gram models
 
-- Status: Todo
+- Status: Review
 - Epic: Models | Owner: David | Milestone: M2 | Priority: High
 - Depends on: T02
 - Done when: Support n=1..10, smoothing and unseen contexts; document tokenization; test on small known sequences.
@@ -79,7 +79,7 @@ Each task has one accountable owner. David owns data, n-grams, the evaluator, n-
 
 ### T07 Build character n-gram models
 
-- Status: Todo
+- Status: Review
 - Epic: Models | Owner: David | Milestone: M2 | Priority: High
 - Depends on: T02
 - Done when: Support n=1..10; generate full-word candidates with length/stop limits; expose the agreed suggestion interface.

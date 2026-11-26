@@ -68,7 +68,7 @@
     "priority": "High",
     "depends_on": "T02",
     "done_when": "Support n=1..10, smoothing and unseen contexts; document tokenization; test on small known sequences.",
-    "status": "Todo",
+    "status": "Review",
     "day": 2
   },
   {
@@ -80,7 +80,7 @@
     "priority": "High",
     "depends_on": "T02",
     "done_when": "Support n=1..10; generate full-word candidates with length/stop limits; expose the agreed suggestion interface.",
-    "status": "Todo",
+    "status": "Review",
     "day": 2
   },
   {
