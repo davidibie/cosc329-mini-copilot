@@ -1,6 +1,6 @@
 # Prediction interface (T02)
 
-**Status:** Proposal for David and Kamso to review. Python is the implementation and dataset language. David owns the dataset, n-grams and shared evaluator; Kamso owns the parser, AST model, hybrid and editor. See [PLAN.md](PLAN.md) for the full work split.
+**Status:** Accepted for implementation after review of PR #21 on November 25, 2026. Python is the implementation and dataset language. David owns the dataset, n-grams and shared evaluator; Kamso owns the parser, AST model, hybrid and editor. See [PLAN.md](PLAN.md) for the full work split.
 
 ## Model calls
 
