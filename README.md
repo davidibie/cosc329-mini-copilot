@@ -21,6 +21,8 @@ python editor.py --family word --model models/editor-provisional.json
 
 Use the model menu to switch between the n-gram and its hybrid without changing the text. The order-3 word model is an example configuration. Use the selected model file and its `--family` for the final comparison. The tuned hybrid settings can be passed with `--pool-size` and `--ast-weight`.
 
+The [editor comparison exercise](docs/EDITOR_COMPARISON.md) gives both participants the same tasks and a worksheet for their observations.
+
 ## What's in the repo
 
 - `docs/PLAN.md`: proposed roles, milestones and decisions to settle.

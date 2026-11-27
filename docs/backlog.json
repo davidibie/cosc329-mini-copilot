@@ -176,7 +176,7 @@
     "priority": "High",
     "depends_on": "T11 T12 T14",
     "done_when": "Explain the choice using results; both try the same coding tasks with two models; record useful and bad suggestions and actual observations.",
-    "status": "Todo",
+    "status": "In progress",
     "day": 4
   },
   {
