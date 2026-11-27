@@ -4,11 +4,22 @@ This a small tool that suggests what to type next while writing Python code. We'
 
 ## Where we're at
 
-Python is the implementation and dataset language. The editor prototype uses a fixed demo vocabulary while the trained models are being developed.
+Python is the implementation and dataset language. The editor supports a demo vocabulary and a comparison between a trained n-gram and its AST hybrid.
 
-## Try the editor prototype
+## Try the editor
 
-Run `python editor.py` from the repository root with Python 3.12 or later and Tkinter available. Type `pri`, then select `print`. To test replacement in the middle of an identifier, put the cursor after `pri` in `printrange` and select `print`. The whole identifier becomes `print`.
+Run from the repository root with Tkinter available. `python editor.py` starts the demo. Type `pri`, then select `print`. To test replacement in the middle of an identifier, put the cursor after `pri` in `printrange` and select `print`. The whole identifier becomes `print`.
+
+To try the two real models, prepare the dataset, install `requirements.txt`, and train an example n-gram using Python 3.12.
+
+```sh
+python -m pip install -r requirements.txt
+python scripts/prepare_data.py
+python scripts/train_model.py --family word --n 3 --fold 1 --output models/editor-provisional.json
+python editor.py --family word --model models/editor-provisional.json
+```
+
+Use the model menu to switch between the n-gram and its hybrid without changing the text. The order-3 word model is an example configuration. Use the selected model file and its `--family` for the final comparison. The tuned hybrid settings can be passed with `--pool-size` and `--ast-weight`.
 
 ## What's in the repo
 
@@ -76,7 +87,7 @@ The first command downloads exact commits into ignored `data/raw/` and writes `d
 
 ## N-gram models
 
-`ngram_models.py` implements word and character models for n=1 through 10. The editor still uses its labelled fake predictor until T14. See [model methods and commands](docs/NGRAMS.md).
+`ngram_models.py` implements word and character models for n=1 through 10. See [model methods and commands](docs/NGRAMS.md).
 
 ```sh
 python scripts/train_model.py --family word --n 3 --fold 1 --output models/word-3-fold1.json

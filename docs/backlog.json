@@ -164,7 +164,7 @@
     "priority": "High",
     "depends_on": "T09 T12 T13",
     "done_when": "Switch between two selected models; update suggestions as code changes; handle empty output/parser errors and check typing responsiveness.",
-    "status": "Todo",
+    "status": "Review",
     "day": 4
   },
   {
