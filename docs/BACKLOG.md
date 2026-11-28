@@ -129,7 +129,7 @@ Each task has one accountable owner. David owns data, n-grams, the evaluator, n-
 
 ### T12 Evaluate AST and hybrid models
 
-- Status: Todo
+- Status: In progress
 - Epic: Evaluation | Owner: Kamso | Milestone: M4 | Priority: High
 - Depends on: T09 T10 T11
 - Done when: Kamso implements syntax integration and the hybrid, runs AST and hybrid comparisons using David's evaluator and common contexts, and gives David saved results and commands for the report. Tune on development data, then compare the selected n-gram, AST and hybrid on the held-out set.

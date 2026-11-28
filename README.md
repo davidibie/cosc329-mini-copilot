@@ -93,3 +93,5 @@ Install `requirements.txt` with Python 3.12, then run a prefix through the stand
 python -m pip install -r requirements.txt
 python -c "from ast_predictor import ASTPredictor; print(ASTPredictor().suggest('from math import sq'))"
 ```
+
+See the [hybrid predictor notes](docs/HYBRID.md) to combine the AST predictor with a fitted word or character n-gram.
