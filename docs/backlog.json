@@ -44,7 +44,7 @@
     "priority": "High",
     "depends_on": "T02",
     "done_when": "Log at least 10 independent Python projects with URL, license, exact commit and included paths.",
-    "status": "Review",
+    "status": "Done",
     "day": 1
   },
   {
@@ -56,7 +56,7 @@
     "priority": "High",
     "depends_on": "T03 T04",
     "done_when": "Exclude generated/vendor code consistently; deduplicate; save project-level splits, seed and file hashes; keep raw code out of Git.",
-    "status": "Review",
+    "status": "Done",
     "day": 1
   },
   {
@@ -68,7 +68,7 @@
     "priority": "High",
     "depends_on": "T02",
     "done_when": "Support n=1..10, smoothing and unseen contexts; document tokenization; test on small known sequences.",
-    "status": "Review",
+    "status": "Done",
     "day": 2
   },
   {
@@ -80,7 +80,7 @@
     "priority": "High",
     "depends_on": "T02",
     "done_when": "Support n=1..10; generate full-word candidates with length/stop limits; expose the agreed suggestion interface.",
-    "status": "Review",
+    "status": "Done",
     "day": 2
   },
   {
@@ -104,7 +104,7 @@
     "priority": "High",
     "depends_on": "T08",
     "done_when": "Produce ranked word candidates from prefix structure; document candidate rules, syntax checks and fallback; never use hidden future text.",
-    "status": "Review",
+    "status": "Done",
     "day": 2
   },
   {
@@ -116,7 +116,7 @@
     "priority": "High",
     "depends_on": "T02",
     "done_when": "Score the same held-out word targets for every model; verify exact-match accuracy and character edit distance with hand-worked cases.",
-    "status": "Todo",
+    "status": "Review",
     "day": 3
   },
   {
@@ -128,7 +128,7 @@
     "priority": "High",
     "depends_on": "T05 T06 T07 T10",
     "done_when": "Fit on each training fold only; save per-fold results for every n plus mean and sample SD; record runtime settings and failures.",
-    "status": "Todo",
+    "status": "In progress",
     "day": 3
   },
   {
@@ -164,7 +164,7 @@
     "priority": "High",
     "depends_on": "T09 T12 T13",
     "done_when": "Switch between two selected models; update suggestions as code changes; handle empty output/parser errors and check typing responsiveness.",
-    "status": "Review",
+    "status": "Done",
     "day": 4
   },
   {
