@@ -119,7 +119,7 @@ Each task has one accountable owner. David owns data, n-grams, the evaluator, n-
 
 ### T11 Run five-fold model comparisons
 
-- Status: In progress
+- Status: Review
 - Epic: Evaluation | Owner: David | Milestone: M3 | Priority: High
 - Depends on: T05 T06 T07 T10
 - Done when: Fit on each training fold only; save per-fold results for every n plus mean and sample SD; record runtime settings and failures.
@@ -179,7 +179,7 @@ Each task has one accountable owner. David owns data, n-grams, the evaluator, n-
 
 ### T17 Finish report and reproduce results
 
-- Status: Todo
+- Status: In progress
 - Epic: Delivery | Owner: David | Milestone: M6 | Priority: High
 - Depends on: T15
 - Done when: Explain data, splits, methods, hybrid and metrics; include real tables and limitations; another partner reproduces the key run from README.

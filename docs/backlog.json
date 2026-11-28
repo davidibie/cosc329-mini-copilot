@@ -128,7 +128,7 @@
     "priority": "High",
     "depends_on": "T05 T06 T07 T10",
     "done_when": "Fit on each training fold only; save per-fold results for every n plus mean and sample SD; record runtime settings and failures.",
-    "status": "In progress",
+    "status": "Review",
     "day": 3
   },
   {
@@ -200,7 +200,7 @@
     "priority": "High",
     "depends_on": "T15",
     "done_when": "Explain data, splits, methods, hybrid and metrics; include real tables and limitations; another partner reproduces the key run from README.",
-    "status": "Todo",
+    "status": "In progress",
     "day": 5
   },
   {

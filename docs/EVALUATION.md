@@ -14,6 +14,17 @@ Each case places the cursor before one eligible Python NAME as defined in [the p
 
 The n-gram comparison caches equivalent contexts and shares character transitions across candidate spellings. It preserves the live predictor rankings. Recorded evaluation times include the scoring and ranking but exclude shared case extraction and context preparation. Use measured editor response times for the practical comparison.
 
+## Refit the selected n-gram
+
+The [saved development run](../results/ngram-cross-validation.json) selected the word 10-gram at alpha 1.0. See the [development results](REPORT.md#n-gram-development-results) for the complete comparison table. Refit this configuration on all 14 development projects for the editor and for the locked final test.
+
+```sh
+python scripts/train_model.py --family word --n 10 --output models/editor-selected.json
+python editor.py --family word --model models/editor-selected.json
+```
+
+The editor command uses the default hybrid settings. Supply the pool size and AST weight chosen in the development run before recording final observations.
+
 ## Use the same cases for the AST and hybrid
 
 `scripts.compare_ngrams.load_cases(manifest_path, projects, raw)` yields the cases from the pinned source files in manifest order. Pass the same materialized list to `evaluation.evaluate(predictor, cases)` for every predictor in an experiment. The evaluator accepts `suggest(prefix, limit=5)` and also reads fallback diagnostics from the AST and hybrid `predict` methods. Fit the selected n-gram separately on each fold's training projects before tuning the hybrid with validation cases. After fixing settings, fit on all development projects, then use `test_projects` to compare the selected n-gram, AST and hybrid in one held-out run.
