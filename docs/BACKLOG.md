@@ -159,7 +159,7 @@ Each task has one accountable owner. David owns data, n-grams, the evaluator, n-
 
 ### T15 Choose models and compare coding experience
 
-- Status: Todo
+- Status: In progress
 - Epic: Evaluation | Owner: Kamso | Milestone: M4 | Priority: High
 - Depends on: T11 T12 T14
 - Done when: Explain the choice using results; both try the same coding tasks with two models; record useful and bad suggestions and actual observations.
