@@ -149,7 +149,7 @@ Each task has one accountable owner. David owns data, n-grams, the evaluator, n-
 
 ### T14 Connect two models and handle failures
 
-- Status: Todo
+- Status: Review
 - Epic: Editor | Owner: Kamso | Milestone: M4 | Priority: High
 - Depends on: T09 T12 T13
 - Done when: Switch between two selected models; update suggestions as code changes; handle empty output/parser errors and check typing responsiveness.
