@@ -49,7 +49,7 @@ Each task has one accountable owner. David owns data, n-grams, the evaluator, n-
 
 ### T04 Choose and log dataset sources
 
-- Status: Review
+- Status: Done
 - Epic: Data | Owner: David | Milestone: M2 | Priority: High
 - Depends on: T02
 - Done when: Log at least 10 independent Python projects with URL, license, exact commit and included paths.
@@ -59,7 +59,7 @@ Each task has one accountable owner. David owns data, n-grams, the evaluator, n-
 
 ### T05 Prepare repeatable dataset and splits
 
-- Status: Review
+- Status: Done
 - Epic: Data | Owner: David | Milestone: M2 | Priority: High
 - Depends on: T03 T04
 - Done when: Exclude generated/vendor code consistently; deduplicate; save project-level splits, seed and file hashes; keep raw code out of Git.
@@ -69,7 +69,7 @@ Each task has one accountable owner. David owns data, n-grams, the evaluator, n-
 
 ### T06 Build word n-gram models
 
-- Status: Review
+- Status: Done
 - Epic: Models | Owner: David | Milestone: M2 | Priority: High
 - Depends on: T02
 - Done when: Support n=1..10, smoothing and unseen contexts; document tokenization; test on small known sequences.
@@ -79,7 +79,7 @@ Each task has one accountable owner. David owns data, n-grams, the evaluator, n-
 
 ### T07 Build character n-gram models
 
-- Status: Review
+- Status: Done
 - Epic: Models | Owner: David | Milestone: M2 | Priority: High
 - Depends on: T02
 - Done when: Support n=1..10; generate full-word candidates with length/stop limits; expose the agreed suggestion interface.
@@ -99,7 +99,7 @@ Each task has one accountable owner. David owns data, n-grams, the evaluator, n-
 
 ### T09 Build the AST prediction baseline
 
-- Status: Review
+- Status: Done
 - Epic: Models | Owner: Kamso | Milestone: M3 | Priority: High
 - Depends on: T08
 - Done when: Produce ranked word candidates from prefix structure; document candidate rules, syntax checks and fallback; never use hidden future text.
@@ -109,7 +109,7 @@ Each task has one accountable owner. David owns data, n-grams, the evaluator, n-
 
 ### T10 Build shared contexts and metrics
 
-- Status: Todo
+- Status: Review
 - Epic: Evaluation | Owner: David | Milestone: M3 | Priority: High
 - Depends on: T02
 - Done when: Score the same held-out word targets for every model; verify exact-match accuracy and character edit distance with hand-worked cases.
@@ -119,7 +119,7 @@ Each task has one accountable owner. David owns data, n-grams, the evaluator, n-
 
 ### T11 Run five-fold model comparisons
 
-- Status: Todo
+- Status: Review
 - Epic: Evaluation | Owner: David | Milestone: M3 | Priority: High
 - Depends on: T05 T06 T07 T10
 - Done when: Fit on each training fold only; save per-fold results for every n plus mean and sample SD; record runtime settings and failures.
@@ -149,7 +149,7 @@ Each task has one accountable owner. David owns data, n-grams, the evaluator, n-
 
 ### T14 Connect two models and handle failures
 
-- Status: Review
+- Status: Done
 - Epic: Editor | Owner: Kamso | Milestone: M4 | Priority: High
 - Depends on: T09 T12 T13
 - Done when: Switch between two selected models; update suggestions as code changes; handle empty output/parser errors and check typing responsiveness.
@@ -179,7 +179,7 @@ Each task has one accountable owner. David owns data, n-grams, the evaluator, n-
 
 ### T17 Finish report and reproduce results
 
-- Status: Todo
+- Status: In progress
 - Epic: Delivery | Owner: David | Milestone: M6 | Priority: High
 - Depends on: T15
 - Done when: Explain data, splits, methods, hybrid and metrics; include real tables and limitations; another partner reproduces the key run from README.

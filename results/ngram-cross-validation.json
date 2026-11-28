@@ -1,0 +1,1978 @@
+{
+  "manifest_sha256": "ad5f2b0ee1a03daeb2cc076f40432dd9cc92bdc7c479e30d9c79d792205defa6",
+  "python_version": "3.12.16",
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "workers": 5,
+  "alpha": 1.0,
+  "max_per_file": null,
+  "folds": [
+    {
+      "split": {
+        "fold": 1,
+        "train_projects": [
+          "arrow",
+          "attrs",
+          "boltons",
+          "filelock",
+          "flask",
+          "more-itertools",
+          "packaging",
+          "platformdirs",
+          "rich",
+          "typer",
+          "werkzeug"
+        ],
+        "validation_projects": [
+          "click",
+          "itsdangerous",
+          "pygments"
+        ]
+      },
+      "case_ids_sha256": "13405b71984ca763732ec5f7b41afd3c7cbafe3f2ff56ed2bd0b9464a0f36811",
+      "models": [
+        {
+          "fold": 1,
+          "family": "word",
+          "n": 1,
+          "fit_seconds": 0.14139845804311335,
+          "vocabulary_size": 5070,
+          "cases": 17791,
+          "top1_accuracy": 0.05924343769321567,
+          "top5_accuracy": 0.17638131639593052,
+          "mean_edit_distance": 5.401832387162048,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 0.09587370790541172
+        },
+        {
+          "fold": 1,
+          "family": "word",
+          "n": 2,
+          "fit_seconds": 0.1950869169086218,
+          "vocabulary_size": 5070,
+          "cases": 17791,
+          "top1_accuracy": 0.13754145354392672,
+          "top5_accuracy": 0.2918329492439998,
+          "mean_edit_distance": 5.206059243437693,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 2.3604026671964675
+        },
+        {
+          "fold": 1,
+          "family": "word",
+          "n": 3,
+          "fit_seconds": 0.2839457499794662,
+          "vocabulary_size": 5070,
+          "cases": 17791,
+          "top1_accuracy": 0.20544095329098983,
+          "top5_accuracy": 0.3386543758079928,
+          "mean_edit_distance": 5.126187398122647,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 10.59745454089716
+        },
+        {
+          "fold": 1,
+          "family": "word",
+          "n": 4,
+          "fit_seconds": 0.3187405839562416,
+          "vocabulary_size": 5070,
+          "cases": 17791,
+          "top1_accuracy": 0.23208363779439042,
+          "top5_accuracy": 0.3357315496599404,
+          "mean_edit_distance": 4.952560283289303,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 15.757894332986325
+        },
+        {
+          "fold": 1,
+          "family": "word",
+          "n": 5,
+          "fit_seconds": 0.4608245422132313,
+          "vocabulary_size": 5070,
+          "cases": 17791,
+          "top1_accuracy": 0.23832274745657916,
+          "top5_accuracy": 0.3361812152211793,
+          "mean_edit_distance": 4.917936035073914,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 18.773109833011404
+        },
+        {
+          "fold": 1,
+          "family": "word",
+          "n": 6,
+          "fit_seconds": 0.7658494999632239,
+          "vocabulary_size": 5070,
+          "cases": 17791,
+          "top1_accuracy": 0.24231352931257377,
+          "top5_accuracy": 0.3364060480017987,
+          "mean_edit_distance": 4.881794165589343,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 27.722708583809435
+        },
+        {
+          "fold": 1,
+          "family": "word",
+          "n": 7,
+          "fit_seconds": 0.9831883751321584,
+          "vocabulary_size": 5070,
+          "cases": 17791,
+          "top1_accuracy": 0.24326906863020628,
+          "top5_accuracy": 0.3361812152211793,
+          "mean_edit_distance": 4.875948513293238,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 24.186439874814823
+        },
+        {
+          "fold": 1,
+          "family": "word",
+          "n": 8,
+          "fit_seconds": 1.0186285409145057,
+          "vocabulary_size": 5070,
+          "cases": 17791,
+          "top1_accuracy": 0.24394356697206454,
+          "top5_accuracy": 0.3361812152211793,
+          "mean_edit_distance": 4.87133944129054,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 24.32373279100284
+        },
+        {
+          "fold": 1,
+          "family": "word",
+          "n": 9,
+          "fit_seconds": 1.3738497919403017,
+          "vocabulary_size": 5070,
+          "cases": 17791,
+          "top1_accuracy": 0.2442246079478388,
+          "top5_accuracy": 0.3361812152211793,
+          "mean_edit_distance": 4.86925973806981,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 26.631869915872812
+        },
+        {
+          "fold": 1,
+          "family": "word",
+          "n": 10,
+          "fit_seconds": 1.3421173330862075,
+          "vocabulary_size": 5070,
+          "cases": 17791,
+          "top1_accuracy": 0.24428081614299366,
+          "top5_accuracy": 0.3361812152211793,
+          "mean_edit_distance": 4.8688100725085715,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 20.24816858395934
+        },
+        {
+          "fold": 1,
+          "family": "character",
+          "n": 1,
+          "fit_seconds": 0.3942130838986486,
+          "vocabulary_size": 5070,
+          "cases": 17791,
+          "top1_accuracy": 0.001742454049800461,
+          "top5_accuracy": 0.03316283514136361,
+          "mean_edit_distance": 5.2762632791861055,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 0.05378025001846254
+        },
+        {
+          "fold": 1,
+          "family": "character",
+          "n": 2,
+          "fit_seconds": 0.5773456660099328,
+          "vocabulary_size": 5070,
+          "cases": 17791,
+          "top1_accuracy": 0.04131302343881738,
+          "top5_accuracy": 0.1499072564779945,
+          "mean_edit_distance": 5.419987634197066,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 0.22899633320048451
+        },
+        {
+          "fold": 1,
+          "family": "character",
+          "n": 3,
+          "fit_seconds": 1.0771836668718606,
+          "vocabulary_size": 5070,
+          "cases": 17791,
+          "top1_accuracy": 0.1295598898319375,
+          "top5_accuracy": 0.2356247540891462,
+          "mean_edit_distance": 5.401551346186274,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 3.125590957934037
+        },
+        {
+          "fold": 1,
+          "family": "character",
+          "n": 4,
+          "fit_seconds": 1.2445848751813173,
+          "vocabulary_size": 5070,
+          "cases": 17791,
+          "top1_accuracy": 0.15406666291945365,
+          "top5_accuracy": 0.25664661907706143,
+          "mean_edit_distance": 5.576977123264572,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 12.123427958227694
+        },
+        {
+          "fold": 1,
+          "family": "character",
+          "n": 5,
+          "fit_seconds": 1.7794357079546899,
+          "vocabulary_size": 5070,
+          "cases": 17791,
+          "top1_accuracy": 0.14810859423303918,
+          "top5_accuracy": 0.24647293575403295,
+          "mean_edit_distance": 6.4346017649373275,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 31.720937374979258
+        },
+        {
+          "fold": 1,
+          "family": "character",
+          "n": 6,
+          "fit_seconds": 2.3417582081165165,
+          "vocabulary_size": 5070,
+          "cases": 17791,
+          "top1_accuracy": 0.13905907481310775,
+          "top5_accuracy": 0.2209544151537294,
+          "mean_edit_distance": 7.597380698105784,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 71.09004412498325
+        },
+        {
+          "fold": 1,
+          "family": "character",
+          "n": 7,
+          "fit_seconds": 3.9822986668441445,
+          "vocabulary_size": 5070,
+          "cases": 17791,
+          "top1_accuracy": 0.11606992299477263,
+          "top5_accuracy": 0.20145017143499522,
+          "mean_edit_distance": 7.939238941037603,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 69.98933412507176
+        },
+        {
+          "fold": 1,
+          "family": "character",
+          "n": 8,
+          "fit_seconds": 5.171127959154546,
+          "vocabulary_size": 5070,
+          "cases": 17791,
+          "top1_accuracy": 0.10156820864482041,
+          "top5_accuracy": 0.18599291776741048,
+          "mean_edit_distance": 7.940756562306785,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 93.61490587494336
+        },
+        {
+          "fold": 1,
+          "family": "character",
+          "n": 9,
+          "fit_seconds": 4.771440624957904,
+          "vocabulary_size": 5070,
+          "cases": 17791,
+          "top1_accuracy": 0.09240627283457928,
+          "top5_accuracy": 0.16322859872969478,
+          "mean_edit_distance": 8.039064695632623,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 118.11169729195535
+        },
+        {
+          "fold": 1,
+          "family": "character",
+          "n": 10,
+          "fit_seconds": 4.007464790949598,
+          "vocabulary_size": 5070,
+          "cases": 17791,
+          "top1_accuracy": 0.0849867910741386,
+          "top5_accuracy": 0.15198695969872408,
+          "mean_edit_distance": 8.185430835815861,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 118.69854854117148
+        }
+      ]
+    },
+    {
+      "split": {
+        "fold": 2,
+        "train_projects": [
+          "attrs",
+          "boltons",
+          "click",
+          "flask",
+          "itsdangerous",
+          "packaging",
+          "platformdirs",
+          "pygments",
+          "rich",
+          "typer",
+          "werkzeug"
+        ],
+        "validation_projects": [
+          "arrow",
+          "filelock",
+          "more-itertools"
+        ]
+      },
+      "case_ids_sha256": "24da274fa62a55001b2def33aa9eff683756061a59c72e5dfcff3315b0af81a8",
+      "models": [
+        {
+          "fold": 2,
+          "family": "word",
+          "n": 1,
+          "fit_seconds": 0.14716495899483562,
+          "vocabulary_size": 4892,
+          "cases": 11257,
+          "top1_accuracy": 0.04832548636404015,
+          "top5_accuracy": 0.15430398862929734,
+          "mean_edit_distance": 6.29430576530159,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 0.06812145793810487
+        },
+        {
+          "fold": 2,
+          "family": "word",
+          "n": 2,
+          "fit_seconds": 0.20823583309538662,
+          "vocabulary_size": 4892,
+          "cases": 11257,
+          "top1_accuracy": 0.10517899973349916,
+          "top5_accuracy": 0.22457137780936307,
+          "mean_edit_distance": 6.186461757128898,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 1.5541558749973774
+        },
+        {
+          "fold": 2,
+          "family": "word",
+          "n": 3,
+          "fit_seconds": 0.26236408296972513,
+          "vocabulary_size": 4892,
+          "cases": 11257,
+          "top1_accuracy": 0.1256107311006485,
+          "top5_accuracy": 0.2291907257706316,
+          "mean_edit_distance": 6.245091942791152,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 4.203359042061493
+        },
+        {
+          "fold": 2,
+          "family": "word",
+          "n": 4,
+          "fit_seconds": 0.3496542910579592,
+          "vocabulary_size": 4892,
+          "cases": 11257,
+          "top1_accuracy": 0.12632140001776673,
+          "top5_accuracy": 0.2243937105800835,
+          "mean_edit_distance": 6.232299902283024,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 5.431001291144639
+        },
+        {
+          "fold": 2,
+          "family": "word",
+          "n": 5,
+          "fit_seconds": 0.4841389588546008,
+          "vocabulary_size": 4892,
+          "cases": 11257,
+          "top1_accuracy": 0.1259660655592076,
+          "top5_accuracy": 0.22279470551656747,
+          "mean_edit_distance": 6.232566403126944,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 5.502051790943369
+        },
+        {
+          "fold": 2,
+          "family": "word",
+          "n": 6,
+          "fit_seconds": 0.6230241251178086,
+          "vocabulary_size": 4892,
+          "cases": 11257,
+          "top1_accuracy": 0.1255218974860087,
+          "top5_accuracy": 0.2226170382872879,
+          "mean_edit_distance": 6.234964910722217,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 5.798880165908486
+        },
+        {
+          "fold": 2,
+          "family": "word",
+          "n": 7,
+          "fit_seconds": 0.6905942088924348,
+          "vocabulary_size": 4892,
+          "cases": 11257,
+          "top1_accuracy": 0.1255218974860087,
+          "top5_accuracy": 0.22252820467264814,
+          "mean_edit_distance": 6.234964910722217,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 6.114824250107631
+        },
+        {
+          "fold": 2,
+          "family": "word",
+          "n": 8,
+          "fit_seconds": 0.9206722918897867,
+          "vocabulary_size": 4892,
+          "cases": 11257,
+          "top1_accuracy": 0.1255218974860087,
+          "top5_accuracy": 0.22252820467264814,
+          "mean_edit_distance": 6.234964910722217,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 6.464480125112459
+        },
+        {
+          "fold": 2,
+          "family": "word",
+          "n": 9,
+          "fit_seconds": 0.9824805839452893,
+          "vocabulary_size": 4892,
+          "cases": 11257,
+          "top1_accuracy": 0.1255218974860087,
+          "top5_accuracy": 0.22252820467264814,
+          "mean_edit_distance": 6.234964910722217,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 6.191041084006429
+        },
+        {
+          "fold": 2,
+          "family": "word",
+          "n": 10,
+          "fit_seconds": 1.1241486249491572,
+          "vocabulary_size": 4892,
+          "cases": 11257,
+          "top1_accuracy": 0.1255218974860087,
+          "top5_accuracy": 0.22252820467264814,
+          "mean_edit_distance": 6.234964910722217,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 6.195979000069201
+        },
+        {
+          "fold": 2,
+          "family": "character",
+          "n": 1,
+          "fit_seconds": 0.3899794169701636,
+          "vocabulary_size": 4892,
+          "cases": 11257,
+          "top1_accuracy": 8.883361463977969e-05,
+          "top5_accuracy": 0.0050635160344674425,
+          "mean_edit_distance": 6.23807408723461,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 0.04128220793791115
+        },
+        {
+          "fold": 2,
+          "family": "character",
+          "n": 2,
+          "fit_seconds": 0.6064317089039832,
+          "vocabulary_size": 4892,
+          "cases": 11257,
+          "top1_accuracy": 0.03668828284622901,
+          "top5_accuracy": 0.13618193124278227,
+          "mean_edit_distance": 6.3056764679754815,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 0.19984999997541308
+        },
+        {
+          "fold": 2,
+          "family": "character",
+          "n": 3,
+          "fit_seconds": 1.080426499946043,
+          "vocabulary_size": 4892,
+          "cases": 11257,
+          "top1_accuracy": 0.09567380296704273,
+          "top5_accuracy": 0.19792129341742914,
+          "mean_edit_distance": 6.309318646175713,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 4.043712583137676
+        },
+        {
+          "fold": 2,
+          "family": "character",
+          "n": 4,
+          "fit_seconds": 1.2986881660763174,
+          "vocabulary_size": 4892,
+          "cases": 11257,
+          "top1_accuracy": 0.1256107311006485,
+          "top5_accuracy": 0.20591631873500932,
+          "mean_edit_distance": 6.451097095140801,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 14.465084375115111
+        },
+        {
+          "fold": 2,
+          "family": "character",
+          "n": 5,
+          "fit_seconds": 2.5815424169413745,
+          "vocabulary_size": 4892,
+          "cases": 11257,
+          "top1_accuracy": 0.1141511948121169,
+          "top5_accuracy": 0.184685084836102,
+          "mean_edit_distance": 7.202718308607977,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 25.062854833202437
+        },
+        {
+          "fold": 2,
+          "family": "character",
+          "n": 6,
+          "fit_seconds": 2.7015770829748362,
+          "vocabulary_size": 4892,
+          "cases": 11257,
+          "top1_accuracy": 0.09052145331793551,
+          "top5_accuracy": 0.1719818779426135,
+          "mean_edit_distance": 7.837079150750644,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 36.50416329107247
+        },
+        {
+          "fold": 2,
+          "family": "character",
+          "n": 7,
+          "fit_seconds": 3.554388999938965,
+          "vocabulary_size": 4892,
+          "cases": 11257,
+          "top1_accuracy": 0.0843919339077907,
+          "top5_accuracy": 0.1779337301234787,
+          "mean_edit_distance": 8.15368215332682,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 47.972528625046834
+        },
+        {
+          "fold": 2,
+          "family": "character",
+          "n": 8,
+          "fit_seconds": 3.432508083060384,
+          "vocabulary_size": 4892,
+          "cases": 11257,
+          "top1_accuracy": 0.0743537354534956,
+          "top5_accuracy": 0.15776849960024875,
+          "mean_edit_distance": 8.26223683041663,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 83.75496220798232
+        },
+        {
+          "fold": 2,
+          "family": "character",
+          "n": 9,
+          "fit_seconds": 6.468306625029072,
+          "vocabulary_size": 4892,
+          "cases": 11257,
+          "top1_accuracy": 0.07071155725326464,
+          "top5_accuracy": 0.1439104557164431,
+          "mean_edit_distance": 8.331438216221018,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 104.35234954208136
+        },
+        {
+          "fold": 2,
+          "family": "character",
+          "n": 10,
+          "fit_seconds": 5.981924999970943,
+          "vocabulary_size": 4892,
+          "cases": 11257,
+          "top1_accuracy": 0.06022919072577063,
+          "top5_accuracy": 0.13360575641822867,
+          "mean_edit_distance": 8.408989961801545,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 118.8932939581573
+        }
+      ]
+    },
+    {
+      "split": {
+        "fold": 3,
+        "train_projects": [
+          "arrow",
+          "boltons",
+          "click",
+          "filelock",
+          "itsdangerous",
+          "more-itertools",
+          "packaging",
+          "platformdirs",
+          "pygments",
+          "rich",
+          "typer"
+        ],
+        "validation_projects": [
+          "attrs",
+          "flask",
+          "werkzeug"
+        ]
+      },
+      "case_ids_sha256": "f664def10721332abf924381f40c7aa899bdfc4aa46581da6d492834c84dd2d0",
+      "models": [
+        {
+          "fold": 3,
+          "family": "word",
+          "n": 1,
+          "fit_seconds": 0.12848362512886524,
+          "vocabulary_size": 4688,
+          "cases": 17950,
+          "top1_accuracy": 0.06813370473537604,
+          "top5_accuracy": 0.20016713091922006,
+          "mean_edit_distance": 5.607465181058496,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 0.08176708384416997
+        },
+        {
+          "fold": 3,
+          "family": "word",
+          "n": 2,
+          "fit_seconds": 0.16452300013042986,
+          "vocabulary_size": 4688,
+          "cases": 17950,
+          "top1_accuracy": 0.15353760445682452,
+          "top5_accuracy": 0.2998885793871866,
+          "mean_edit_distance": 5.4231197771587745,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 1.6125800828449428
+        },
+        {
+          "fold": 3,
+          "family": "word",
+          "n": 3,
+          "fit_seconds": 0.25739941699430346,
+          "vocabulary_size": 4688,
+          "cases": 17950,
+          "top1_accuracy": 0.176991643454039,
+          "top5_accuracy": 0.3078551532033426,
+          "mean_edit_distance": 5.56116991643454,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 6.1065146250184625
+        },
+        {
+          "fold": 3,
+          "family": "word",
+          "n": 4,
+          "fit_seconds": 0.3437390001490712,
+          "vocabulary_size": 4688,
+          "cases": 17950,
+          "top1_accuracy": 0.1747075208913649,
+          "top5_accuracy": 0.2916991643454039,
+          "mean_edit_distance": 5.555654596100278,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 8.307146791834384
+        },
+        {
+          "fold": 3,
+          "family": "word",
+          "n": 5,
+          "fit_seconds": 0.46477787499316037,
+          "vocabulary_size": 4688,
+          "cases": 17950,
+          "top1_accuracy": 0.17437325905292478,
+          "top5_accuracy": 0.28852367688022285,
+          "mean_edit_distance": 5.562562674094708,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 8.997995332814753
+        },
+        {
+          "fold": 3,
+          "family": "word",
+          "n": 6,
+          "fit_seconds": 0.6447146660648286,
+          "vocabulary_size": 4688,
+          "cases": 17950,
+          "top1_accuracy": 0.17426183844011142,
+          "top5_accuracy": 0.2878551532033426,
+          "mean_edit_distance": 5.558105849582173,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 9.691894374787807
+        },
+        {
+          "fold": 3,
+          "family": "word",
+          "n": 7,
+          "fit_seconds": 0.7422787910327315,
+          "vocabulary_size": 4688,
+          "cases": 17950,
+          "top1_accuracy": 0.17426183844011142,
+          "top5_accuracy": 0.28774373259052927,
+          "mean_edit_distance": 5.558774373259053,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 9.711697082966566
+        },
+        {
+          "fold": 3,
+          "family": "word",
+          "n": 8,
+          "fit_seconds": 0.8397121671587229,
+          "vocabulary_size": 4688,
+          "cases": 17950,
+          "top1_accuracy": 0.17442896935933147,
+          "top5_accuracy": 0.28774373259052927,
+          "mean_edit_distance": 5.5579944289693595,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 13.490718999877572
+        },
+        {
+          "fold": 3,
+          "family": "word",
+          "n": 9,
+          "fit_seconds": 1.3049134591128677,
+          "vocabulary_size": 4688,
+          "cases": 17950,
+          "top1_accuracy": 0.17442896935933147,
+          "top5_accuracy": 0.28774373259052927,
+          "mean_edit_distance": 5.5579944289693595,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 16.811006542062387
+        },
+        {
+          "fold": 3,
+          "family": "word",
+          "n": 10,
+          "fit_seconds": 1.4468421249184757,
+          "vocabulary_size": 4688,
+          "cases": 17950,
+          "top1_accuracy": 0.17442896935933147,
+          "top5_accuracy": 0.28774373259052927,
+          "mean_edit_distance": 5.5579944289693595,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 13.297694499837235
+        },
+        {
+          "fold": 3,
+          "family": "character",
+          "n": 1,
+          "fit_seconds": 0.5142256249673665,
+          "vocabulary_size": 4688,
+          "cases": 17950,
+          "top1_accuracy": 0.002785515320334262,
+          "top5_accuracy": 0.03944289693593315,
+          "mean_edit_distance": 5.4782729805013926,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 0.07958812499418855
+        },
+        {
+          "fold": 3,
+          "family": "character",
+          "n": 2,
+          "fit_seconds": 0.715398000087589,
+          "vocabulary_size": 4688,
+          "cases": 17950,
+          "top1_accuracy": 0.043788300835654596,
+          "top5_accuracy": 0.16623955431754875,
+          "mean_edit_distance": 5.63058495821727,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 0.23704679193906486
+        },
+        {
+          "fold": 3,
+          "family": "character",
+          "n": 3,
+          "fit_seconds": 0.9782773749902844,
+          "vocabulary_size": 4688,
+          "cases": 17950,
+          "top1_accuracy": 0.152924791086351,
+          "top5_accuracy": 0.30557103064066854,
+          "mean_edit_distance": 5.45949860724234,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 2.718894583871588
+        },
+        {
+          "fold": 3,
+          "family": "character",
+          "n": 4,
+          "fit_seconds": 1.5184426249470562,
+          "vocabulary_size": 4688,
+          "cases": 17950,
+          "top1_accuracy": 0.1807799442896936,
+          "top5_accuracy": 0.29364902506963786,
+          "mean_edit_distance": 5.660445682451254,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 13.511861250037327
+        },
+        {
+          "fold": 3,
+          "family": "character",
+          "n": 5,
+          "fit_seconds": 2.219915916910395,
+          "vocabulary_size": 4688,
+          "cases": 17950,
+          "top1_accuracy": 0.16573816155988857,
+          "top5_accuracy": 0.28178272980501395,
+          "mean_edit_distance": 6.227743732590529,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 28.540819582995027
+        },
+        {
+          "fold": 3,
+          "family": "character",
+          "n": 6,
+          "fit_seconds": 2.612174875102937,
+          "vocabulary_size": 4688,
+          "cases": 17950,
+          "top1_accuracy": 0.15420612813370474,
+          "top5_accuracy": 0.27348189415041785,
+          "mean_edit_distance": 6.781949860724234,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 39.28653599997051
+        },
+        {
+          "fold": 3,
+          "family": "character",
+          "n": 7,
+          "fit_seconds": 2.635822417214513,
+          "vocabulary_size": 4688,
+          "cases": 17950,
+          "top1_accuracy": 0.13292479108635097,
+          "top5_accuracy": 0.23348189415041784,
+          "mean_edit_distance": 7.187799442896936,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 67.41328520793468
+        },
+        {
+          "fold": 3,
+          "family": "character",
+          "n": 8,
+          "fit_seconds": 6.465472792042419,
+          "vocabulary_size": 4688,
+          "cases": 17950,
+          "top1_accuracy": 0.11682451253481894,
+          "top5_accuracy": 0.20328690807799443,
+          "mean_edit_distance": 7.684066852367688,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 99.25277137500234
+        },
+        {
+          "fold": 3,
+          "family": "character",
+          "n": 9,
+          "fit_seconds": 6.5615157501306385,
+          "vocabulary_size": 4688,
+          "cases": 17950,
+          "top1_accuracy": 0.10646239554317549,
+          "top5_accuracy": 0.1872423398328691,
+          "mean_edit_distance": 7.6325348189415045,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 109.91351774986833
+        },
+        {
+          "fold": 3,
+          "family": "character",
+          "n": 10,
+          "fit_seconds": 5.624413500074297,
+          "vocabulary_size": 4688,
+          "cases": 17950,
+          "top1_accuracy": 0.09342618384401115,
+          "top5_accuracy": 0.17197771587743732,
+          "mean_edit_distance": 7.6538718662952645,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 134.11244249995798
+        }
+      ]
+    },
+    {
+      "split": {
+        "fold": 4,
+        "train_projects": [
+          "arrow",
+          "attrs",
+          "boltons",
+          "click",
+          "filelock",
+          "flask",
+          "itsdangerous",
+          "more-itertools",
+          "packaging",
+          "pygments",
+          "werkzeug"
+        ],
+        "validation_projects": [
+          "platformdirs",
+          "rich",
+          "typer"
+        ]
+      },
+      "case_ids_sha256": "3fbbcb78058c5c5e6a5e77e23b62762ed6c28e1a6088fba593280f29075c4dbc",
+      "models": [
+        {
+          "fold": 4,
+          "family": "word",
+          "n": 1,
+          "fit_seconds": 0.14080733293667436,
+          "vocabulary_size": 4782,
+          "cases": 18981,
+          "top1_accuracy": 0.06796269954164691,
+          "top5_accuracy": 0.19677572309151256,
+          "mean_edit_distance": 5.76703018808282,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 0.11155058303847909
+        },
+        {
+          "fold": 4,
+          "family": "word",
+          "n": 2,
+          "fit_seconds": 0.21354837506078184,
+          "vocabulary_size": 4782,
+          "cases": 18981,
+          "top1_accuracy": 0.148042779621727,
+          "top5_accuracy": 0.30440967283072545,
+          "mean_edit_distance": 5.742742742742743,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 2.2230479158461094
+        },
+        {
+          "fold": 4,
+          "family": "word",
+          "n": 3,
+          "fit_seconds": 0.23554795910604298,
+          "vocabulary_size": 4782,
+          "cases": 18981,
+          "top1_accuracy": 0.21331858173963436,
+          "top5_accuracy": 0.3394447078657605,
+          "mean_edit_distance": 5.480164374901217,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 9.365179874934256
+        },
+        {
+          "fold": 4,
+          "family": "word",
+          "n": 4,
+          "fit_seconds": 0.3445079999510199,
+          "vocabulary_size": 4782,
+          "cases": 18981,
+          "top1_accuracy": 0.2298087561245456,
+          "top5_accuracy": 0.3412359728149202,
+          "mean_edit_distance": 5.389284020862968,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 13.480655916966498
+        },
+        {
+          "fold": 4,
+          "family": "word",
+          "n": 5,
+          "fit_seconds": 0.5072820000350475,
+          "vocabulary_size": 4782,
+          "cases": 18981,
+          "top1_accuracy": 0.23549865655128813,
+          "top5_accuracy": 0.34192086823665774,
+          "mean_edit_distance": 5.354986565512881,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 15.242305333027616
+        },
+        {
+          "fold": 4,
+          "family": "word",
+          "n": 6,
+          "fit_seconds": 0.5825058340560645,
+          "vocabulary_size": 4782,
+          "cases": 18981,
+          "top1_accuracy": 0.2385543438175017,
+          "top5_accuracy": 0.34213160528950004,
+          "mean_edit_distance": 5.3295400663821715,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 18.78675741609186
+        },
+        {
+          "fold": 4,
+          "family": "word",
+          "n": 7,
+          "fit_seconds": 1.0986393748316914,
+          "vocabulary_size": 4782,
+          "cases": 18981,
+          "top1_accuracy": 0.2396080290817133,
+          "top5_accuracy": 0.34202623676307886,
+          "mean_edit_distance": 5.32211158526948,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 25.287957499967888
+        },
+        {
+          "fold": 4,
+          "family": "word",
+          "n": 8,
+          "fit_seconds": 1.3625955001916736,
+          "vocabulary_size": 4782,
+          "cases": 18981,
+          "top1_accuracy": 0.2401348717138191,
+          "top5_accuracy": 0.34202623676307886,
+          "mean_edit_distance": 5.318739792424003,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 20.944315999979153
+        },
+        {
+          "fold": 4,
+          "family": "word",
+          "n": 9,
+          "fit_seconds": 1.174820665968582,
+          "vocabulary_size": 4782,
+          "cases": 18981,
+          "top1_accuracy": 0.24039829302987198,
+          "top5_accuracy": 0.34202623676307886,
+          "mean_edit_distance": 5.316790474685211,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 21.123089333064854
+        },
+        {
+          "fold": 4,
+          "family": "word",
+          "n": 10,
+          "fit_seconds": 1.490311082918197,
+          "vocabulary_size": 4782,
+          "cases": 18981,
+          "top1_accuracy": 0.24045097729308257,
+          "top5_accuracy": 0.34197355249986827,
+          "mean_edit_distance": 5.3163690005795265,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 22.534625041065738
+        },
+        {
+          "fold": 4,
+          "family": "character",
+          "n": 1,
+          "fit_seconds": 0.4068017501849681,
+          "vocabulary_size": 4782,
+          "cases": 18981,
+          "top1_accuracy": 0.000474158368895211,
+          "top5_accuracy": 0.002318107581265476,
+          "mean_edit_distance": 5.8836731468310415,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 0.0663579588290304
+        },
+        {
+          "fold": 4,
+          "family": "character",
+          "n": 2,
+          "fit_seconds": 0.722889208002016,
+          "vocabulary_size": 4782,
+          "cases": 18981,
+          "top1_accuracy": 0.04030346135609293,
+          "top5_accuracy": 0.15836889521100048,
+          "mean_edit_distance": 5.8250882461408775,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 0.49673808296211064
+        },
+        {
+          "fold": 4,
+          "family": "character",
+          "n": 3,
+          "fit_seconds": 1.3945607910864055,
+          "vocabulary_size": 4782,
+          "cases": 18981,
+          "top1_accuracy": 0.12986670881407725,
+          "top5_accuracy": 0.2488277751435646,
+          "mean_edit_distance": 5.695801064222117,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 3.3392162080854177
+        },
+        {
+          "fold": 4,
+          "family": "character",
+          "n": 4,
+          "fit_seconds": 1.19385483302176,
+          "vocabulary_size": 4782,
+          "cases": 18981,
+          "top1_accuracy": 0.1525209419946262,
+          "top5_accuracy": 0.2701122174806385,
+          "mean_edit_distance": 5.991254412307044,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 11.462521208217368
+        },
+        {
+          "fold": 4,
+          "family": "character",
+          "n": 5,
+          "fit_seconds": 1.6307051659096032,
+          "vocabulary_size": 4782,
+          "cases": 18981,
+          "top1_accuracy": 0.1309730783414994,
+          "top5_accuracy": 0.2686897423739529,
+          "mean_edit_distance": 6.864706812075233,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 26.368960874853656
+        },
+        {
+          "fold": 4,
+          "family": "character",
+          "n": 6,
+          "fit_seconds": 2.115882124984637,
+          "vocabulary_size": 4782,
+          "cases": 18981,
+          "top1_accuracy": 0.15868500079026396,
+          "top5_accuracy": 0.2372899215004478,
+          "mean_edit_distance": 7.158052789631737,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 55.57056237501092
+        },
+        {
+          "fold": 4,
+          "family": "character",
+          "n": 7,
+          "fit_seconds": 4.7557850000448525,
+          "vocabulary_size": 4782,
+          "cases": 18981,
+          "top1_accuracy": 0.13160528950002634,
+          "top5_accuracy": 0.23528791949844582,
+          "mean_edit_distance": 7.559717612349191,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 79.79516366589814
+        },
+        {
+          "fold": 4,
+          "family": "character",
+          "n": 8,
+          "fit_seconds": 4.200626916019246,
+          "vocabulary_size": 4782,
+          "cases": 18981,
+          "top1_accuracy": 0.12349191296559718,
+          "top5_accuracy": 0.2182182182182182,
+          "mean_edit_distance": 7.583372846530741,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 103.65107704186812
+        },
+        {
+          "fold": 4,
+          "family": "character",
+          "n": 9,
+          "fit_seconds": 3.684345790883526,
+          "vocabulary_size": 4782,
+          "cases": 18981,
+          "top1_accuracy": 0.11068963700542647,
+          "top5_accuracy": 0.1954586165112481,
+          "mean_edit_distance": 7.772035193087825,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 123.28031000006013
+        },
+        {
+          "fold": 4,
+          "family": "character",
+          "n": 10,
+          "fit_seconds": 3.972030624980107,
+          "vocabulary_size": 4782,
+          "cases": 18981,
+          "top1_accuracy": 0.10452557820978874,
+          "top5_accuracy": 0.1758600705969127,
+          "mean_edit_distance": 7.866392708497972,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 126.49865183304064
+        }
+      ]
+    },
+    {
+      "split": {
+        "fold": 5,
+        "train_projects": [
+          "arrow",
+          "attrs",
+          "click",
+          "filelock",
+          "flask",
+          "itsdangerous",
+          "more-itertools",
+          "platformdirs",
+          "pygments",
+          "rich",
+          "typer",
+          "werkzeug"
+        ],
+        "validation_projects": [
+          "boltons",
+          "packaging"
+        ]
+      },
+      "case_ids_sha256": "dcc0210aae35c3f563a435f252033da700ae1025fde6b250644a0182be20864a",
+      "models": [
+        {
+          "fold": 5,
+          "family": "word",
+          "n": 1,
+          "fit_seconds": 0.14433570788241923,
+          "vocabulary_size": 4644,
+          "cases": 18351,
+          "top1_accuracy": 0.07623562748624053,
+          "top5_accuracy": 0.20031605907035038,
+          "mean_edit_distance": 5.44607923273936,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 0.09023137507028878
+        },
+        {
+          "fold": 5,
+          "family": "word",
+          "n": 2,
+          "fit_seconds": 0.17681012488901615,
+          "vocabulary_size": 4644,
+          "cases": 18351,
+          "top1_accuracy": 0.11465315241676204,
+          "top5_accuracy": 0.2533921857119503,
+          "mean_edit_distance": 5.359871396654134,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 1.6683122909162194
+        },
+        {
+          "fold": 5,
+          "family": "word",
+          "n": 3,
+          "fit_seconds": 0.23884912487119436,
+          "vocabulary_size": 4644,
+          "cases": 18351,
+          "top1_accuracy": 0.134161626069424,
+          "top5_accuracy": 0.25017710206528254,
+          "mean_edit_distance": 5.535883603073402,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 6.1526465830393136
+        },
+        {
+          "fold": 5,
+          "family": "word",
+          "n": 4,
+          "fit_seconds": 0.42246620799414814,
+          "vocabulary_size": 4644,
+          "cases": 18351,
+          "top1_accuracy": 0.13563293553484823,
+          "top5_accuracy": 0.24358345594245545,
+          "mean_edit_distance": 5.475886872649991,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 7.670104957884178
+        },
+        {
+          "fold": 5,
+          "family": "word",
+          "n": 5,
+          "fit_seconds": 0.5701165839564055,
+          "vocabulary_size": 4644,
+          "cases": 18351,
+          "top1_accuracy": 0.13492452727371806,
+          "top5_accuracy": 0.24189417470437577,
+          "mean_edit_distance": 5.483788349408751,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 8.97283008415252
+        },
+        {
+          "fold": 5,
+          "family": "word",
+          "n": 6,
+          "fit_seconds": 0.6023895000107586,
+          "vocabulary_size": 4644,
+          "cases": 18351,
+          "top1_accuracy": 0.1348700343305542,
+          "top5_accuracy": 0.24183968176121193,
+          "mean_edit_distance": 5.484660236499374,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 8.511450459016487
+        },
+        {
+          "fold": 5,
+          "family": "word",
+          "n": 7,
+          "fit_seconds": 0.7181370838079602,
+          "vocabulary_size": 4644,
+          "cases": 18351,
+          "top1_accuracy": 0.1348700343305542,
+          "top5_accuracy": 0.24173069587488422,
+          "mean_edit_distance": 5.484660236499374,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 8.849677707999945
+        },
+        {
+          "fold": 5,
+          "family": "word",
+          "n": 8,
+          "fit_seconds": 2.4587934168521315,
+          "vocabulary_size": 4644,
+          "cases": 18351,
+          "top1_accuracy": 0.1348700343305542,
+          "top5_accuracy": 0.24173069587488422,
+          "mean_edit_distance": 5.484660236499374,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 12.191935000009835
+        },
+        {
+          "fold": 5,
+          "family": "word",
+          "n": 9,
+          "fit_seconds": 1.4371042910497636,
+          "vocabulary_size": 4644,
+          "cases": 18351,
+          "top1_accuracy": 0.1348700343305542,
+          "top5_accuracy": 0.24173069587488422,
+          "mean_edit_distance": 5.484660236499374,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 14.77035883301869
+        },
+        {
+          "fold": 5,
+          "family": "word",
+          "n": 10,
+          "fit_seconds": 1.426726333098486,
+          "vocabulary_size": 4644,
+          "cases": 18351,
+          "top1_accuracy": 0.1348700343305542,
+          "top5_accuracy": 0.24173069587488422,
+          "mean_edit_distance": 5.484660236499374,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 12.08928258297965
+        },
+        {
+          "fold": 5,
+          "family": "character",
+          "n": 1,
+          "fit_seconds": 0.5338609169702977,
+          "vocabulary_size": 4644,
+          "cases": 18351,
+          "top1_accuracy": 0.0029971118740123154,
+          "top5_accuracy": 0.006539153179663234,
+          "mean_edit_distance": 5.383412348100921,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 0.08502916595898569
+        },
+        {
+          "fold": 5,
+          "family": "character",
+          "n": 2,
+          "fit_seconds": 0.6716282078996301,
+          "vocabulary_size": 4644,
+          "cases": 18351,
+          "top1_accuracy": 0.03160590703503896,
+          "top5_accuracy": 0.16413274480954718,
+          "mean_edit_distance": 5.55054220478448,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 0.24516733293421566
+        },
+        {
+          "fold": 5,
+          "family": "character",
+          "n": 3,
+          "fit_seconds": 0.9618038751650602,
+          "vocabulary_size": 4644,
+          "cases": 18351,
+          "top1_accuracy": 0.12985668355947905,
+          "top5_accuracy": 0.23508255680889326,
+          "mean_edit_distance": 5.5617677510762356,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 2.9176258749794215
+        },
+        {
+          "fold": 5,
+          "family": "character",
+          "n": 4,
+          "fit_seconds": 1.4966361250262707,
+          "vocabulary_size": 4644,
+          "cases": 18351,
+          "top1_accuracy": 0.13813961092038582,
+          "top5_accuracy": 0.23742575336493923,
+          "mean_edit_distance": 5.781374312026593,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 13.819345207884908
+        },
+        {
+          "fold": 5,
+          "family": "character",
+          "n": 5,
+          "fit_seconds": 2.1522060830611736,
+          "vocabulary_size": 4644,
+          "cases": 18351,
+          "top1_accuracy": 0.13383466841044084,
+          "top5_accuracy": 0.22516484115307067,
+          "mean_edit_distance": 6.367118958094927,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 28.56676850002259
+        },
+        {
+          "fold": 5,
+          "family": "character",
+          "n": 6,
+          "fit_seconds": 2.5140551670920104,
+          "vocabulary_size": 4644,
+          "cases": 18351,
+          "top1_accuracy": 0.12364448803879897,
+          "top5_accuracy": 0.20571086044357256,
+          "mean_edit_distance": 6.883984524004141,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 40.37694054096937
+        },
+        {
+          "fold": 5,
+          "family": "character",
+          "n": 7,
+          "fit_seconds": 2.620694458950311,
+          "vocabulary_size": 4644,
+          "cases": 18351,
+          "top1_accuracy": 0.1137267723829764,
+          "top5_accuracy": 0.2099068170671898,
+          "mean_edit_distance": 7.193613427061195,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 73.0580239999108
+        },
+        {
+          "fold": 5,
+          "family": "character",
+          "n": 8,
+          "fit_seconds": 5.127299374900758,
+          "vocabulary_size": 4644,
+          "cases": 18351,
+          "top1_accuracy": 0.10130238134161626,
+          "top5_accuracy": 0.19148820227780503,
+          "mean_edit_distance": 7.207018691079505,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 105.19789749989286
+        },
+        {
+          "fold": 5,
+          "family": "character",
+          "n": 9,
+          "fit_seconds": 4.820169209036976,
+          "vocabulary_size": 4644,
+          "cases": 18351,
+          "top1_accuracy": 0.09236553866274318,
+          "top5_accuracy": 0.17524930521497467,
+          "mean_edit_distance": 7.45708680725846,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 115.68495533405803
+        },
+        {
+          "fold": 5,
+          "family": "character",
+          "n": 10,
+          "fit_seconds": 5.141138042090461,
+          "vocabulary_size": 4644,
+          "cases": 18351,
+          "top1_accuracy": 0.08021361233720234,
+          "top5_accuracy": 0.16249795651463136,
+          "mean_edit_distance": 7.586344068443137,
+          "empty_outputs": 0,
+          "failures": {},
+          "fallbacks": {},
+          "evaluation_seconds": 134.96632145904005
+        }
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "family": "word",
+      "n": 10,
+      "top1_accuracy": {
+        "mean": 0.18391053892239412,
+        "sample_sd": 0.05644797658824874
+      },
+      "top5_accuracy": {
+        "mean": 0.28603148017182184,
+        "sample_sd": 0.05395059934484103
+      },
+      "mean_edit_distance": {
+        "mean": 5.4925597298558095,
+        "sample_sd": 0.4938664704513656
+      }
+    },
+    {
+      "family": "word",
+      "n": 9,
+      "top1_accuracy": {
+        "mean": 0.18388876043072103,
+        "sample_sd": 0.05641975632654696
+      },
+      "top5_accuracy": {
+        "mean": 0.28604201702446397,
+        "sample_sd": 0.05396426000813333
+      },
+      "mean_edit_distance": {
+        "mean": 5.492733957789194,
+        "sample_sd": 0.4936869234310959
+      }
+    },
+    {
+      "family": "word",
+      "n": 8,
+      "top1_accuracy": {
+        "mean": 0.1837798679723556,
+        "sample_sd": 0.0562786802016442
+      },
+      "top5_accuracy": {
+        "mean": 0.28604201702446397,
+        "sample_sd": 0.05396426000813333
+      },
+      "mean_edit_distance": {
+        "mean": 5.493539761981099,
+        "sample_sd": 0.49285717243430016
+      }
+    },
+    {
+      "family": "word",
+      "n": 7,
+      "top1_accuracy": {
+        "mean": 0.1835061735937188,
+        "sample_sd": 0.05597349788723982
+      },
+      "top5_accuracy": {
+        "mean": 0.28604201702446397,
+        "sample_sd": 0.05396426000813333
+      },
+      "mean_edit_distance": {
+        "mean": 5.495291923808672,
+        "sample_sd": 0.4911305507546611
+      }
+    },
+    {
+      "family": "word",
+      "n": 6,
+      "top1_accuracy": {
+        "mean": 0.18310432867734996,
+        "sample_sd": 0.05545472654684132
+      },
+      "top5_accuracy": {
+        "mean": 0.28616990530862824,
+        "sample_sd": 0.05399619797796045
+      },
+      "mean_edit_distance": {
+        "mean": 5.497813045755056,
+        "sample_sd": 0.48861952143688997
+      }
+    },
+    {
+      "family": "word",
+      "n": 5,
+      "top1_accuracy": {
+        "mean": 0.18181705117874356,
+        "sample_sd": 0.053498270769451066
+      },
+      "top5_accuracy": {
+        "mean": 0.2862629281118006,
+        "sample_sd": 0.05383204025066624
+      },
+      "mean_edit_distance": {
+        "mean": 5.510368005443439,
+        "sample_sd": 0.47437335468962927
+      }
+    },
+    {
+      "family": "word",
+      "n": 4,
+      "top1_accuracy": {
+        "mean": 0.17971085007258317,
+        "sample_sd": 0.050177281499180416
+      },
+      "top5_accuracy": {
+        "mean": 0.28732877066856066,
+        "sample_sd": 0.05277876028066034
+      },
+      "mean_edit_distance": {
+        "mean": 5.521137135037113,
+        "sample_sd": 0.4608840426132377
+      }
+    },
+    {
+      "family": "word",
+      "n": 3,
+      "top1_accuracy": {
+        "mean": 0.17110470713094714,
+        "sample_sd": 0.040094071015789885
+      },
+      "top5_accuracy": {
+        "mean": 0.293064412942602,
+        "sample_sd": 0.050910489626201164
+      },
+      "mean_edit_distance": {
+        "mean": 5.589699447064592,
+        "sample_sd": 0.4062298469417715
+      }
+    },
+    {
+      "family": "character",
+      "n": 4,
+      "top1_accuracy": {
+        "mean": 0.15022357824496155,
+        "sample_sd": 0.020649171876397227
+      },
+      "top5_accuracy": {
+        "mean": 0.2527499867454573,
+        "sample_sd": 0.033232464261191974
+      },
+      "mean_edit_distance": {
+        "mean": 5.892229725038053,
+        "sample_sd": 0.3491187455476477
+      }
+    },
+    {
+      "family": "character",
+      "n": 5,
+      "top1_accuracy": {
+        "mean": 0.13856113947139698,
+        "sample_sd": 0.019400438272718215
+      },
+      "top5_accuracy": {
+        "mean": 0.2413590667844345,
+        "sample_sd": 0.038345088308995065
+      },
+      "mean_edit_distance": {
+        "mean": 6.6193779152611985,
+        "sample_sd": 0.40361690448902593
+      }
+    },
+    {
+      "family": "character",
+      "n": 6,
+      "top1_accuracy": {
+        "mean": 0.13322322901876218,
+        "sample_sd": 0.02755827870129147
+      },
+      "top5_accuracy": {
+        "mean": 0.22188379383815623,
+        "sample_sd": 0.037591027701938284
+      },
+      "mean_edit_distance": {
+        "mean": 7.251689404643308,
+        "sample_sd": 0.45464644485065525
+      }
+    },
+    {
+      "family": "word",
+      "n": 2,
+      "top1_accuracy": {
+        "mean": 0.13179079795454787,
+        "sample_sd": 0.02104760817766501
+      },
+      "top5_accuracy": {
+        "mean": 0.27481895299664505,
+        "sample_sd": 0.034559724045626426
+      },
+      "mean_edit_distance": {
+        "mean": 5.583650983424448,
+        "sample_sd": 0.3895876379338729
+      }
+    },
+    {
+      "family": "character",
+      "n": 3,
+      "top1_accuracy": {
+        "mean": 0.1275763752517775,
+        "sample_sd": 0.02046152528283058
+      },
+      "top5_accuracy": {
+        "mean": 0.24460548201994034,
+        "sample_sd": 0.03900441937160826
+      },
+      "mean_edit_distance": {
+        "mean": 5.6855874829805355,
+        "sample_sd": 0.3661519199488821
+      }
+    },
+    {
+      "family": "character",
+      "n": 7,
+      "top1_accuracy": {
+        "mean": 0.1157437419743834,
+        "sample_sd": 0.019582438356415554
+      },
+      "top5_accuracy": {
+        "mean": 0.21161210645490547,
+        "sample_sd": 0.023870681309324834
+      },
+      "mean_edit_distance": {
+        "mean": 7.606810315334349,
+        "sample_sd": 0.4353438585618397
+      }
+    },
+    {
+      "family": "character",
+      "n": 8,
+      "top1_accuracy": {
+        "mean": 0.10350815018806968,
+        "sample_sd": 0.01894257749627261
+      },
+      "top5_accuracy": {
+        "mean": 0.19135094918833537,
+        "sample_sd": 0.022476796475444958
+      },
+      "mean_edit_distance": {
+        "mean": 7.73549035654027,
+        "sample_sd": 0.39517795921544013
+      }
+    },
+    {
+      "family": "character",
+      "n": 9,
+      "top1_accuracy": {
+        "mean": 0.09452708025983782,
+        "sample_sd": 0.015652709140550284
+      },
+      "top5_accuracy": {
+        "mean": 0.17301786320104595,
+        "sample_sd": 0.02033453557008944
+      },
+      "mean_edit_distance": {
+        "mean": 7.846431946228286,
+        "sample_sd": 0.3446791817234363
+      }
+    },
+    {
+      "family": "character",
+      "n": 10,
+      "top1_accuracy": {
+        "mean": 0.08467627123818229,
+        "sample_sd": 0.01649414631375373
+      },
+      "top5_accuracy": {
+        "mean": 0.15918569182118683,
+        "sample_sd": 0.017020551722858435
+      },
+      "mean_edit_distance": {
+        "mean": 7.940205888170756,
+        "sample_sd": 0.35090865181524267
+      }
+    },
+    {
+      "family": "word",
+      "n": 1,
+      "top1_accuracy": {
+        "mean": 0.06398019116410386,
+        "sample_sd": 0.01061619497785104
+      },
+      "top5_accuracy": {
+        "mean": 0.18558884362126218,
+        "sample_sd": 0.020112709397176347
+      },
+      "mean_edit_distance": {
+        "mean": 5.703342550868863,
+        "sample_sd": 0.3604091077032542
+      }
+    },
+    {
+      "family": "character",
+      "n": 2,
+      "top1_accuracy": {
+        "mean": 0.038739795102366574,
+        "sample_sd": 0.004734316948035904
+      },
+      "top5_accuracy": {
+        "mean": 0.15496607641177462,
+        "sample_sd": 0.012259017683314334
+      },
+      "mean_edit_distance": {
+        "mean": 5.746375902263035,
+        "sample_sd": 0.34543466719744587
+      }
+    },
+    {
+      "family": "character",
+      "n": 1,
+      "top1_accuracy": {
+        "mean": 0.0016176146455364059,
+        "sample_sd": 0.0013159837730232944
+      },
+      "top5_accuracy": {
+        "mean": 0.01730530177453858,
+        "sample_sd": 0.017549371409465025
+      },
+      "mean_edit_distance": {
+        "mean": 5.651939168370814,
+        "sample_sd": 0.40020424523377796
+      }
+    }
+  ],
+  "selected": {
+    "family": "word",
+    "n": 10,
+    "top1_accuracy": {
+      "mean": 0.18391053892239412,
+      "sample_sd": 0.05644797658824874
+    },
+    "top5_accuracy": {
+      "mean": 0.28603148017182184,
+      "sample_sd": 0.05395059934484103
+    },
+    "mean_edit_distance": {
+      "mean": 5.4925597298558095,
+      "sample_sd": 0.4938664704513656
+    }
+  }
+}

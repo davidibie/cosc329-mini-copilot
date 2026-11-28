@@ -96,7 +96,7 @@ python scripts/train_model.py --family word --n 3 --fold 1 --output models/word-
 python scripts/train_model.py --family character --n 3 --fold 1 --output models/character-3-fold1.json
 ```
 
-T11 will compare every n on the saved five folds and select a best model. No formal model accuracy or edit-distance results have been claimed yet.
+See [shared evaluation and model selection](docs/EVALUATION.md) for the five-fold benchmark, saved case verification and the AST/hybrid handoff.
 
 ## Try the AST predictor
 
